@@ -1,12 +1,15 @@
+// JavaScript Document
 
 data.RES_DEC_REAS_CODE_TABLE = new Array();
 var stateO = new Array('O','L','R','A','D');
 var NoPosKI = new Array('NEGATIVE','HDNEGATIVE','MEDIUM');
 
+/*
 var amnistActTerm = 'N';
 if (data.PROD_SCHEME_TERM>=6 && data.PROD_SCHEME_TERM<12 && (data.RES_FINAL_KRED_SUM_6>=1000 || data.RES_FINAL_KRED_SUM>=1000)){
     amnistActTerm = 'Y';
 }
+*/
 
 
 /*----------------------------------- CASH_BLACK_PAN definition------------------------------------------------------*/
@@ -61,17 +64,19 @@ if (data.LOCAL_BLPHONE =='Y' ) {
 }
 
 /*----------------------------------------Negative credit history-----------------------------------------------------*/
-/*
- if ((data.PROD_CHAR_BANK =='PB' || data.PROD_CHAR_BANK =='AB') &&
- (data.BCH_CRED_HIST_YBCH != undefined && data.BCH_CRED_HIST_YBCH.substring(0,1)=='N' &&
- ((data.RES_DEBCARD_Z_SRED < 1000 && data.RES_DEBCARD_P_SRED< 1000 && data.PROD_CHAR_LIMITREQUESTED<5000) ||
- data.PROD_CHAR_LIMITREQUESTED>5000)
- ) ||
- (data.BCH_CRED_HIST_YBCH != undefined && data.BCH_CRED_HIST_YBCH.substring(0,1)=='H'))
+
+ if (
+  (data.PROD_CHAR_BANK =='PB' || data.PROD_CHAR_BANK =='AB') &&
+  (data.BCH_CRED_HIST_YBCH != undefined && data.BCH_CRED_HIST_YBCH.substring(0,1)=='N' &&
+   ((data.RES_DEBCARD_Z_SRED < 1000 && data.RES_DEBCARD_P_SRED< 1000 && data.PROD_CHAR_LIMITREQUESTED<5000) ||
+    data.PROD_CHAR_LIMITREQUESTED>5000)
+  ) ||
+ (data.BCH_CRED_HIST_YBCH != undefined && data.BCH_CRED_HIST_YBCH.substring(0,1)=='H')
+ )
  {
  data.RES_DEC_REAS_CODE_TABLE.push('D606');
  }
- */
+ 
 
 /*---------------------Negative internal credit history--------------------------------------------------------------*/
 
@@ -86,8 +91,7 @@ if (data.LOCAL_BLCL_COLOR =='BORDO')  {
 /*------------------No limit---------------------------------------------------------------*/
 
 if (
-    (data.RES_FINAL_KRED_SUM<5000 && data.DATA_TRELCLIENTS_FACH_LIM24<5000 && data.cash_amnisty != 'Y' && amnistActTerm != 'Y') ||
-    data.RES_TYPE_CUST == 'EXTERN'
+    (data.RES_FINAL_KRED_SUM<5000 && data.DATA_TRELCLIENTS_FACH_LIM24<5000 && data.cash_amnisty != 'Y') 
 ) {
     data.RES_DEC_REAS_CODE_TABLE.push('D609');
 }
@@ -106,7 +110,7 @@ if ((
     ||
     data.LOCAL_MOBILIZATION =='Y'
     ||
-    (data.SPVostok_VostokRegion=='Y')  && (data.LOCAL_DONBASS_EXCLUDES!='Y' || data.RES_TYPE_CUST !='INTERN')
+    (data.SPVostok_VostokRegion=='Y')  && (data.LOCAL_DONBASS_EXCLUDES!='Y' && data.RES_TYPE_CUST !='INTERN')
     || (data.FRAUD_DEC_FINAL_FLOW=='DECLINE' && data.RES_TYPE_CUST !='INTERN'))
 {
     data.RES_DEC_REAS_CODE_TABLE.push('D610');
@@ -120,17 +124,19 @@ if ( data.LOCAL_CONTACT_PHONE_MOB == undefined || data.LOCAL_CONTACT_PHONE_MOB.t
 
 //-----------------------Cash_Loanamount-------------------------------
 
-if ((data.PROD_SCHEME_TERM> 6 && ((data.PROD_CHAR_LIMITREQUESTED<5000 && amnistActTerm != 'Y') || data.PROD_CHAR_LIMITREQUESTED > 50000)) || (data.PROD_SCHEME_TERM== 6 && data.PROD_CHAR_LIMITREQUESTED<1000)) {
+if (data.PROD_CHAR_LIMITREQUESTED<5000 || data.PROD_CHAR_LIMITREQUESTED > 100000) {
     data.RES_DEC_REAS_CODE_TABLE.push('D625');
 }
 
+
 //-----------------------Cash_LightStopAction-------------------------------
+/*
 
 if (data.PROD_SCHEME_TERM>= 12 && amnistActTerm == 'Y' && ((data.RES_FINAL_KRED_SUM<5000 && data.DATA_TRELCLIENTS_FACH_LIM24<5000)||data.PROD_CHAR_LIMITREQUESTED<5000)) {
     data.RES_DEC_REAS_CODE_TABLE.push('D627');
 }
 
-
+*/
 //--------------------Open_Fach_DDZ------------------------------------------
 
 /*
@@ -170,7 +176,7 @@ if (data.RES_DEC_REAS_CODE_TABLE.length==0 && data.APP_CUST_ID != 51391734){
 //-------------------------------------Амнистия по решению КЦ (сутки)----------------------
 
 if (data.PROD_StatusFach == 'N' && data.KC_LIMIT_P48>0) {
-    if (data.PROD_SCHEME_TERM == data.KC_SCHEME_TERM && data.KC_LIMIT_P48 == data.PROD_CHAR_LIMITREQUESTED) {
+    if (data.PROD_SCHEME_TERM == data.KC_SCHEME_TERM && data.KC_LIMIT_P48 >= data.PROD_CHAR_LIMITREQUESTED) {
         data.RES_DEC_REAS_CODE_TABLE = [];
     }
 }
@@ -188,4 +194,3 @@ if (data.RES_DEC_REAS_CODE_TABLE.length==0) {
     data.RES_DEC_CATEGORY='ACCEPT';
     data.RES_DEC_CATEGORY='ACCEPT';
 }
-
