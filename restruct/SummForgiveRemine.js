@@ -81,10 +81,6 @@ for (i = 0; i < data.LOCAL_RS_OVER_COM_FORGIVE.length; i++) {
     LOCAL_SUM_PROC += data.LOCAL_RS_OVER_PROC_FORGIVE[i];
 }
 
-// для "замороженных" клиентов передается мин.сумма аванса
-if (data.PROD_CHAR_ADVANCEAMOUNT < data.LOCAL_SUM_AVANS){
-    data.PROD_CHAR_ADVANCEAMOUNT = data.LOCAL_SUM_AVANS;
-}
 
 // для рестр. СБ
 if (data.LOCAL_TYPE_RESTR == 4 && data.PROD_CHAR_ADVANCEAMOUNT< data.LOCAL_RS_TOTAL_SUM_REMINE*0.5){
