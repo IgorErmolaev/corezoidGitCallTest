@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    json = '{"data":{"RES_EXP_MONTH_TOTAL":1280,"BCH_CRED_PLAT_MIN_TOTAL":0,"RES_COEFF_ELIG":1.3,"APP_EMPL_SOCIALSTATUS":"FULLWORK","PROD_APP_EMPLOYEE":"N","RES_INC_DISP":5000,"RES_INC_NOT_CONF":0,"APP_EMPL_ORGTYPE":"BUSINESS","RES_DEBCARD_Z_SRED":5000,"PROD_CHAR_BANK":"PB","PROD_CHAR_TYPE":"UPLIMNKK","PROD_PACK_TYPE":"GOLD","RES_CRED_LIM":15000,"RES_PROD_TYPE":"UNI","LIMIT_FOR_GOLD":"Y","RTDM_DIC_LIMITPARAM":{"UPGRADE":{"UPGRADE":{"bank":"PB","bound":0,"coefficient":0,"max_sum":15000,"min_sum":0}},"LIMIT_OLD":{"LIMIT_OLD":{"bank":"PB","bound":0,"coefficient":0,"max_sum":15000,"min_sum":0}},"DEPOS":{"DEPOS":{"bank":"PB","bound":5000,"coefficient":0.8,"max_sum":15000,"min_sum":2000}},"UNEMP":{"UNEMP":{"bank":"PB","bound":0,"coefficient":0,"max_sum":2000,"min_sum":500}},"TOP-1000/WHITEWORK":{"TOP-1000/WHITEWORK":{"bank":"PB","bound":0,"coefficient":3,"max_sum":5000,"min_sum":0}},"VNESH":{"VNESH":{"bank":"PB","bound":0,"coefficient":0,"max_sum":8000,"min_sum":500},"PARTWORK":{"bank":"PB","bound":0,"coefficient":0,"max_sum":8000,"min_sum":500},"EXPERIENCElt6":{"bank":"PB","bound":0,"coefficient":0,"max_sum":8000,"min_sum":500},"AGElt22":{"bank":"PB","bound":0,"coefficient":0,"max_sum":4000,"min_sum":500}},"ACC_INCOME":{"ACC_INCOME":{"bank":"PB","bound":0,"coefficient":2,"max_sum":8000,"min_sum":2000}},"POS":{"POS":{"bank":"PB","bound":0,"coefficient":2,"max_sum":8000,"min_sum":2000}},"STUD":{"STUD":{"bank":"PB","bound":100,"coefficient":1,"max_sum":1500,"min_sum":500}},"JUNIOR":{"JUNIOR":{"bank":"PB","bound":0,"coefficient":0,"max_sum":8000,"min_sum":1000}},"HYSTORY":{"HYSTORY":{"bank":"PB","bound":0,"coefficient":0,"max_sum":8000,"min_sum":500}},"CASHPAYM":{"CASHPAYM":{"bank":"PB","bound":0,"coefficient":0,"max_sum":15000,"min_sum":0}},"NEW":{"NEW":{"bank":"PB","bound":0,"coefficient":0,"max_sum":8000,"min_sum":500}},"DECREE":{"DECREE":{"bank":"PB","bound":0,"coefficient":1,"max_sum":500,"min_sum":500}},"PENS_VN":{"AGElt25":{"bank":"PB","bound":0,"coefficient":1,"max_sum":1500,"min_sum":500},"AGEge25":{"bank":"PB","bound":0,"coefficient":3,"max_sum":8000,"min_sum":500}},"SOTR/ZP":{"STATE":{"bank":"PB","bound":500,"coefficient":4,"max_sum":15000,"min_sum":2000},"EMPLOYEE":{"bank":"PB","bound":500,"coefficient":3,"max_sum":15000,"min_sum":3000},"PRIVATE":{"bank":"PB","bound":500,"coefficient":3,"max_sum":15000,"min_sum":2000}},"PENS":{"AGElt25":{"bank":"PB","bound":400,"coefficient":1,"max_sum":1500,"min_sum":500},"AGEge25":{"bank":"PB","bound":400,"coefficient":4,"max_sum":8000,"min_sum":2500}},"USAGE":{"USAGE":{"bank":"PB","bound":0,"coefficient":0,"max_sum":8000,"min_sum":0}},"IMPORTANT":{"IMPORTANT":{"bank":"PB","bound":0,"coefficient":0,"max_sum":25000,"min_sum":0}}}}}';
+    var data = JSON.parse(json).data;
+    data.RES_LIMIT = new Array();
+    data.RES_LIMIT_TYPE = new Array();
+    data.LOCAL_MAX_LIMIT = new Array();
+
+
+    data.RES_INC_DISP = 0;
+    data.RES_INC_NOT_CONF = 900;
+    data.APP_EMPL_SOCIALSTATUS = 'FULLWORK';
+    data.RES_AGE = 59;
+    //data.APP_EMPL_TIMEEMPL
+    data.RES_TYPE_CUST = 'EXTERN';
+    data.RES_PROD_TYPE = 'UNI';
+    data.LOCAL_POSITIVE_HISTORY = 'Y';
+    data.RES_COEFF_ELIG = 3.4;
+    data.RES_EXP_MONTH_TOTAL =949;
+    data.RES_CRED_PLAT_MIN = 0;
+
+    data.APP_CUST_INN = '2056420122';
+    data.PROD_CHAR_BANK = 'PB';
+
+ //==========================================================
+
+    var limit = 0;
+    var limit_max = 0;
+
+    var emplSocstat = new Array('WORKPENS','FULLWORK','PARTWORK', 'SAILOR');
+
+
+    coef = data.RES_COEFF_ELIG/2;
+
+    limit = Math.min(Math.max(coef * (data.RES_INC_DISP + data.RES_INC_NOT_CONF - data.RES_EXP_MONTH_TOTAL - data.RES_CRED_PLAT_MIN),data.RTDM_DIC_LIMITPARAM.VNESH.VNESH.min_sum),data.RTDM_DIC_LIMITPARAM.NEW.NEW.max_sum);
+    limit_max = data.RTDM_DIC_LIMITPARAM.NEW.NEW.max_sum;
+
+    if (data.RES_AGE < 22){
+        limit = Math.min(limit,data.RTDM_DIC_LIMITPARAM.VNESH.AGElt22.max_sum);
+        limit_max = data.RTDM_DIC_LIMITPARAM.VNESH.AGElt22.max_sum;
+    }
+    if((data.APP_EMPL_SOCIALSTATUS == 'SAILOR' || data.APP_EMPL_SOCIALSTATUS == 'PARTWORK') && data.RES_PROD_TYPE != 'VIP'){
+        limit = Math.min(limit,data.RTDM_DIC_LIMITPARAM.VNESH.PARTWORK.max_sum);
+        limit_max = data.RTDM_DIC_LIMITPARAM.VNESH.PARTWORK.max_sum;
+    }
+    if (data.APP_EMPL_TIMEEMPL < 6 && emplSocstat.indexOf(data.APP_EMPL_SOCIALSTATUS) !=-1 && data.RES_TYPE_CUST != 'INTERN' && data.RES_PROD_TYPE != 'VIP' && data.LOCAL_POSITIVE_HISTORY == 'N' && data.RES_LIMIT.indexOf('IMPORTANT') ==-1){
+        limit = Math.min(limit,data.RTDM_DIC_LIMITPARAM.VNESH.EXPERIENCElt6.max_sum);
+        limit_max = data.RTDM_DIC_LIMITPARAM.VNESH.EXPERIENCElt6.max_sum;
+    }
+    if ((data.PROD_CHAR_BANK == 'AB' || data.PROD_CHAR_BANK == 'PB') && data.APP_CUST_INN == null){
+        limit = 500;
+        limit_max = 500;
+    }
+
+    data.RES_LIMIT.push(limit);
+    data.RES_LIMIT_TYPE.push('NEW');
+    data.LOCAL_MAX_LIMIT.push(limit_max);
+
+
+</script>
+</body>
+</html>

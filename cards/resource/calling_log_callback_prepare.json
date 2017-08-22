@@ -1,0 +1,980 @@
+{
+  "create_time": "2016.09.07 10:00:43",
+  "change_time": "2016.09.07 10:06:02",
+  "node_prev_id": "56b9b0d4d393c9dfbe66ad30",
+  "status": 4,
+  "user_id": 11378,
+  "data": {
+    "doc": {
+      "mes": {
+        "@ref": "160907TSTT859524LOTM",
+        "@result": "ok"
+      }
+    },
+    "LOCAL_CODE": {
+      "MOB": [
+        {
+          "call_qa_match": null,
+          "call_qa_nomatch": null,
+          "CALL_QUESTION": "***",
+          "CALL_ANSWER": "***",
+          "NBSM_QUESTION": "Q046",
+          "NBSM_ANSWER": "CONTACT_J",
+          "call_grade": 0
+        },
+        {
+          "CALL_QUESTION": "***",
+          "CALL_ANSWER": "***",
+          "NBSM_ANSWER": "INTERESTED_ACTION"
+        },
+        {
+          "CALL_QUESTION": "***",
+          "CALL_ANSWER": "***",
+          "NBSM_QUESTION": "Q054",
+          "NBSM_ANSWER": "GENERAL_Y"
+        },
+        {
+          "CALL_QUESTION": "***",
+          "CALL_ANSWER": "***",
+          "NBSM_QUESTION": "Q085",
+          "NBSM_ANSWER": "GENERAL_NEXT"
+        },
+        {
+          "CALL_QUESTION": "1000",
+          "CALL_ANSWER": "28",
+          "NBSM_QUESTION": "Q999",
+          "NBSM_ANSWER": "GENERAL_N"
+        },
+        {
+          "CALL_QUESTION": "1001",
+          "CALL_ANSWER": "CY",
+          "NBSM_QUESTION": "Q066"
+        }
+      ]
+    },
+    "calling_feedback": {
+      "app_contact_list": [
+        {
+          "contact_type": "MOB",
+          "cust_id": "1000736542",
+          "contact_value": "+380500139521",
+          "call_qa": "341:270;475:536;466:274;347:546;1000:28;1001:CY",
+          "contact_status": "CY",
+          "date_call": "2016-09-07 10:05:28.060"
+        }
+      ],
+      "prod_char_type": "REISSUE",
+      "proc_ref": "160907TSTT859524LOTM",
+      "res_call_limit": "***"
+    },
+    "mqdoc": {
+      "date": [
+        {
+          "@name": "APP.EMPL_TIMEEMPL_DATE",
+          "#value": "2009-01-25"
+        }
+      ],
+      "string": [
+        {
+          "@name": "APP.CUST_GENDER",
+          "#value": "M"
+        },
+        {
+          "@name": "APP.CUST_NAME",
+          "#value": "ВЛАДИСЛАВ"
+        },
+        {
+          "@name": "APP.CUST_PATRONYMIC",
+          "#value": "ВЛАДИМИРОВИЧ"
+        },
+        {
+          "@name": "APP.CUST_SURNAME",
+          "#value": "КЛИМЕНКО"
+        },
+        {
+          "@name": "PROD.CHAR_BANK",
+          "#value": "PB"
+        },
+        {
+          "@name": "PROD.SCHEME_CCY_LOAN",
+          "#value": "UAH"
+        },
+        {
+          "@name": "PROD.CHAR_TYPE",
+          "#value": "REISSUE"
+        },
+        {
+          "@name": "PROD.CASH_CRED",
+          "#value": ""
+        },
+        {
+          "@name": "RES.CALL_DIALOGE_TYPE",
+          "#value": "ZERO_LIM"
+        },
+        {
+          "@name": "RES.CALL_NEED_TRANSFER",
+          "#value": "N"
+        },
+        {
+          "@name": "RES.RIP_APPLICATION",
+          "#value": "N"
+        },
+        {
+          "@name": "RES.LIMIT_ITOG_TYPE",
+          "#value": "NEW"
+        },
+        {
+          "@name": "APP.MARITAL_MARITALCOND",
+          "#value": "SINGLE"
+        },
+        {
+          "@name": "APP.SOCSTATUS_EDUCATION",
+          "#value": "HIG"
+        },
+        {
+          "@name": "APP.PROPERTY_CAR_HAS",
+          "#value": "Y"
+        },
+        {
+          "@name": "APP.EMPL_SOCIALSTATUS",
+          "#value": "FULLWORK"
+        },
+        {
+          "@name": "APP.EMPL_RANK",
+          "#value": "WORKER"
+        },
+        {
+          "@name": "APP.ACT_ADDRESS_ESTATETYPE",
+          "#value": "RENT"
+        },
+        {
+          "@name": "APP.EMPL_ORGTYPE",
+          "#value": "PRIVATE"
+        },
+        {
+          "@name": "APP.EMPL_ACTIVITY",
+          "#value": "METALL"
+        },
+        {
+          "@name": "APP.INCOME_MONTHSALARY_CURRENCY",
+          "#value": "UAH"
+        },
+        {
+          "@name": "APP.INCOME_OTHERSOURCE_CURRENCY",
+          "#value": "UAH"
+        },
+        {
+          "@name": "APP.EMPL_POSITION",
+          "#value": "МУХОКОТ"
+        },
+        {
+          "@name": "APP.EMPL_WORKPLACE",
+          "#value": "МУХИ И КОТЛЕТЫ"
+        }
+      ],
+      "long": [
+        {
+          "@name": "APP.CUST_ID",
+          "#value": 1000736542
+        },
+        {
+          "@name": "APP.SOCSTATUS_CHILDNUMBER",
+          "#value": 1
+        }
+      ],
+      "double": [
+        {
+          "@name": "RES.LIMIT_ITOG",
+          "#value": "***"
+        },
+        {
+          "@name": "APP.INCOME_MONTHSALARY",
+          "#value": 2000
+        },
+        {
+          "@name": "APP.INCOME_OTHERSOURCE",
+          "#value": "***"
+        }
+      ],
+      "arrprs": [
+        {
+          "el": [
+            {
+              "string": [
+                {
+                  "@name": "CVALUE",
+                  "#value": "+380561816533"
+                },
+                {
+                  "@name": "CTYPE",
+                  "#value": "HOME"
+                },
+                {
+                  "@name": "MAIN",
+                  "#value": "N"
+                },
+                {
+                  "@name": "CALL_NEED",
+                  "#value": "N"
+                },
+                {
+                  "@name": "CFIN",
+                  "#value": "N"
+                }
+              ],
+              "date": [
+                {
+                  "@name": "DATE_MOD",
+                  "#value": "2015-11-06T11:02:26"
+                }
+              ],
+              "long": [
+                {
+                  "@name": "CUST_ID",
+                  "#value": "1000736542"
+                },
+                {
+                  "@name": "LIGHT",
+                  "#value": 0
+                }
+              ],
+              "double": []
+            },
+            {
+              "string": [
+                {
+                  "@name": "CVALUE",
+                  "#value": "+380627485428"
+                },
+                {
+                  "@name": "CTYPE",
+                  "#value": "WORK"
+                },
+                {
+                  "@name": "MAIN",
+                  "#value": "N"
+                },
+                {
+                  "@name": "CALL_NEED",
+                  "#value": "N"
+                },
+                {
+                  "@name": "CFIN",
+                  "#value": "N"
+                }
+              ],
+              "date": [
+                {
+                  "@name": "DATE_MOD",
+                  "#value": "2015-11-06T11:02:26"
+                }
+              ],
+              "long": [
+                {
+                  "@name": "CUST_ID",
+                  "#value": "1000736542"
+                },
+                {
+                  "@name": "LIGHT",
+                  "#value": 0
+                }
+              ],
+              "double": []
+            },
+            {
+              "string": [
+                {
+                  "@name": "CVALUE",
+                  "#value": "+380500139521"
+                },
+                {
+                  "@name": "CTYPE",
+                  "#value": "MOB"
+                },
+                {
+                  "@name": "MAIN",
+                  "#value": "N"
+                },
+                {
+                  "@name": "CALL_NEED",
+                  "#value": "Y"
+                },
+                {
+                  "@name": "CFIN",
+                  "#value": "N"
+                }
+              ],
+              "date": [
+                {
+                  "@name": "DATE_MOD",
+                  "#value": "2015-05-20T03:52:27"
+                }
+              ],
+              "long": [
+                {
+                  "@name": "CUST_ID",
+                  "#value": "1000736542"
+                },
+                {
+                  "@name": "LIGHT",
+                  "#value": 10
+                }
+              ],
+              "double": []
+            }
+          ],
+          "@name": "APP.CONTACTS"
+        }
+      ],
+      "@rtdm": "Y",
+      "@proc_type": "REISSUE",
+      "@action": "CALLING",
+      "@ref": "160907TSTT859524LOTM",
+      "@conv_id": 49193
+    },
+    "LOCAL_DEC_TEXT_1": [
+      "ACCEPT"
+    ],
+    "LOCAL_DEC_CATEGORY_1": [
+      "ACCEPT"
+    ],
+    "LOCAL_DEC_REAS_CODE_TABLE_1": [
+      "A101"
+    ],
+    "FRAUD_DEC_REAS_CODE_TABLE": [
+      "A101"
+    ],
+    "DATA_REF_OTHERBANK": null,
+    "DATA_LIMIT_DOWN_CATALOGE_DATE": [],
+    "FR_DEPOSIT": null,
+    "DATA_ATTRACT_DATE": [],
+    "DATA_ATTRACT_PHONE_MODEL": [],
+    "RAT_CLID_H_EDU_TO_LINK_FAM": null,
+    "DATA_LIMIT_DOWN_CATALOGE_REF": [],
+    "DATA_DEPOSIT": [],
+    "REP_AGE_CATEGORY": null,
+    "RAT_CLID_H_EDU_TO_LINK_NEI": null,
+    "QTY_LINK_PHONE": null,
+    "FR_GOLD": null,
+    "RAT_CLID_AUTO_TO_LINK_ALL": null,
+    "FILL_TXT_FLD": null,
+    "RES_PREDICT_LIMIT": [
+      3000
+    ],
+    "APP_PROPERTY_CAR": [],
+    "tPan": [
+      {
+        "branch": "DNDZ",
+        "id_Client": 1000736542,
+        "pan": 5168757200880406,
+        "panAcc": 5168757200880407000,
+        "panDealRef": "ATREISSUE0000000003",
+        "panExp": "0715",
+        "panMain": 5168757200880406,
+        "panSt": "1"
+      }
+    ],
+    "DATA_ATTRACT_CHANNEL": [],
+    "VK_REGISTR_YEAR": null,
+    "DOC_IDENT": [
+      {
+        "ID": "1024736806",
+        "COUNTRY": "UA",
+        "CUST_ID": "1000736542",
+        "DATEEND": "1900-01-01",
+        "DATESTART": "2009-11-19",
+        "DATEMOD": "2013-12-06 14:13:21.17",
+        "MAIN": "Y",
+        "SER": "КО",
+        "NUM": "803774",
+        "EKB_TYPE": "000001",
+        "GIVEN": "НОВОСАНЖАРСКИМ РОУМВД УКР",
+        "ACTUAL": "Y",
+        "VALID": "Y",
+        "TYPE": "PASSPORT",
+        "DESCR": "Общегражданский паспорт",
+        "WEIGHT": 10,
+        "IDENT_MAIN": "Y"
+      },
+      {
+        "ID": "1004250216",
+        "COUNTRY": "UA",
+        "CUST_ID": "1000736542",
+        "DATESTART": "1993-10-14",
+        "DATEMOD": "2008-09-12 10:09:51.473",
+        "MAIN": "N",
+        "SER": "КЕ",
+        "NUM": "421314",
+        "EKB_TYPE": "000003",
+        "GIVEN": "ЗАГС НОВОСАНЖАРСКОГО Р-НА ПОЛТ ОБЛ",
+        "ACTUAL": "Y",
+        "VALID": "Y",
+        "TYPE": "BIRHTCERTIF",
+        "DESCR": "Cвидетельство о рождении",
+        "WEIGHT": 60,
+        "IDENT_MAIN": "N"
+      }
+    ],
+    "DATA_ATTRACT_PHONE_OS": [],
+    "DATA_ATTRACT_SHELF": [],
+    "FR_PROSR": null,
+    "APP_REG_ADDRESS": {
+      "addrxml": {
+        "doc": {
+          "addr": {
+            "N": [
+              {
+                "@c": "1311842286WOJ0",
+                "@d": "44",
+                "@n": "9",
+                "@s": "BUILDING",
+                "@t": "дом"
+              },
+              {
+                "@c": "UA4974",
+                "@d": "Днепр",
+                "@n": "4",
+                "@s": "CITY",
+                "@t": "город"
+              },
+              {
+                "@c": "UA40773",
+                "@d": "Украина",
+                "@n": "1",
+                "@s": "COUNTRY",
+                "@t": "страна"
+              },
+              {
+                "@c": "UA4973",
+                "@d": "Днепропетровская",
+                "@n": "2",
+                "@s": "AREA",
+                "@t": "область"
+              },
+              {
+                "@c": "2X1RZIKXLT4A00",
+                "@d": "Малиновского",
+                "@n": "8",
+                "@s": "STREET",
+                "@t": "улица"
+              },
+              {
+                "@c": "13L45AN36SK5P0",
+                "@d": "77",
+                "@n": "11",
+                "@s": "FLAT",
+                "@t": "квартира"
+              }
+            ]
+          }
+        },
+        "@name": "APP.REG_ADDRESS"
+      },
+      "UADID": "13L45AN36SK5P0",
+      "KLADRCODE": "",
+      "UADID9": "1311842286WOJ0",
+      "ID_REGION": "UA4974",
+      "SUBTOWN": "CITY",
+      "ID_REGION_SP": "ДНЕПРОПЕТРОВСКАЯ",
+      "ADDLINK_LAST": "N"
+    },
+    "AGE_GR_ID_DEV": null,
+    "UBKI_CRED_MAR": [],
+    "RAT_CLID_H_EDU_TO_LINK_COHAB": null,
+    "RES_PREDICT_LIMIT_TYPE": [
+      "REVOL1"
+    ],
+    "APP_LINK": [],
+    "FR_OPPOS_SEX": null,
+    "REGION_CATEGORY": null,
+    "RAT_CLID_FAMST_MAR_TO_LINK_COHAB": null,
+    "DOC_ESTATE": [],
+    "FR_ANTIMAIDAN": null,
+    "APP_PHONE": [
+      {
+        "TYPE_CALL": "HOME",
+        "CUST_ID_CALL": "1000736542",
+        "NUMBER_CALL": "+380561816533",
+        "LIGHT": 0,
+        "DTM": "2015-11-06 11:02:26.933",
+        "MAIN": "N",
+        "CALL_BAL_HIST": 0
+      },
+      {
+        "TYPE_CALL": "WORK",
+        "CUST_ID_CALL": "1000736542",
+        "NUMBER_CALL": "+380627485428",
+        "LIGHT": 0,
+        "DTM": "2015-11-06 11:02:26.936",
+        "MAIN": "N",
+        "CALL_BAL_HIST": 0
+      },
+      {
+        "TYPE_CALL": "MOB",
+        "CUST_ID_CALL": "1000736542",
+        "NUMBER_CALL": "+380500139521",
+        "LIGHT": 10,
+        "DTM": "2015-05-20 03:52:27.646",
+        "MAIN": "N",
+        "CALL_BAL_HIST": 0
+      }
+    ],
+    "DATA_LIMIT_DOWN_CATALOGE": [],
+    "DATA_CRED": [],
+    "RAT_CLID_FAMST_DIV_TO_LINK_NEI": null,
+    "DATA_DEBCARD": [],
+    "DATA_LINK": [],
+    "DEVIAT_AVG_FR_AGE_CATEG": null,
+    "DATA_PERSLINK": [],
+    "RAT_CLID_BAD90_TO_LINK_COHAB": null,
+    "FOLLOW_TO_FR": null,
+    "RAT_LINK_FAM_TO_LINK_DRFO": null,
+    "APP_ACT_ADDRESS": {
+      "addrxml": {
+        "doc": {
+          "addr": {
+            "N": [
+              {
+                "@c": "1311842286WOJ0",
+                "@d": "44",
+                "@n": "9",
+                "@s": "BUILDING",
+                "@t": "дом"
+              },
+              {
+                "@c": "UA4974",
+                "@d": "Днепр",
+                "@n": "4",
+                "@s": "CITY",
+                "@t": "город"
+              },
+              {
+                "@c": "UA40773",
+                "@d": "Украина",
+                "@n": "1",
+                "@s": "COUNTRY",
+                "@t": "страна"
+              },
+              {
+                "@c": "UA4973",
+                "@d": "Днепропетровская",
+                "@n": "2",
+                "@s": "AREA",
+                "@t": "область"
+              },
+              {
+                "@c": "2X1RZIKXLT4A00",
+                "@d": "Малиновского",
+                "@n": "8",
+                "@s": "STREET",
+                "@t": "улица"
+              },
+              {
+                "@c": "13L45AN36SK5P0",
+                "@d": "77",
+                "@n": "11",
+                "@s": "FLAT",
+                "@t": "квартира"
+              }
+            ]
+          }
+        },
+        "@name": "APP.ACT_ADDRESS"
+      },
+      "UADID": "13L45AN36SK5P0",
+      "KLADRCODE": "",
+      "UADID9": "1311842286WOJ0",
+      "ID_REGION": "UA4974",
+      "SUBTOWN": "CITY",
+      "ID_REGION_SP": "ДНЕПРОПЕТРОВСКАЯ",
+      "ADDLINK_LAST": "N"
+    },
+    "FR_AVG_AGE": null,
+    "FR_VIP": null,
+    "UBKI_CRED": [],
+    "AGE_REG_SN": null,
+    "DOC_BIZ": [],
+    "LOCAL_CRED_HIST_DATA_IDX": [],
+    "LOCAL_DEBCARD_Z_SRED": [],
+    "LOCAL_DEBCARD_P_SRED": [],
+    "LOCAL_STUD_SRED_MAS": [],
+    "LOCAL_PERSONAL_SRED_MAS": [],
+    "LOCAL_SALARY_AMOUNT_TYPE": [],
+    "LOCAL_INCOME_01": [],
+    "RES_LIMIT": [
+      2998.7999999999997,
+      3000,
+      1499.3999999999999
+    ],
+    "RES_LIMIT_TYPE": [
+      "VNESH",
+      "CASHPAYM",
+      "NEW"
+    ],
+    "LOCAL_MAX_LIMIT": [
+      8000,
+      50000,
+      8000
+    ],
+    "RES_DEC_REAS_CODE_TABLE": [
+      "A101"
+    ],
+    "RES_CALL_NEED": [
+      "N",
+      "N",
+      "Y"
+    ],
+    "__conveyor_copy_task_result__": "ok",
+    "new_lg_state": "REFUSE",
+    "new_state": "DL",
+    "RES_CALL_LIMIT": "***",
+    "RES_RIP_APPLICATION": "N",
+    "RES_VIP_SUM": 0,
+    "RES_GOLD_ISFREE": "N",
+    "RES_BI": "O",
+    "RES_LIMIT_CALL": "***",
+    "RES_CALL_NEED_TRANSFER": "N",
+    "RES_DEC_AUTO": "Y",
+    "RES_TYPE_GENERATION": "STANDART",
+    "RES_TYPE_SMS": "Y",
+    "RES_TYPE_MATRIX": 1,
+    "RES_DEC_FINAL_FLOW": "ACCEPT",
+    "RES_TO_KC": "N",
+    "RES_LIMIT_P48": 0,
+    "DECLINE_GROUP": "FALSE",
+    "RES_HISTORY_REAS_CODE": "A101;A101;",
+    "RES_SCCARD_CALL_NAME": "CC_CALL_0113",
+    "RES_SCCARD_CALL_BAL": 126.53000000000002,
+    "SID": "160905pbb1czy1qo13p1",
+    "limit_prep": 0,
+    "result": "ok",
+    "RTDM_ID": 955109,
+    "APPLIC_ID": "160907TSTT859524LOTM",
+    "typeMatrix": "MATRIX_MODEL_PREBAD",
+    "RES_SCCARD_SCORE_SALDO": 533.3999999999999,
+    "RES_SCCARD_NAME_SALDO": "CC_SS_0515",
+    "policyAp": "data.RES_LIMIT_ITOG",
+    "retsr_vip_end": 3000,
+    "RES_VIP_PERS_MANAGER": "Y",
+    "RES_VIP_NEED_SZ": "N",
+    "limitBank": "AB/PB",
+    "LOCAL_SCORE_BAD": "N",
+    "LOCAL_SCORE_GOOD": "N",
+    "GREY_ZONE": "***",
+    "RES_SCORE_GREY_ZONE": "SCORE_POS",
+    "RES_SCORE_TYPE": "REGION_PREBAD",
+    "bankAdd": "UA",
+    "RES_CUST_IS_VNESH": "Y",
+    "RES_COEFF_ELIG": 3.4,
+    "RES_SCCARD_TOTAL_SCORE": 835.6163627369826,
+    "RES_SCCARD_SCORE_1": 906.666878125749,
+    "RES_SCCARD_NAME_1": "CC_PB_0515",
+    "LOCAL_CRED_CARD_RIP": "N",
+    "THE_RIP": "N",
+    "DATA_LIMIT_OTHERBANK": 0,
+    "LOCAL_CRED_HAS_CARD_WITH_LIMIT": "N",
+    "LOCAL_VIP_SUM_LIMIT_FOR_IMPORTANT": 0,
+    "LOCAL_VIP_BALANCE": 0,
+    "LOCAL_ONLINEANKETA_TYPE": "N",
+    "RES_PROD_TYPE": "UNI",
+    "LOCAL_MEDIUM_HISTORY": "N",
+    "LOCAL_POSITIVE_HISTORY": "N",
+    "BCH_CRED_LIMIT_ACTION": 0,
+    "RES_CRED_TOTAL": 0,
+    "BCH_CRED_COUNT_ACT_CC": 0,
+    "BCH_CRED_COUNT_ACT_FOREIGN": 0,
+    "BCH_CRED_COUNT_ACT": 0,
+    "RES_CRED_PLAT_MIN": 0,
+    "RES_CRED_TOTAL_LIMIT": 0,
+    "BCH_CRED_HIST_TOTAL": "UNDEFINITE",
+    "BCH_CRED_HIST_DATA": "UNDEFINITE",
+    "BCH_CRED_HIST_YBCH": "UNDEFINITE",
+    "BCH_CRED_OWN_PROS_YBCH": "N",
+    "RES_DEPOSIT_TOTAL": 0,
+    "LOCAL_DEPOSIT_SCORING_SUM": 0,
+    "LOCAL_DEPOSIT_SCORING": "",
+    "LOCAL_DEPOSIT_AMOUNT": 0,
+    "RES_DEPOSIT_ACTIVE": "N",
+    "LOCAL_CATALOGE_FLAG": "N",
+    "ref": "160907TSTT859524LOTM",
+    "rtdm_api_url": "http://rtdm.test.it.loc/RTDMApi",
+    "APP_CUST_NAME": "ВЛАДИСЛАВ",
+    "LOCAL_TICKET_FLAG_EXTRACT": "N",
+    "LOCAL_SCORE_30_DAYS": 906.666878126,
+    "APP_CUST_ID": 1000736542,
+    "PROD_CHAR_SET_LIMIT": "LIMIT",
+    "APP_VISUAL_ESTIMATION": "Y",
+    "LOCAL_TICKET_FLAG_FORPASSP": "N",
+    "APP_SOCSTATUS_EDUCATION": "HIG",
+    "APP_CUST_ID_FOTO": 0,
+    "PROD_EMPL_LDAP_EXECUTIVE": "wavetest2",
+    "UTIL_VALIDATION_REF": "160907TSVT988978BFQC",
+    "APP_CUST_BIRTHDAY": "1993-09-20T00:00:00.000Z",
+    "PROD_APP_GIVENPAN": 5168755600640406,
+    "DOC_IDENT_SER": "КО",
+    "LOCAL_SCORE_DATE_30_DAYS": "2016-08-25T08:28:35.299Z",
+    "RES_CUST_ISID": "Y",
+    "DATA_WORK_TOP1000_INN": "N",
+    "APP_PROPERTY_CAR_HAS": "Y",
+    "LOCAL_COUNT_STATIC_PHONE": 2,
+    "LOCAL_VIP_NO_NEED_SZ": "N",
+    "APP_INCOME_MONTHSALARY": 2000,
+    "PROD_APP_DATEFILING": "2016-09-07T10:00:37",
+    "DATA_OPER_IS_VIP_MANAGER": "",
+    "LIMIT_CLIENT_F_NCLIENT": "D015",
+    "LOCAL_PHONE_WORK_TYPE": "STATIC",
+    "FL_INSUR_NS": 0,
+    "APP_CUST_DB": "1993-09-20",
+    "PROD_TRANSUT": "J",
+    "APP_CUST_RELIGIOUS": "N",
+    "APP_CUST_SPECIALPROJECT": "",
+    "error_code": 0,
+    "QTY_LINK_TRAN": 0,
+    "PROD_PACK_TYPE": "UNI",
+    "FRAUD_FRAUD_SUSPICTION": "N",
+    "PROD_CHAR_TYPE": "REISSUE",
+    "rtdm_id": 955109,
+    "DATA_CARD_UPGRADE_LIMIT": 0,
+    "PROD_CLIENT_BLOCK": "N",
+    "LOCAL_BLPHONE": "N",
+    "PROD_LDAP_BLOCK": "N",
+    "RES_CRED_ACTIVE": "N",
+    "FL_DIR_UCH": "N",
+    "APP_VISIT_COUNTRY": "",
+    "BCH_YBCH_SCORE_MAR": 0,
+    "ubki_not_work": "N",
+    "FRAUD_DEC_REAS_CODE": "A101;",
+    "APP_ACT_ADDRESS_ESTATETYPE": "RENT",
+    "APP_SOCSTATUS_CHILDNUMBER": 1,
+    "PROD_CHAR_BRANCH": "DNC1",
+    "APP_ACT_ADDRESS_REG_EQUAL": "Y",
+    "APP_EMPL_ACTIVITY": "METALL",
+    "PROD_CHAR_BRANCH_FIL": "ДНЕПРОПЕТРОВСКОЕ РУ",
+    "shp_not_work": "N",
+    "APP_CUST_INN": "3423107239",
+    "calling_conv_id": 49193,
+    "PROD_RETURN_KC": "N",
+    "PROD_APP_EMPLOYEE": "N",
+    "nkk_callback_pre_url": "https://test-nkk.privatbank.ua/ActionHandler/Callback/SASLimitCardPre.xml",
+    "APP_EMPL_ORGTYPE": "PRIVATE",
+    "APP_CUST_POSSIBLE_BANK": "",
+    "FL_Y_PH": "N",
+    "PROD_CHAR_TYPE_CARD": "CRPL",
+    "APP_IS_ENTERPRENEUR": "N",
+    "underwr_url": "https://rmsvc.test.it.loc/service/uw_dec/live/",
+    "LOCAL_TICKET_FLAG_10": "N",
+    "LOCAL_SCCARD_NAME_30_DAYS_SALDO": "CC_SS_0515",
+    "client_prop_not_work": "N",
+    "APP_SOCSTATUS_RESIDENT": "UA",
+    "QTY_SHOP_TRAN": 0,
+    "APP_INCOME_OTHERSOURCE": "***",
+    "LIMIT_CLIENT_RES": "ok",
+    "nkk_callback_fin_url": "https://test-nkk.privatbank.ua/ActionHandler/Callback/SASLimitCardFin.xml",
+    "APP_EMPL_OKPO": "",
+    "PROD_SCHEME_CCY_LOAN": "UAH",
+    "BCH_YBCH_NOT_WORK": "N",
+    "APP_INCOME_OTHERSOURCE_CURRENCY": "UAH",
+    "RES_AGE": 22,
+    "FRAUD_FIRST_SCCARD_NAME": "CC_PB_0515",
+    "LOCAL_SCORE_30_DAYS_SALDO": 533.4,
+    "jaguar_url": "http://rtdm.test.it.loc/Jaguar",
+    "PROD_SETTING_PACKAGE": "CALCUL",
+    "APP_VISIT_COUNTRY_COUNT": 0,
+    "LOCAL_PHONE_HOME_TYPE": "STATIC",
+    "LOCAL_CONTACT_PHONE_HOME": "+380561816533",
+    "PROD_CHAR_REFERENCE": "",
+    "FRAUD_FIRST_SCCARD_SCORE_SALDO": "CC_SS_0515",
+    "APP_SOCSTATUS_IS_RESIDENT": "Y",
+    "APP_EMPL_POSITION": "МУХОКОТ",
+    "RES_CUST_IS_JUNIOR": "N",
+    "FRAUD_FIRST_SCOR": 906.666878126,
+    "FRAUD_FIRST_SCORING_DATE_SALDO": "2016-08-25T08:28:35.663Z",
+    "RES_ONLINEANKETA_LIMIT": 0,
+    "LOCAL_PHONE_WORK_OPERATOR": "***",
+    "RES_CUST_IS_VIP": "N",
+    "LOCAL_PHONE_MOB_OPERATOR": "***",
+    "BCH_YBCH_SCORE": 432.26,
+    "FRAUD_FIRST_SCORING_SALDO": 533.4,
+    "APP_CUST_IMPORTANT": "N",
+    "PROD_APP_MAINPAN": 5168757200960406,
+    "APP_CONTACT_EMAIL": "TRATATA@GMAIL.COM",
+    "LOCAL_PHONE_HOME_OPERATOR": "***",
+    "kchist_not_work": "N",
+    "RES_CLIENT_INSURANCE": "N",
+    "DATA_CARD_UPGRADE_REFCONTRAC": "",
+    "LOCAL_DOC_IDENT_COUNTRY": "UA",
+    "APP_INCOME_MONTHSALARY_CURRENCY": "UAH",
+    "PROD_CHAR_BANK": "PB",
+    "APP_CUST_PATRONYMIC": "ВЛАДИМИРОВИЧ",
+    "dict_id": 95797,
+    "DATA_CASHPAYMENTS_LIMIT": 3000,
+    "APP_CUST_GENDER": "M",
+    "LOCAL_MARITAL_MARITALCOND": "SINGLE",
+    "LOCAL_PHONE_WORK_IS_MOB": "N",
+    "FL_P24": 0,
+    "DOC_IDENT_NUM": "803774",
+    "prevdata_get_not_work": "N",
+    "dicdoc_not_work": "N",
+    "APP_CUST_IMPORTANT_PRODUCT": "",
+    "LOCAL_TICKET_FLAG_TEHPASSP": "N",
+    "onlineanketa_callback_url": "https://test-nkk.privatbank.ua/ActionHandlerAnketa/Callback/A_RISKI_RS.xml",
+    "FL_KOPL": 1,
+    "STRATEGY_ID": "CredCard",
+    "DATA_CASHPAYMENTS_TYPE": "REVOL1",
+    "LIMIT_CLIENT_NEWLIMIT": "3000",
+    "LOCAL_TICKET_FLAG": "N",
+    "APP_EMPL_TIMEEMPL": 92,
+    "LOCAL_SCORE_DATE_30_DAYS_SALDO": "2016-08-25T08:28:35.663Z",
+    "addr_not_work": "N",
+    "LOCAL_CONTACT_EMAIL": "Y",
+    "PROD_GOAL_CARD_CCY": "UAH",
+    "RES_CHANNEL": "",
+    "FL_G_MPH": "N",
+    "APP_EMPL_WORKPLACE": "МУХИ И КОТЛЕТЫ",
+    "APP_CUST_SURNAME": "КЛИМЕНКО",
+    "RES_SCORE_REGION": "PREBAD",
+    "limits_not_work": "N",
+    "PROD_CASH_CRED": "",
+    "QTY_PS_CASS": 0,
+    "LIMIT_CLIENT_MAXLIMGRAN": "5000",
+    "FRAUD_FIRST_SCOR_DATE": "2016-08-25T08:28:35.299Z",
+    "BCH_YBCH_NOT_WORK_MAR": "",
+    "APP_EMPL_SOCIALSTATUS": "FULLWORK",
+    "megav_not_work": "N",
+    "PROD_RIP_TYPE": "",
+    "RES_CHANNEL_SHELF": "",
+    "DOC_IDENT_DATESTART": "2009-11-19",
+    "APP_CUST_IMPORTANT_COM": "",
+    "calling_url": "https://rmsvc.test.it.loc/service/uw_call/",
+    "ekb_blndoc_not_work": "N",
+    "APP_EMPL_RANK": "WORKER",
+    "RES_HAS_INC_CONF": "N",
+    "LOCAL_TICKET_FLAG_OUT_CRED": "N",
+    "LOCAL_CONTACT_PHONE_MOB": "+380500139521",
+    "antifraud_not_work": "N",
+    "APP_CUST_LANG": "RUS",
+    "LIMIT_CLIENT_F_NREF": "A101",
+    "LOCAL_CONTACT_PHONE_WORK": "+380627485428",
+    "LOCAL_DOC_IDENT_MAIN": "PASSPORT",
+    "APP_MARITAL_MARITALCOND": "SINGLE",
+    "RES_CUST_IS_EXJUNIOR": "N",
+    "PROD_ONLINEANKETA_SOURCE": "",
+    "FRAUD_DEC_FINAL_FLOW": "ACCEPT",
+    "PROD_CHAR_LIMITREQUESTED": 0,
+    "datamart_not_work": "N",
+    "ekb_not_work": "N",
+    "BCH_YBCH_SCORE_DATE_MAR": "",
+    "APP_VISIT_COUNTRY_TYPE": "",
+    "RES_CUST_ISID_FRAUD": "N",
+    "BCH_YBCH_SCORE_DATE": "2016-02-09T00:00:00.000Z",
+    "error_descr": "ok!",
+    "LOCAL_SCCARD_NAME_30_DAYS": "CC_PB_0515",
+    "APP_MARITAL_ID": 0,
+    "LIMIT_CLIENT_CODE": "",
+    "underwr_conv_id": 49194,
+    "wave_irbis_url": "https://test-start.privatbank.ua:7355/Irbis",
+    "status": "ok",
+    "score_call_bal": 0,
+    "APP_CUST_IMPORTANT_LIMIT": 0,
+    "APP_EMPL_TIMEEMPL_DATE": "2009-01-25",
+    "nodeName": "удаление служебных данных",
+    "RES_EXP_MONTH_TOTAL": 1218,
+    "RES_LIMIT_START": 0,
+    "LOCAL_CRED_CARD_LIM_ONLINE": 0,
+    "RES_CRED_LIM": 0,
+    "LOCAL_LOCK_CARD": "N",
+    "LOCAL_BODY_DELINQUENCY": 0,
+    "LOCAL_PRC_DELINQUENCY": 0,
+    "LOCAL_CRED_CARD_MORE_TERM": "N",
+    "LOCAL_RESTRUCTURING": 0,
+    "LOCAL_RESTRUCTURING_LIMIT": 0,
+    "LOCAL_RESTRICTION_OLD30": 0,
+    "LOCAL_RESTRUCTURING_INTERN": "N",
+    "LOCAL_HAS_DELINQUENCY": "N",
+    "LOCAL_MOBILIZATION": "N",
+    "LOCAL_SALARY_AMOUNT": 0,
+    "LOCAL_PENS_AMOUNT": 0,
+    "LOCAL_STUD_AMOUNT": 0,
+    "LOCAL_SALARY_LESS30": "N",
+    "LOCAL_PENS_LESS30": "N",
+    "LOCAL_STUD_LESS30": "N",
+    "RES_DEBCARD_ZP": "N",
+    "RES_DEBCARD_PENS": "N",
+    "LOCAL_STUD_ACTIVE": "N",
+    "LOCAL_PERSONAL_ACTIVE": "N",
+    "RES_DEBCARD_Z_SRED": 0,
+    "RES_DEBCARD_P_SRED": 0,
+    "LOCAL_PERSONAL_SRED": 0,
+    "LOCAL_STUD_SRED": 0,
+    "RES_DEBCARD_ZP_PAN": "",
+    "LOCAL_SUM_ZP_PENS_DEPOS": 0,
+    "BCH_CRED_OWN_PROS_YBCH_MAR": "N",
+    "BCH_CRED_HIST_YBCH_MAR": "",
+    "BCH_CRED_HIST_TOTAL_MAR": "",
+    "RES_TYPE_CUST": "INTERN",
+    "SPVostok_BadBranch": "N",
+    "SPVostok_AllBranch": "N",
+    "SPVostok_VostokRegion": "N",
+    "SPVostok_ATOVostokRegion": "N",
+    "SPVostok_RegionNoSpravka": "N",
+    "LOCAL_VIP_NOT_BADRATE": "N",
+    "LOCAL_INCOME_MONTHSALARY": 0,
+    "LOCAL_INCOME_OTHERSOURCE": 2100,
+    "RES_INC_DISP": 0,
+    "RES_INC_NOT_CONF": 2100,
+    "RES_DEBCARD_POGASHENIE": 5168757200960406,
+    "RES_DEBCARD_POGASH_TYPE": "",
+    "LOCAL_PAN_FLAG": "N",
+    "RES_SCCARD_NAME_VK": "CC_VK_0515",
+    "RES_SCCARD_SCORE_VK": 718.1000000000001,
+    "DATA_EMPL_PROB_LDAP_MANAGER": 2,
+    "DATA_EMPL_PROB_LDAP_EXECUTIVE": 2,
+    "RES_LIMIT_TYPE_MATRIX": 1,
+    "MATRIX_NAME": "MATRIX_CONF_PB",
+    "RES_DEVIATION_FRAUD_SCOR": 2.768608225858712e-13,
+    "LIMIT_FOR_GOLD": "N",
+    "LimitBank": "PB",
+    "RES_CUST_IS_DECREE": "N",
+    "RES_LIMIT_ITOG": "***",
+    "RES_LIMIT_ITOG_TYPE": "NEW",
+    "RES_LIMIT_PLAT": 3000,
+    "RES_LIMIT_EXTRA": 3000,
+    "BLACK_PAN": "FALSE",
+    "SCORE_EXLUDES": "TRUE",
+    "RES_HIST_RESTRICTION": "age25;",
+    "retsr": 3000,
+    "retsr_statPhone": 3000,
+    "retsr_limreq": 3000,
+    "retsr_2cards_st": 3000,
+    "retsr_2cards_fn": 3000,
+    "retsr_end": 3000,
+    "retsr_round": 3000,
+    "RES_DEC_CATEGORY": "ACCEPT",
+    "RES_DEC_TEXT": "ACCEPT",
+    "RES_DEVIATION_FRAUD_SCOR_SALDO": -2.1313617870569185e-16,
+    "RES_MATRIX_DOHODN": "809:842;527:588",
+    "RES_MATRIX_DOHODN_COEFF": 1,
+    "RES_DEC_REAS_FINAL_CODE": "A101",
+    "RES_DEC_FINAL_CODE_COMMENT": "kA101",
+    "RES_CUST_NEED_CALL": "Y",
+    "RES_CALL_MOB_PHONE": "Y",
+    "RES_CALL_WORK_PHONE": "N",
+    "RES_CALL_HOME_PHONE": "N",
+    "RES_CALL_DIALOGE_TYPE": "ZERO_LIM",
+    "LOCAL_CALL_HOME_PHONE": "N",
+    "LOCAL_CALL_MOB_PHONE": "N",
+    "LOCAL_CALL_WORK_PHONE": "N",
+    "RES_CUST_IS_HISTORY": "N",
+    "RES_CUST_IS_PENS_VN": "N",
+    "RES_IS_STUD": "N",
+    "RES_CUST_IS_DEPOS": "N",
+    "RES_CUST_IS_CASHPAYM": "Y",
+    "RES_CUST_IS_TOP1000": "N",
+    "RES_CUST_IS_PENS": "N",
+    "RES_CUST_IS_ZP": "N",
+    "RES_CUST_IS_SOTR": "N",
+    "RES_CRED_KOD": "7",
+    "RES_COMMENT_NO_AUTO": "",
+    "DecAuto": "Y"
+  }
+}

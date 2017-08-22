@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    json ='{"data":{"APP_CUST_SPECIALPROJECT":null,"RES_DEC_REAS_CODE_TABLE":["A101"],"DATA_WORK_TOP1000":null,"LOCAL_BLCL_CONTROL":null,"PROD_CHAR_REFERENCE":null,"RES_CALL_TOTAL_HIST":null,"APP_CUST_IMPORTANT_PRODUCT":null,"APP_PHONE_TYPE_CALL":null,"RES_CALL_LIMIT":null,"LOCAL_CODE":{"WORK":[{"CALL_ANSWER":"43","CALL_QUESTION":"570","NBSM_ANSWER":"CONTACT_J","NBSM_QUESTION":"Q008","call_grade":0,"call_qa_match":0,"call_qa_nomatch":0},{"CALL_ANSWER":"124","CALL_QUESTION":"561","NBSM_ANSWER":"WORKPHONE","NBSM_QUESTION":"Q092","call_grade":0,"call_qa_match":0,"call_qa_nomatch":0},{"CALL_ANSWER":"45","CALL_QUESTION":"572","NBSM_ANSWER":"SOCIALSTATUS_FULLWORK","NBSM_QUESTION":"Q054","call_grade":0,"call_qa_match":1,"call_qa_nomatch":-1},{"CALL_ANSWER":"29","CALL_QUESTION":"573","NBSM_ANSWER":"GENERAL_OVERLAP","NBSM_QUESTION":"Q093","call_grade":0,"call_qa_match":0,"call_qa_nomatch":0},{"CALL_ANSWER":"102","CALL_QUESTION":"148","NBSM_ANSWER":"TIMEEMPL_1-3","NBSM_QUESTION":"Q026","call_grade":0,"call_qa_match":1,"call_qa_nomatch":-1},{"CALL_ANSWER":"58","CALL_QUESTION":"140","NBSM_ANSWER":"ORGTYPE_STATE","NBSM_QUESTION":"Q052","call_grade":0,"call_qa_match":1,"call_qa_nomatch":-1},{"CALL_ANSWER":"63","CALL_QUESTION":"177","NBSM_ANSWER":"RANK_ORGLEAD","NBSM_QUESTION":"Q051","call_grade":0,"call_qa_match":1,"call_qa_nomatch":-1},{"CALL_ANSWER":"108","CALL_QUESTION":"574","NBSM_ANSWER":"CORRECT_100_PRC","NBSM_QUESTION":"Q030","call_grade":1,"call_qa_match":0,"call_qa_nomatch":0},{"CALL_ANSWER":"27","CALL_QUESTION":"153","NBSM_ANSWER":"GENERAL_Y","NBSM_QUESTION":"Q055","call_grade":0,"call_qa_match":0,"call_qa_nomatch":0},{"CALL_ANSWER":"28","CALL_QUESTION":"357","NBSM_ANSWER":"GENERAL_N","NBSM_QUESTION":"Q079","call_grade":0,"call_qa_match":0,"call_qa_nomatch":0},{"CALL_ANSWER":"44","CALL_QUESTION":"210","NBSM_ANSWER":"GENERAL_NEXT","NBSM_QUESTION":"Q043","call_grade":0,"call_qa_match":0,"call_qa_nomatch":0},{"CALL_ANSWER":"28","CALL_QUESTION":"1000","NBSM_ANSWER":"GENERAL_N","NBSM_QUESTION":"Q999","call_grade":0,"call_qa_match":0,"call_qa_nomatch":0},{"CALL_ANSWER":"OK","CALL_QUESTION":"1001","NBSM_ANSWER":"","NBSM_QUESTION":"Q066","call_grade":0,"call_qa_match":0,"call_qa_nomatch":0}]},"LOCAL_PHONE_WORK_ARRAY":[0],"LOCAL_PHONE_HOME_ARRAY":[],"LOCAL_PHONE_MOB_ARRAY":[],"RES_CALL_ISID_FRAUD":"N","RES_DEC_FINAL_FLOW":"ACCEPT","RES_DEC_REAS_FINAL_CODE":"A101","RES_DEC_FINAL_COMMENT":"kA101;","RES_DEC_FINAL_CODE_COMMENT":"kA101","ref":"160405B1TT364911BCMK","CALL_REPLAY":1,"STRATEGY_ID":"CredCard","APPLIC_ID":"160405B1TT364911BCMK","RTDM_ID":2531722,"APP_EMPL_ORGTYPE":"STATE","RES_COMMENT_NO_AUTO":"","PROD_PACK_TYPE":"UNI","RES_CALL_MOB_PHONE":"N","RES_CALL_DIALOGE_TYPE":"NORMAL","RES_CALL_WORK_PHONE":"Y","PROD_CASH_CRED":"N","APP_SOCSTATUS_RESIDENT":"UA","RES_CUST_ISID":"Y","LOCAL_TICKET_FLAG_FORPASSP":"N","APP_EMPL_SOCIALSTATUS":"FULLWORK","APP_EMPL_RANK":"ORGLEAD","LOCAL_TICKET_FLAG_TEHPASSP":"N","RES_CALL_HOME_PHONE":"N","RES_CUST_ISID_FRAUD":"N","RES_HISTORY_REAS_CODE":"A101;A101;A101;","RES_HIST_RESTRICTION":"callNull;","RES_DEC_AUTO":"Y","RES_LIMIT_CALL":4700,"RES_LIMIT_ITOG_TYPE":"NEW","DATA_CARD_UPGRADE_LIMIT":0,"RES_LIMIT_ITOG":4700,"PROD_CHAR_TYPE":"UNIPACKSAS","PROD_CHAR_BANK":"PB","FRAUD_FRAUD_SUSPICTION":"N","APP_EMPL_TIMEEMPL":9,"RES_TO_KC":"N","RES_CRED_LIM":0,"PROD_CHAR_BRANCH":"CNRG","PROD_CHAR_LIMITREQUESTED":10000,"RES_LIMIT_P48":4700,"RES_DEC_TEXT":"ACCEPT","RES_PROD_TYPE":"UNI","RES_TYPE_SMS":"Y","RES_CALL_WORK_BAL":0,"RES_CALL_HOME_BAL":0,"RES_CALL_MOB_BAL":0,"RES_CALL_WORK_TOTAL":"C_NULL","RES_CALL_BAL":0,"RES_CALL_TOTAL":"C_NULL","AUTO_DEC":"Y"}}';
+    var data = JSON.parse(json).data;
+ /*   data.RES_SCCARD_SCORE_SALDO = 520;
+    data.RES_DEC_REAS_CODE_TABLE = new Array('L121','A101');
+    data.LOCAL_DEC_REAS_CODE_TABLE_1 = new Array('L121','A101');
+    data.RES_LIMIT_TYPE = new Array();
+    data.PROD_CHAR_LIMITREQUESTED = 10000;
+    data.RES_SCORE_GREY_ZONE = 'SCORE_NEG';
+    data.RES_PROD_TYPE = 'GOLD';
+    data.LOCAL_DEC_CATEGORY_1 = new Array('ZERO_LIMIT');
+    data.LOCAL_DEC_TEXT_1 = new Array('ZERO_LIMIT');
+    data.RES_LIMIT_ITOG_TYPE = 'NEW';
+    data.RES_LIMIT_ITOG = 5000;
+    data.APP_CUST_ID = 123666;
+    data.APP_PHONE = new Array();
+    data.FIN_REAS_CODE_TABLE = new Array();
+    data.LOCAL_BLCL_CONTROL = new Array();
+    data.RES_DEC_CATEGORY = 'ZERO_LIMIT';
+    data.PROD_CHAR_BRANCH = 'DNH0';
+    data.DATA_TRELCLIENTS_FACH_LIM24 = 5000;
+    data.RES_CALL_HOME_PHONE = 'Y';*/
+
+    //------------------------------------------------------------------------------------------------
+
+    /*
+     var data = new Object();
+     data['LOCAL_CODE'] = {};
+     var contact_type_mob = new Array();
+     contact_type_mob[0] = {};
+     contact_type_mob[1] = {};
+     contact_type_mob[2] = {};
+     contact_type_mob[0]['NBSM_QUESTION'] = 'Q069';
+     contact_type_mob[0]['NBSM_ANSWER'] = 'GENERAL_Y';
+     contact_type_mob[0]['NBSM_BAL'] = '0';
+     contact_type_mob[1]['NBSM_QUESTION'] = 'Q055';
+     contact_type_mob[1]['NBSM_ANSWER'] = 'GENERAL_N';
+     contact_type_mob[1]['NBSM_BAL'] = '2';
+     contact_type_mob[2]['NBSM_QUESTION'] = 'Q068';
+     contact_type_mob[2]['NBSM_ANSWER'] = 'GENERAL_M';
+     contact_type_mob[2]['NBSM_BAL'] = '4';
+     data['LOCAL_CODE']['MOB'] = contact_type_mob;
+
+     var contact_type_work = new Array();
+     contact_type_work[0] = {};
+     contact_type_work[0]['NBSM_QUESTION'] = 'Q066';
+     contact_type_work[0]['NBSM_ANSWER'] = 'CALL_NO_TELEFON_NUMBER';
+     contact_type_work[0]['NBSM_BAL'] = '0';
+     data['LOCAL_CODE']['WORK'] = contact_type_work;
+
+     data['RES_CALL_WORK_PHONE']='Y';*/
+
+    //-----------------------------------------------
+
+    var LOCAL_CALL_TOTAL, LOCAL_CALL_BAL;
+    var LOCAL_PHONE_ARRAY = new Array();
+    data.RES_CALL_WORK_BAL = 0;
+    data.RES_CALL_HOME_BAL = 0;
+    data.RES_CALL_MOB_BAL = 0;
+
+    if (data.LOCAL_CODE == undefined || data.LOCAL_CODE == null)
+    {
+        data.LOCAL_CODE = {};
+    }
+
+    function AnalysisType (type){
+
+        var total_call_qa_grade= 0;
+        var tmp=0;
+        LOCAL_CALL_TOTAL = '';
+        LOCAL_CALL_BAL = 0;
+        LOCAL_PHONE_ARRAY.length = 0;
+        if (data.LOCAL_CODE != undefined ) {
+            var localCodeObj = data.LOCAL_CODE[type];
+            for (var j = 0; j < localCodeObj.length; j++) {
+                if (localCodeObj[j].call_grade != null && localCodeObj[j].call_qa_match != null && localCodeObj[j].call_qa_nomatch != null) {
+                    if (localCodeObj[j].call_grade == 0 && localCodeObj[j].call_qa_match != 0 && localCodeObj[j].call_qa_nomatch != 0) {
+                        tmp = MatchProc(localCodeObj[j].NBSM_QUESTION, localCodeObj[j].NBSM_ANSWER, localCodeObj[j].CALL_ANSWER, localCodeObj[j].call_qa_match, localCodeObj[j].call_qa_nomatch);
+                        total_call_qa_grade += tmp;
+                        LOCAL_PHONE_ARRAY.push(tmp);
+                    }
+                    else {
+                        total_call_qa_grade += localCodeObj[j].call_grade;
+                        LOCAL_PHONE_ARRAY.push(localCodeObj[j].call_grade);
+                    }
+                }
+            }
+        }
+
+        if (total_call_qa_grade <-1){
+            LOCAL_CALL_TOTAL = 'C_NEG';
+        }
+        else {
+            if (total_call_qa_grade >=-1 && total_call_qa_grade <= 1){
+                LOCAL_CALL_TOTAL = 'C_NULL';
+            }
+            else {
+                if (total_call_qa_grade >1){
+                    LOCAL_CALL_TOTAL = 'C_POS';
+                }
+            }
+        }
+        LOCAL_CALL_BAL = total_call_qa_grade;
+    }
+
+    function MatchProc (nbsm_qcode, nbsm_acode, call_acode, call_qamatch, call_qanomatch){
+        /*APP_EMPL_SOCIALSTATUS*/
+        if (nbsm_qcode == 'Q054' || nbsm_qcode == 'Q062'){
+            if (nbsm_acode.slice(nbsm_acode.indexOf('_')+1) == data.APP_EMPL_SOCIALSTATUS){
+                return call_qamatch;
+            }
+            else {
+                return call_qanomatch;
+            }
+        }
+        /*APP_EMPL_ORGTYPE*/
+        if (nbsm_qcode == 'Q001' || nbsm_qcode == 'Q052'){
+            if (nbsm_acode.slice(nbsm_acode.indexOf('_')+1) == data.APP_EMPL_ORGTYPE){
+                return call_qamatch;
+            }
+            else {
+                return call_qanomatch;
+            }
+        }
+        /*APP_EMPL_RANK*/
+        if (nbsm_qcode == 'Q003' || nbsm_qcode == 'Q051'){
+            if (nbsm_acode.slice(nbsm_acode.indexOf('_')+1) == data.APP_EMPL_RANK){
+                return call_qamatch;
+            }
+            else {
+                return call_qanomatch;
+            }
+        }
+        /*APP_MARITAL_MARITALCOND*/
+        if (nbsm_qcode == 'Q013'){
+            if (nbsm_acode.slice(nbsm_acode.indexOf('_')+1) == data.APP_MARITAL_MARITALCOND){
+                return call_qamatch;
+            }
+            else {
+                return call_qanomatch;
+            }
+        }
+        /*APP_EMPL_TIMEEMPL_DATE*/
+        if (nbsm_qcode == 'Q004' || nbsm_qcode == 'Q026'){
+            if (data.PROD_CASH_CRED != 'Y'){
+                var timeempl = data.APP_EMPL_TIMEEMPL;
+                if (timeempl < 3 && call_acode =='99'){
+                    return call_qamatch;
+                }
+                else {
+                    if ((timeempl >= 3 && timeempl < 6) &&  call_acode =='100'){
+                        return call_qamatch;
+                    }
+                    else {
+                        if ((timeempl >= 6 && timeempl < 12) && call_acode =='101'){
+                            return call_qamatch;
+                        }
+                        else {
+                            if ((timeempl >= 12 && timeempl < 36) && call_acode=='102'){
+                                return call_qamatch;
+                            }
+                            else {
+                                if ((timeempl >= 36 && timeempl < 120) && call_acode =='103'){
+                                    return call_qamatch;
+                                }
+                                else {
+                                    if (timeempl >= 120 && call_acode =='104'){
+                                        return call_qamatch;
+                                    }
+                                    else {
+                                        return call_qanomatch;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            else {
+                var timeempl = data.APP_EMPL_TIMEEMPL;
+                if (timeempl < 3 && call_acode =='814'){
+                    return call_qamatch;
+                }
+                else {
+                    if ((timeempl >= 3 && timeempl < 6) && call_acode =='815'){
+                        return call_qamatch;
+                    }
+                    else {
+                        return call_qanomatch;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    //----------------------------------------------------------------------------------------
+    data.LOCAL_PHONE_WORK_ARRAY= new Array();
+    data.LOCAL_PHONE_HOME_ARRAY = new Array();
+    data.LOCAL_PHONE_MOB_ARRAY = new Array();
+
+    if (data.RES_CALL_WORK_PHONE == 'Y') {
+        AnalysisType('WORK');
+        data.RES_CALL_WORK_TOTAL = LOCAL_CALL_TOTAL;
+        data.RES_CALL_WORK_BAL = LOCAL_CALL_BAL;
+        if (LOCAL_PHONE_ARRAY != undefined && LOCAL_PHONE_ARRAY!= null && LOCAL_PHONE_ARRAY.length>0) {
+            for (var i = 0; i < LOCAL_PHONE_ARRAY.length; i++) {
+                data.LOCAL_PHONE_WORK_ARRAY.push(LOCAL_PHONE_ARRAY[i]);
+            }
+        }
+        else {
+            data.LOCAL_PHONE_WORK_ARRAY.push(0);
+        }
+    }
+
+    if (data.RES_CALL_HOME_PHONE == 'Y'){
+        AnalysisType('HOME');
+        data.RES_CALL_HOME_TOTAL = LOCAL_CALL_TOTAL;
+        data.RES_CALL_HOME_BAL = LOCAL_CALL_BAL;
+        if (LOCAL_PHONE_ARRAY != undefined && LOCAL_PHONE_ARRAY!= null && LOCAL_PHONE_ARRAY.length>0) {
+            for (var i = 0; i < LOCAL_PHONE_ARRAY.length; i++) {
+                data.LOCAL_PHONE_HOME_ARRAY.push(LOCAL_PHONE_ARRAY[i]);
+            }
+        }
+        else {
+            data.LOCAL_PHONE_HOME_ARRAY.push(0);
+        }
+    }
+
+    if (data.RES_CALL_MOB_PHONE == 'Y'){
+        AnalysisType('MOB');
+        data.RES_CALL_MOB_TOTAL = LOCAL_CALL_TOTAL;
+        data.RES_CALL_MOB_BAL = LOCAL_CALL_BAL;
+        if (LOCAL_PHONE_ARRAY != undefined && LOCAL_PHONE_ARRAY!= null && LOCAL_PHONE_ARRAY.length>0) {
+            for (var i = 0; i < LOCAL_PHONE_ARRAY.length; i++) {
+                data.LOCAL_PHONE_MOB_ARRAY.push(LOCAL_PHONE_ARRAY[i]);
+            }
+        }
+        else {
+            data.LOCAL_PHONE_MOB_ARRAY.push(0);
+        }
+    }
+
+    data.RES_CALL_BAL = 0;
+    data.RES_CALL_BAL = data.RES_CALL_WORK_BAL + data.RES_CALL_HOME_BAL  + data.RES_CALL_MOB_BAL ;
+
+    if (data.RES_CALL_BAL <-1){
+        data.RES_CALL_TOTAL = 'C_NEG';
+    }
+    else {
+        if (data.RES_CALL_BAL >=-1 && data.RES_CALL_BAL <=1){
+            data.RES_CALL_TOTAL = 'C_NULL';
+        }
+        else {
+            if (data.RES_CALL_BAL >1){
+                data.RES_CALL_TOTAL = 'C_POS';
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

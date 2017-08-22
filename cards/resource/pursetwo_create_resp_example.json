@@ -1,0 +1,11 @@
+{"a.wfPurseTwoResponse": {
+  "reqMRef": "testtestetst123021",
+  "reqMId": "RMCA",
+  "reqBank": "PB",
+  "reqPrState": "p",
+  "bpState": "s",
+  "twoCardUpdated": "N",
+  "twoAccountUpdated": "N",
+  "twoCardNeedUpdate": "N",
+  "twoAccountNeedUpdate": "N"
+}}

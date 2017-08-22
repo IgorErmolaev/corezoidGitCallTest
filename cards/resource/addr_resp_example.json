@@ -1,0 +1,212 @@
+{
+  "data": {
+    "addressByAnswer": {
+      "addAttrs": {
+        "@value": "19264",
+        "@typeId": "5",
+        "@name": "POPULATION"
+      },
+      "countryCode": {
+        "@numeric": "***",
+        "@alpha3": "UKR",
+        "@alpha2": "UA"
+      },
+      "fixedAttrs": {
+        "@zip": "63734",
+        "@longitude": "37.62925000",
+        "@latitude": "49.59507900",
+        "@geoPrecision": "4",
+        "@geoKind": "2",
+        "@addrOuterId": "5M1FFC67GUV00C"
+      },
+      "addr": [
+        {
+          "addrPath": [
+            {
+              "@nodeTypeSName": "дом",
+              "@nodeTypeName": "дом",
+              "@nodeTypeId": "9",
+              "@nodeTypeCodeId": "38",
+              "@nodeTypeCode": "BUILDING",
+              "@langCode": "RUS",
+              "@innerId": "UKR00K00Q00U00J00L",
+              "@desc": "71",
+              "@code": "5M1FFC67GUV00C"
+            },
+            {
+              "@nodeTypeSName": "пгт",
+              "@nodeTypeName": "пгт",
+              "@nodeTypeId": "4",
+              "@nodeTypeCodeId": "10",
+              "@nodeTypeCode": "PGT",
+              "@langCode": "RUS",
+              "@innerId": "UKR00K00Q00U",
+              "@desc": "Ковшаровка",
+              "@code": "2377Q4G4DEQ000"
+            },
+            {
+              "@nodeTypeSName": "обл",
+              "@nodeTypeName": "область",
+              "@nodeTypeId": "2",
+              "@nodeTypeCodeId": "58",
+              "@nodeTypeCode": "AREA",
+              "@langCode": "RUS",
+              "@innerId": "UKR00K",
+              "@desc": "Харьковская",
+              "@code": "UA31354"
+            },
+            {
+              "@nodeTypeSName": "стр",
+              "@nodeTypeName": "страна",
+              "@nodeTypeId": "1",
+              "@nodeTypeCodeId": "44",
+              "@nodeTypeCode": "COUNTRY",
+              "@langCode": "RUS",
+              "@innerId": "UKR",
+              "@desc": "Украина",
+              "@code": "UA40773"
+            },
+            {
+              "@nodeTypeSName": "р-н",
+              "@nodeTypeName": "район",
+              "@nodeTypeId": "3",
+              "@nodeTypeCodeId": "8",
+              "@nodeTypeCode": "REGION",
+              "@langCode": "RUS",
+              "@innerId": "UKR00K00Q",
+              "@desc": "Купянский",
+              "@code": "UA32841"
+            },
+            {
+              "@nodeTypeSName": "ул",
+              "@nodeTypeName": "улица",
+              "@nodeTypeId": "8",
+              "@nodeTypeCodeId": "36",
+              "@nodeTypeCode": "STREET",
+              "@langCode": "RUS",
+              "@innerId": "UKR00K00Q00U00J",
+              "@desc": "Победы",
+              "@code": "2OY8V5L35JA000"
+            },
+            {
+              "@nodeTypeSName": "кв",
+              "@nodeTypeName": "квартира",
+              "@nodeTypeId": "11",
+              "@nodeTypeCodeId": "40",
+              "@nodeTypeCode": "FLAT",
+              "@langCode": "RUS",
+              "@innerId": "UKR00K00Q00U00J00L002",
+              "@desc": "20",
+              "@code": "58GKFW0YMEOO0C"
+            }
+          ],
+          "@nodeTypeSname": "кв",
+          "@nodeTypeName": "квартира",
+          "@nodeTypeId": "11",
+          "@nodeTypeCodeId": "40",
+          "@langCode": "RUS",
+          "@address": "Украина,область Харьковская,район Купянский,пгт Ковшаровка,улица Победы,дом 71,квартира 20",
+          "@addrName": "20"
+        },
+        {
+          "addrPath": [
+            {
+              "@nodeTypeSName": "буд",
+              "@nodeTypeName": "будинок",
+              "@nodeTypeId": "9",
+              "@nodeTypeCodeId": "38",
+              "@nodeTypeCode": "BUILDING",
+              "@langCode": "UAN",
+              "@innerId": "UKR00K00Q00U00J00L",
+              "@desc": "71",
+              "@code": "5M1FFC67GUV00C"
+            },
+            {
+              "@nodeTypeSName": "смт",
+              "@nodeTypeName": "смт",
+              "@nodeTypeId": "4",
+              "@nodeTypeCodeId": "10",
+              "@nodeTypeCode": "PGT",
+              "@langCode": "UAN",
+              "@innerId": "UKR00K00Q00U",
+              "@desc": "Ківшарівка",
+              "@code": "2377Q4G4DEQ000"
+            },
+            {
+              "@nodeTypeSName": "обл",
+              "@nodeTypeName": "область",
+              "@nodeTypeId": "2",
+              "@nodeTypeCodeId": "58",
+              "@nodeTypeCode": "AREA",
+              "@langCode": "UAN",
+              "@innerId": "UKR00K",
+              "@desc": "Харківська",
+              "@code": "UA31354"
+            },
+            {
+              "@nodeTypeSName": "країна",
+              "@nodeTypeName": "країна",
+              "@nodeTypeId": "1",
+              "@nodeTypeCodeId": "44",
+              "@nodeTypeCode": "COUNTRY",
+              "@langCode": "UAN",
+              "@innerId": "UKR",
+              "@desc": "Україна",
+              "@code": "UA40773"
+            },
+            {
+              "@nodeTypeSName": "р-н",
+              "@nodeTypeName": "район",
+              "@nodeTypeId": "3",
+              "@nodeTypeCodeId": "8",
+              "@nodeTypeCode": "REGION",
+              "@langCode": "UAN",
+              "@innerId": "UKR00K00Q",
+              "@desc": "Куп’янський",
+              "@code": "UA32841"
+            },
+            {
+              "@nodeTypeSName": "вул",
+              "@nodeTypeName": "вулиця",
+              "@nodeTypeId": "8",
+              "@nodeTypeCodeId": "36",
+              "@nodeTypeCode": "STREET",
+              "@langCode": "UAN",
+              "@innerId": "UKR00K00Q00U00J",
+              "@desc": "Перемоги",
+              "@code": "2OY8V5L35JA000"
+            },
+            {
+              "@nodeTypeSName": "кв",
+              "@nodeTypeName": "квартира",
+              "@nodeTypeId": "11",
+              "@nodeTypeCodeId": "40",
+              "@nodeTypeCode": "FLAT",
+              "@langCode": "UAN",
+              "@innerId": "UKR00K00Q00U00J00L002",
+              "@desc": "20",
+              "@code": "58GKFW0YMEOO0C"
+            }
+          ],
+          "@nodeTypeSname": "кв",
+          "@nodeTypeName": "квартира",
+          "@nodeTypeId": "11",
+          "@nodeTypeCodeId": "40",
+          "@langCode": "UAN",
+          "@address": "Україна,область Харківська,район Куп’янський,смт Ківшарівка,вулиця Перемоги,будинок 71,квартира 20",
+          "@addrName": "20"
+        }
+      ],
+      "@аddrNewId": "UKR00K00Q00U00J00L002",
+      "@addrValid": "A",
+      "@addrOuterId": "58GKFW0YMEOO0C",
+      "@addrOldOuterId": "58GKFW0YMEOO0C",
+      "@addrOldId": "UKR00K00Q00U00J00L002"
+    },
+    "APP_ACT_ADDRESS": {
+      "UADID": "58GKFW0YMEOO0C"
+    },
+    "APP_CUST_ID": 8024512,
+    "APPLIC_ID": "151202TS1111111"
+  }
+}

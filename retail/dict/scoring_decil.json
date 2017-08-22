@@ -1,0 +1,94 @@
+{
+    "ops": [
+        {
+            "ref": "RES_SCCARD_DECIL",
+            "type": "create",
+            "obj": "task",
+            "conv_id": 105435,
+            "data": {
+                "DECIL": [
+                    {
+                        "border1": 0.001,
+                        "border2": 0.01
+                    },
+                    {
+                        "border1": 0.01,
+                        "border2": 0.013
+                    },
+                    {
+                        "border1": 0.013,
+                        "border2": 0.016
+                    },
+                    {
+                        "border1": 0.016,
+                        "border2": 0.019
+                    },
+                    {
+                        "border1": 0.019,
+                        "border2": 0.022
+                    },
+                    {
+                        "border1": 0.022,
+                        "border2": 0.025
+                    },
+                    {
+                        "border1": 0.025,
+                        "border2": 0.028
+                    },
+                    {
+                        "border1": 0.028,
+                        "border2": 0.031
+                    },
+                    {
+                        "border1": 0.031,
+                        "border2": 0.034
+                    },
+                    {
+                        "border1": 0.034,
+                        "border2": 0.037
+                    },
+                    {
+                        "border1": 0.037,
+                        "border2": 0.041
+                    },
+                    {
+                        "border1": 0.041,
+                        "border2": 0.045
+                    },
+                    {
+                        "border1": 0.045,
+                        "border2": 0.05
+                    },
+                    {
+                        "border1": 0.05,
+                        "border2": 0.055
+                    },
+                    {
+                        "border1": 0.055,
+                        "border2": 0.062
+                    },
+                    {
+                        "border1": 0.062,
+                        "border2": 0.069
+                    },
+                    {
+                        "border1": 0.069,
+                        "border2": 0.081
+                    },
+                    {
+                        "border1": 0.081,
+                        "border2": 0.099
+                    },
+                    {
+                        "border1": 0.099,
+                        "border2": 0.133
+                    },
+                    {
+                        "border1": 0.133,
+                        "border2": 1
+                    }
+                ]
+            }
+        }
+    ]
+}

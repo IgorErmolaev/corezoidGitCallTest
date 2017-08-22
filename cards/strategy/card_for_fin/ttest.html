@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    json = '{"data":{"DATA_OPER_IS_VIP_MANAGER":"N"}}';
+    var data = JSON.parse(json).data;
+
+    data.RES_RIP_APPLICATION = 'Y';
+    data.PROD_CHAR_BANK = 'AB';
+    data.PROD_CHAR_LIMITREQUESTED = 5000;
+    data.RES_LIMIT_ITOG = 1000;
+
+
+    if (data.RES_RIP_APPLICATION == 'Y' && data.PROD_CHAR_BANK == 'AB'){
+        if (data.PROD_CHAR_LIMITREQUESTED <= 2000 ){
+            data.RES_LIMIT_ITOG = Math.min(data.RES_LIMIT_ITOG,2000);
+        }
+        else {
+            data.RES_LIMIT_ITOG = Math.min(data.RES_LIMIT_ITOG,data.PROD_CHAR_LIMITREQUESTED);
+        }
+    }
+</script>
+</body>
+</html>
+
+

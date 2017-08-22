@@ -1,0 +1,1566 @@
+{
+  "ops": [
+    {
+      "ref": "RTDM_DIC_LIMITPARAM",
+      "type": "create",
+      "obj": "task",
+      "conv_id": "96057",
+      "data": {
+        "PB": {
+          "UPGRADE": {
+            "UPGRADE": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 0
+            }
+          },
+          "LIMIT_OLD": {
+            "LIMIT_OLD": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 0
+            }
+          },
+          "DEPOS": {
+            "DEPOS": {
+              "bank": "PB",
+              "bound": 5000,
+              "coefficient": 0.8,
+              "max_sum": 50000,
+              "min_sum": 2000
+            }
+          },
+          "UNEMP": {
+            "UNEMP": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 500
+            }
+          },
+          "TOP-1000/WHITEWORK": {
+            "TOP-1000/WHITEWORK": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 5000,
+              "min_sum": 0
+            }
+          },
+          "VNESH": {
+            "VNESH": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            },
+            "PARTWORK": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            },
+            "EXPERIENCElt6": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            },
+            "AGElt22": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 4000,
+              "min_sum": 500
+            }
+          },
+          "ACC_INCOME": {
+            "ACC_INCOME": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 8000,
+              "min_sum": 2000
+            }
+          },
+          "POS": {
+            "POS": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 8000,
+              "min_sum": 2000
+            }
+          },
+          "STUD": {
+            "STUD": {
+              "bank": "PB",
+              "bound": 100,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 500
+            }
+          },
+          "JUNIOR": {
+            "JUNIOR": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 1000
+            }
+          },
+          "HYSTORY": {
+            "HYSTORY": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 500
+            }
+          },
+          "CASHPAYM": {
+            "CASHPAYM": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 50000,
+              "min_sum": 0
+            }
+          },
+          "NEW": {
+            "NEW": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            }
+          },
+          "DECREE": {
+            "DECREE": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 500,
+              "min_sum": 500
+            }
+          },
+          "PENS_VN": {
+            "AGElt25": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 8000,
+              "min_sum": 500
+            }
+          },
+          "SOTR/ZP": {
+            "STATE": {
+              "bank": "PB",
+              "bound": 500,
+              "coefficient": 4,
+              "max_sum": 50000,
+              "min_sum": 2000
+            },
+            "EMPLOYEE": {
+              "bank": "PB",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 50000,
+              "min_sum": 3000
+            },
+            "PRIVATE": {
+              "bank": "PB",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 50000,
+              "min_sum": 2000
+            }
+          },
+          "PENS": {
+            "AGElt25": {
+              "bank": "PB",
+              "bound": 400,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "PB",
+              "bound": 400,
+              "coefficient": 4,
+              "max_sum": 8000,
+              "min_sum": 2500
+            }
+          },
+          "USAGE": {
+            "USAGE": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 0
+            }
+          },
+          "IMPORTANT": {
+            "IMPORTANT": {
+              "bank": "PB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 25000,
+              "min_sum": 0
+            }
+          }
+        },
+        "PB_GOLD": {
+          "UPGRADE": {
+            "UPGRADE": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 25000,
+              "min_sum": 0
+            }
+          },
+          "LIMIT_OLD": {
+            "LIMIT_OLD": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 25000,
+              "min_sum": 0
+            }
+          },
+          "DEPOS": {
+            "DEPOS": {
+              "bank": "PB_GOLD",
+              "bound": 5000,
+              "coefficient": 0.8,
+              "max_sum": 75000,
+              "min_sum": 2000
+            }
+          },
+          "UNEMP": {
+            "UNEMP": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 1000
+            }
+          },
+          "TOP-1000/WHITEWORK": {
+            "TOP-1000/WHITEWORK": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 5000,
+              "min_sum": 1000
+            }
+          },
+          "VNESH": {
+            "VNESH": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 1000
+            },
+            "PARTWORK": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 1000
+            },
+            "EXPERIENCElt6": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 1000
+            },
+            "AGElt22": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 4000,
+              "min_sum": 1000
+            }
+          },
+          "ACC_INCOME": {
+            "ACC_INCOME": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 8000,
+              "min_sum": 2000
+            }
+          },
+          "POS": {
+            "POS": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 8000,
+              "min_sum": 2000
+            }
+          },
+          "STUD": {
+            "STUD": {
+              "bank": "PB_GOLD",
+              "bound": 100,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 1000
+            }
+          },
+          "JUNIOR": {
+            "JUNIOR": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 1000
+            }
+          },
+          "HYSTORY": {
+            "HYSTORY": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 1000
+            }
+          },
+          "CASHPAYM": {
+            "CASHPAYM": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 75000,
+              "min_sum": 0
+            }
+          },
+          "NEW": {
+            "NEW": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 1000
+            }
+          },
+          "DECREE": {
+            "DECREE": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 1000,
+              "min_sum": 1000
+            }
+          },
+          "PENS_VN": {
+            "AGElt25": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 1000
+            },
+            "AGEge25": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 8000,
+              "min_sum": 1000
+            }
+          },
+          "SOTR/ZP": {
+            "STATE": {
+              "bank": "PB_GOLD",
+              "bound": 500,
+              "coefficient": 4,
+              "max_sum": 75000,
+              "min_sum": 2000
+            },
+            "EMPLOYEE": {
+              "bank": "PB_GOLD",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 75000,
+              "min_sum": 3000
+            },
+            "PRIVATE": {
+              "bank": "PB_GOLD",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 75000,
+              "min_sum": 2000
+            }
+          },
+          "PENS": {
+            "AGElt25": {
+              "bank": "PB_GOLD",
+              "bound": 400,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 1000
+            },
+            "AGEge25": {
+              "bank": "PB_GOLD",
+              "bound": 400,
+              "coefficient": 4,
+              "max_sum": 8000,
+              "min_sum": 2500
+            }
+          },
+          "USAGE": {
+            "USAGE": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 1000
+            }
+          },
+          "IMPORTANT": {
+            "IMPORTANT": {
+              "bank": "PB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 25000,
+              "min_sum": 0
+            }
+          }
+        },
+        "AB": {
+          "UPGRADE": {
+            "UPGRADE": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 0
+            }
+          },
+          "LIMIT_OLD": {
+            "LIMIT_OLD": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 0
+            }
+          },
+          "DEPOS": {
+            "DEPOS": {
+              "bank": "AB",
+              "bound": 5000,
+              "coefficient": 0.8,
+              "max_sum": 50000,
+              "min_sum": 2000
+            }
+          },
+          "UNEMP": {
+            "UNEMP": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 500
+            }
+          },
+          "TOP-1000/WHITEWORK": {
+            "TOP-1000/WHITEWORK": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 4000,
+              "min_sum": 0
+            }
+          },
+          "VNESH": {
+            "VNESH": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            },
+            "PARTWORK": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            },
+            "EXPERIENCElt6": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            },
+            "AGElt22": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2500,
+              "min_sum": 500
+            }
+          },
+          "ACC_INCOME": {
+            "ACC_INCOME": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 8000,
+              "min_sum": 2000
+            }
+          },
+          "POS": {
+            "POS": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 8000,
+              "min_sum": 2000
+            }
+          },
+          "STUD": {
+            "STUD": {
+              "bank": "AB",
+              "bound": 100,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 500
+            }
+          },
+          "JUNIOR": {
+            "JUNIOR": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 1000
+            }
+          },
+          "HYSTORY": {
+            "HYSTORY": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            }
+          },
+          "CASHPAYM": {
+            "CASHPAYM": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 50000,
+              "min_sum": 0
+            }
+          },
+          "NEW": {
+            "NEW": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            }
+          },
+          "DECREE": {
+            "DECREE": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 500,
+              "min_sum": 500
+            }
+          },
+          "PENS_VN": {
+            "AGElt25": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 8000,
+              "min_sum": 500
+            }
+          },
+          "SOTR/ZP": {
+            "STATE": {
+              "bank": "AB",
+              "bound": 500,
+              "coefficient": 4,
+              "max_sum": 50000,
+              "min_sum": 2000
+            },
+            "EMPLOYEE": {
+              "bank": "AB",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 50000,
+              "min_sum": 3000
+            },
+            "PRIVATE": {
+              "bank": "AB",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 50000,
+              "min_sum": 2000
+            }
+          },
+          "PENS": {
+            "AGElt25": {
+              "bank": "AB",
+              "bound": 400,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "AB",
+              "bound": 400,
+              "coefficient": 4,
+              "max_sum": 25000,
+              "min_sum": 2500
+            }
+          },
+          "USAGE": {
+            "USAGE": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 0
+            }
+          },
+          "IMPORTANT": {
+            "IMPORTANT": {
+              "bank": "AB",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 25000,
+              "min_sum": 0
+            }
+          }
+        },
+        "AB_GOLD": {
+          "UPGRADE": {
+            "UPGRADE": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 25000,
+              "min_sum": 0
+            }
+          },
+          "LIMIT_OLD": {
+            "LIMIT_OLD": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 25000,
+              "min_sum": 0
+            }
+          },
+          "DEPOS": {
+            "DEPOS": {
+              "bank": "AB_GOLD",
+              "bound": 5000,
+              "coefficient": 0.8,
+              "max_sum": 75000,
+              "min_sum": 2000
+            }
+          },
+          "UNEMP": {
+            "UNEMP": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 500
+            }
+          },
+          "TOP-1000/WHITEWORK": {
+            "TOP-1000/WHITEWORK": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 5000,
+              "min_sum": 0
+            }
+          },
+          "VNESH": {
+            "VNESH": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            },
+            "PARTWORK": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            },
+            "EXPERIENCElt6": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            },
+            "AGElt22": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2500,
+              "min_sum": 500
+            }
+          },
+          "ACC_INCOME": {
+            "ACC_INCOME": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 8000,
+              "min_sum": 2000
+            }
+          },
+          "POS": {
+            "POS": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 8000,
+              "min_sum": 2000
+            }
+          },
+          "STUD": {
+            "STUD": {
+              "bank": "AB_GOLD",
+              "bound": 100,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 500
+            }
+          },
+          "JUNIOR": {
+            "JUNIOR": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 1000
+            }
+          },
+          "HYSTORY": {
+            "HYSTORY": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            }
+          },
+          "CASHPAYM": {
+            "CASHPAYM": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 75000,
+              "min_sum": 0
+            }
+          },
+          "NEW": {
+            "NEW": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 15000,
+              "min_sum": 500
+            }
+          },
+          "DECREE": {
+            "DECREE": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 500,
+              "min_sum": 500
+            }
+          },
+          "PENS_VN": {
+            "AGElt25": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 8000,
+              "min_sum": 500
+            }
+          },
+          "SOTR/ZP": {
+            "STATE": {
+              "bank": "AB_GOLD",
+              "bound": 500,
+              "coefficient": 4,
+              "max_sum": 75000,
+              "min_sum": 2000
+            },
+            "EMPLOYEE": {
+              "bank": "AB_GOLD",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 75000,
+              "min_sum": 3000
+            },
+            "PRIVATE": {
+              "bank": "AB_GOLD",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 75000,
+              "min_sum": 2000
+            }
+          },
+          "PENS": {
+            "AGElt25": {
+              "bank": "AB_GOLD",
+              "bound": 400,
+              "coefficient": 1,
+              "max_sum": 1500,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "AB_GOLD",
+              "bound": 400,
+              "coefficient": 4,
+              "max_sum": 25000,
+              "min_sum": 2500
+            }
+          },
+          "USAGE": {
+            "USAGE": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 8000,
+              "min_sum": 0
+            }
+          },
+          "IMPORTANT": {
+            "IMPORTANT": {
+              "bank": "AB_GOLD",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 40000,
+              "min_sum": 0
+            }
+          }
+        },
+        "PB_VIP": {
+          "UPGRADE": {
+            "UPGRADE": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 0
+            }
+          },
+          "LIMIT_OLD": {
+            "LIMIT_OLD": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 0
+            }
+          },
+          "DEPOS": {
+            "DEPOS": {
+              "bank": "PB_VIP",
+              "bound": 1000,
+              "coefficient": 0.9,
+              "max_sum": 100000,
+              "min_sum": 2000
+            }
+          },
+          "UNEMP": {
+            "UNEMP": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 0
+            }
+          },
+          "TOP-1000/WHITEWORK": {
+            "TOP-1000/WHITEWORK": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 100000,
+              "min_sum": 0
+            }
+          },
+          "VNESH": {
+            "VNESH": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 500
+            },
+            "PARTWORK": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 500
+            },
+            "EXPERIENCElt6": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 500
+            },
+            "AGElt22": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 500
+            }
+          },
+          "ACC_INCOME": {
+            "ACC_INCOME": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 100000,
+              "min_sum": 2000
+            }
+          },
+          "POS": {
+            "POS": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0.2,
+              "max_sum": 100000,
+              "min_sum": 2000
+            }
+          },
+          "STUD": {
+            "STUD": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 0,
+              "min_sum": 0
+            }
+          },
+          "JUNIOR": {
+            "JUNIOR": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 1000,
+              "min_sum": 1000
+            }
+          },
+          "HYSTORY": {
+            "HYSTORY": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 500
+            }
+          },
+          "CASHPAYM": {
+            "CASHPAYM": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 0
+            }
+          },
+          "NEW": {
+            "NEW": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 500
+            }
+          },
+          "DECREE": {
+            "DECREE": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 0,
+              "min_sum": 0
+            }
+          },
+          "PENS_VN": {
+            "AGElt25": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 100000,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 100000,
+              "min_sum": 500
+            }
+          },
+          "SOTR/ZP": {
+            "STATE": {
+              "bank": "PB_VIP",
+              "bound": 500,
+              "coefficient": 4,
+              "max_sum": 100000,
+              "min_sum": 2000
+            },
+            "EMPLOYEE": {
+              "bank": "PB_VIP",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 100000,
+              "min_sum": 3000
+            },
+            "PRIVATE": {
+              "bank": "PB_VIP",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 100000,
+              "min_sum": 2000
+            }
+          },
+          "PENS": {
+            "AGElt25": {
+              "bank": "PB_VIP",
+              "bound": 400,
+              "coefficient": 1,
+              "max_sum": 100000,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "PB_VIP",
+              "bound": 400,
+              "coefficient": 4,
+              "max_sum": 100000,
+              "min_sum": 2500
+            }
+          },
+          "USAGE": {
+            "USAGE": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 0
+            }
+          },
+          "IMPORTANT": {
+            "IMPORTANT": {
+              "bank": "PB_VIP",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 100000,
+              "min_sum": 0
+            }
+          }
+        },
+        "PB_VIPE": {
+          "UPGRADE": {
+            "UPGRADE": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 0
+            }
+          },
+          "LIMIT_OLD": {
+            "LIMIT_OLD": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 0
+            }
+          },
+          "DEPOS": {
+            "DEPOS": {
+              "bank": "PB_VIPE",
+              "bound": 1000,
+              "coefficient": 0.9,
+              "max_sum": 200000,
+              "min_sum": 2000
+            }
+          },
+          "UNEMP": {
+            "UNEMP": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 0
+            }
+          },
+          "TOP-1000/WHITEWORK": {
+            "TOP-1000/WHITEWORK": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 200000,
+              "min_sum": 0
+            }
+          },
+          "VNESH": {
+            "VNESH": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 500
+            },
+            "PARTWORK": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 500
+            },
+            "EXPERIENCElt6": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 500
+            },
+            "AGElt22": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 500
+            }
+          },
+          "ACC_INCOME": {
+            "ACC_INCOME": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 2,
+              "max_sum": 200000,
+              "min_sum": 2000
+            }
+          },
+          "POS": {
+            "POS": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0.2,
+              "max_sum": 200000,
+              "min_sum": 2000
+            }
+          },
+          "STUD": {
+            "STUD": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 0,
+              "min_sum": 0
+            }
+          },
+          "JUNIOR": {
+            "JUNIOR": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 1000,
+              "min_sum": 1000
+            }
+          },
+          "HYSTORY": {
+            "HYSTORY": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 500
+            }
+          },
+          "CASHPAYM": {
+            "CASHPAYM": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 0
+            }
+          },
+          "NEW": {
+            "NEW": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 500
+            }
+          },
+          "DECREE": {
+            "DECREE": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 0,
+              "min_sum": 0
+            }
+          },
+          "PENS_VN": {
+            "AGElt25": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 200000,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 200000,
+              "min_sum": 500
+            }
+          },
+          "SOTR/ZP": {
+            "STATE": {
+              "bank": "PB_VIPE",
+              "bound": 500,
+              "coefficient": 4,
+              "max_sum": 200000,
+              "min_sum": 2000
+            },
+            "EMPLOYEE": {
+              "bank": "PB_VIPE",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 200000,
+              "min_sum": 3000
+            },
+            "PRIVATE": {
+              "bank": "PB_VIPE",
+              "bound": 500,
+              "coefficient": 3,
+              "max_sum": 200000,
+              "min_sum": 2000
+            }
+          },
+          "PENS": {
+            "AGElt25": {
+              "bank": "PB_VIPE",
+              "bound": 400,
+              "coefficient": 1,
+              "max_sum": 200000,
+              "min_sum": 500
+            },
+            "AGEge25": {
+              "bank": "PB_VIPE",
+              "bound": 400,
+              "coefficient": 4,
+              "max_sum": 200000,
+              "min_sum": 2500
+            }
+          },
+          "USAGE": {
+            "USAGE": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 0
+            }
+          },
+          "IMPORTANT": {
+            "IMPORTANT": {
+              "bank": "PB_VIPE",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200000,
+              "min_sum": 0
+            }
+          }
+        },
+        "PL": {
+          "UPGRADE": {
+            "UPGRADE": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 0
+            }
+          },
+          "DEPOS": {
+            "DEPOS": {
+              "bank": "PL",
+              "bound": 70,
+              "coefficient": 9,
+              "max_sum": 2000,
+              "min_sum": 140
+            }
+          },
+          "LIMIT_OLD": {
+            "LIMIT_OLD": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 0
+            }
+          },
+          "UNEMP": {
+            "UNEMP": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 0,
+              "min_sum": 0
+            }
+          },
+          "TOP-1000/WHITEWORK": {
+            "TOP-1000/WHITEWORK": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 0,
+              "min_sum": 0
+            }
+          },
+          "VNESH": {
+            "VNESH": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 50
+            },
+            "PARTWORK": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 0
+            },
+            "EXPERIENCElt6": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 150,
+              "min_sum": 0
+            },
+            "AGElt22": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200,
+              "min_sum": 0
+            }
+          },
+          "ACC_INCOME": {
+            "ACC_INCOME": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 0,
+              "min_sum": 0
+            }
+          },
+          "POS": {
+            "POS": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 0,
+              "min_sum": 0
+            }
+          },
+          "STUD": {
+            "STUD": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 0,
+              "min_sum": 0
+            }
+          },
+          "JUNIOR": {
+            "JUNIOR": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 0
+            }
+          },
+          "CASHPAYM": {
+            "CASHPAYM": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 0
+            }
+          },
+          "HYSTORY": {
+            "HYSTORY": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 50
+            }
+          },
+          "NEW": {
+            "NEW": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 50
+            }
+          },
+          "DECREE": {
+            "DECREE": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 50,
+              "min_sum": 50
+            }
+          },
+          "PENS_VN": {
+            "AGElt25": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 1,
+              "max_sum": 110,
+              "min_sum": 50
+            },
+            "AGEge25": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 3,
+              "max_sum": 2000,
+              "min_sum": 70
+            }
+          },
+          "SOTR/ZP": {
+            "STATE": {
+              "bank": "PL",
+              "bound": 35,
+              "coefficient": 4,
+              "max_sum": 2000,
+              "min_sum": 200
+            },
+            "EMPLOYEE": {
+              "bank": "PL",
+              "bound": 35,
+              "coefficient": 3,
+              "max_sum": 2000,
+              "min_sum": 210
+            },
+            "PRIVATE": {
+              "bank": "PL",
+              "bound": 35,
+              "coefficient": 3,
+              "max_sum": 2000,
+              "min_sum": 200
+            }
+          },
+          "PENS": {
+            "AGElt25": {
+              "bank": "PL",
+              "bound": 28,
+              "coefficient": 1,
+              "max_sum": 110,
+              "min_sum": 35
+            },
+            "AGEge25": {
+              "bank": "PL",
+              "bound": 28,
+              "coefficient": 4,
+              "max_sum": 2000,
+              "min_sum": 200
+            }
+          },
+          "USAGE": {
+            "USAGE": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 200,
+              "min_sum": 0
+            }
+          },
+          "IMPORTANT": {
+            "IMPORTANT": {
+              "bank": "PL",
+              "bound": 0,
+              "coefficient": 0,
+              "max_sum": 2000,
+              "min_sum": 0
+            }
+          }
+        }
+      }
+    }
+  ]
+}

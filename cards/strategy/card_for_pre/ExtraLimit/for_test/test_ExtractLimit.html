@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    json = '{"data":{"RES_LIMIT_ITOG_TYPE":"ZP","RES_LIMIT_ITOG":5000,"LOCAL_MAX_LIMIT":[10000,20000,50000],"RES_LIMIT":[1000,2000,5000],"RES_LIMIT_TYPE":["NEW","VNESH","ZP"],"crmCars":[{"model":"LEXUS","isnative":"N"},{"model":"ВАЗ","isnative":"Y"}],"coefAddLimit":{"CASHPAYM":{"zp_value":0.2,"pens_value":0.2,"name":"CASHPAYM","history_value":0.2,"depos_value":0.2},"HYSTORY":{"zp_value":0.2,"pens_value":0.2,"name":"HYSTORY","history_value":0,"depos_value":0.2},"PENS":{"zp_value":0,"pens_value":0,"name":"PENS","history_value":0.2,"depos_value":0.2},"ELITE":{"zp_value":0.2,"pens_value":0.2,"name":"ELITE","history_value":0.2,"depos_value":0.2},"VNESH":{"zp_value":0,"pens_value":0,"name":"VNESH","history_value":0.2,"depos_value":0.2},"OTHER":{"zp_value":0,"pens_value":0,"name":"OTHER","history_value":0,"depos_value":0},"PENS_VN":{"zp_value":0,"pens_value":0,"name":"PENS_VN","history_value":0.2,"depos_value":0.2},"ZP":{"zp_value":0,"pens_value":0,"name":"ZP","history_value":0.2,"depos_value":0.2},"SOTR":{"zp_value":0,"pens_value":0,"name":"SOTR","history_value":0.2,"depos_value":0.2},"DEPOS":{"zp_value":0.2,"pens_value":0.2,"name":"DEPOS","history_value":0.2,"depos_value":0}},"carAddLimit":[{"nativ":1,"car_age":"low_2","bank":"UA","add_sum":2000},{"nativ":1,"car_age":"2_5","bank":"UA","add_sum":2000},{"nativ":1,"car_age":"5_10","bank":"UA","add_sum":1000},{"nativ":1,"car_age":"10_hi","bank":"UA","add_sum":"***"},{"nativ":0,"car_age":"low_2","bank":"UA","add_sum":4000},{"nativ":0,"car_age":"2_5","bank":"UA","add_sum":3000},{"nativ":0,"car_age":"5_10","bank":"UA","add_sum":2000},{"nativ":0,"car_age":"10_hi","bank":"UA","add_sum":1000}],"LIMIT_FOR_GOLD":"Y","APP_PROPERTY_CAR":[{"model":"lexus"},{"model":"Ваз"}],"PROD_CHAR_BANK":"PB","PROD_CHAR_TYPE":"UPLIMNKK","PROD_PACK_TYPE":"GOLD","RES_CRED_LIM":15000,"RES_PROD_TYPE":"UNI","LIMIT_FOR_GOLD":"Y"}}';
+    var data = JSON.parse(json).data;
+
+
+
+    function Datediff(days_diff ){
+        var dateOpen = new Date(days_diff); // дата на входе
+        var today = new Date();
+        var diff = Math.abs(today - dateOpen);
+        var one_day = 1000 * 60 * 60 * 24;
+        var days = Math.round(diff / one_day);
+        return days;
+    }
+
+    function CarAge (age){
+        if (age < 2){
+            return 'low_2';
+        }
+        else {
+            if(age>=2 && age<5){
+                return '2_5';
+            }
+            else {
+                if(age>=5 && age<10){
+                    return '5_10';
+                }
+                else {
+                    if(age>=10){
+                        return '10_hi';
+                    }
+                    else {
+                        return '10_hi';
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*AddLimit_For_Type_Limit*/
+
+    var limZp = 0;
+    var limPens = 0;
+    var limDepos = 0;
+    var limHystory = 0;
+    var maxItogLim = 0;
+    var ExtraSumMultiBr =0;
+
+
+    if (data.RES_LIMIT_TYPE.indexOf('ZP')!= -1){
+        limZp = data.RES_LIMIT[data.RES_LIMIT_TYPE.indexOf('ZP')];
+    }
+    if (data.RES_LIMIT_TYPE.indexOf('PENS')!= -1){
+        limPens = data.RES_LIMIT[data.RES_LIMIT_TYPE.indexOf('PENS')];
+    }
+    if (data.RES_LIMIT_TYPE.indexOf('DEPOS')!= -1){
+        limDepos = data.RES_LIMIT[data.RES_LIMIT_TYPE.indexOf('DEPOS')];
+    }
+    if (data.RES_LIMIT_TYPE.indexOf('HYSTORY')!= -1){
+        limHystory = data.RES_LIMIT[data.RES_LIMIT_TYPE.indexOf('HYSTORY')];
+    }
+
+    if (data.RES_LIMIT_TYPE.indexOf(data.RES_LIMIT_ITOG_TYPE)!= -1){
+        maxItogLim = data.LOCAL_MAX_LIMIT[data.RES_LIMIT_TYPE.indexOf(data.RES_LIMIT_ITOG_TYPE)];
+    }
+
+    if (data.coefAddLimit != null) {
+        switch (data.RES_LIMIT_ITOG_TYPE) {
+            case 'DEPOS':
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.DEPOS.zp_value * limZp, data.coefAddLimit.DEPOS.pens_value * limPens) + data.coefAddLimit.DEPOS.depos_value * limDepos + data.coefAddLimit.DEPOS.history_value * limHystory;
+                break;
+            case 'SOTR':
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.SOTR.zp_value * limZp, data.coefAddLimit.SOTR.pens_value * limPens) + data.coefAddLimit.SOTR.depos_value * limDepos + data.coefAddLimit.SOTR.history_value * limHystory;
+                break;
+            case 'ZP':
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.ZP.zp_value * limZp, data.coefAddLimit.ZP.pens_value * limPens) + data.coefAddLimit.ZP.depos_value * limDepos + data.coefAddLimit.ZP.history_value * limHystory;
+                break;
+            case 'PENS_VN':
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.PENS_VN.zp_value * limZp, data.coefAddLimit.PENS_VN.pens_value * limPens) + data.coefAddLimit.PENS_VN.depos_value * limDepos + data.coefAddLimit.PENS_VN.history_value * limHystory;
+                break;
+            case 'VNESH':
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.VNESH.zp_value * limZp, data.coefAddLimit.VNESH.pens_value * limPens) + data.coefAddLimit.VNESH.depos_value * limDepos + data.coefAddLimit.VNESH.history_value * limHystory;
+                break;
+            case 'ELITE':
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.ELITE.zp_value * limZp, data.coefAddLimit.ELITE.pens_value * limPens) + data.coefAddLimit.ELITE.depos_value * limDepos + data.coefAddLimit.ELITE.history_value * limHystory;
+                break;
+            case 'PENS':
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.PENS.zp_value * limZp, data.coefAddLimit.PENS.pens_value * limPens) + data.coefAddLimit.PENS.depos_value * limDepos + data.coefAddLimit.PENS.history_value * limHystory;
+                break;
+            case 'HYSTORY':
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.HYSTORY.zp_value * limZp, data.coefAddLimit.HYSTORY.pens_value * limPens) + data.coefAddLimit.HYSTORY.depos_value * limDepos + data.coefAddLimit.HYSTORY.history_value * limHystory;
+                break;
+            case 'CASHPAYM':
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.CASHPAYM.zp_value * limZp, data.coefAddLimit.CASHPAYM.pens_value * limPens) + data.coefAddLimit.CASHPAYM.depos_value * limDepos + data.coefAddLimit.CASHPAYM.history_value * limHystory;
+                break;
+            default :
+                ExtraSumMultiBr = Math.max(data.coefAddLimit.OTHER.zp_value * limZp, data.coefAddLimit.OTHER.pens_value * limPens) + data.coefAddLimit.OTHER.depos_value * limDepos + data.coefAddLimit.OTHER.history_value * limHystory;
+        }
+    }
+
+    data.RES_LIMIT_ITOG += ExtraSumMultiBr;
+    delete data.coefAddLimit;
+
+    /*AddLimit_For_Car*/
+
+    var isNative, diffyear, carAge, ExtraSum;
+    if (data.APP_PROPERTY_CAR.length != 0) {
+        for (var i = 0; i < data.APP_PROPERTY_CAR.length; i++) {
+            isNative = 0;
+            diffyear = 0;
+            carAge = '10_hi';
+            ExtraSum = 0;
+            for (var j=0; j< data.crmCars.length; j++) {
+                if (data.crmCars[j] != null && data.APP_PROPERTY_CAR[i].model.toUpperCase() == data.crmCars[j].model) {
+                    if (data.crmCars[j].isnative == 'Y'){
+                        isNative = 1;
+                    }
+                    break;
+                }
+            }
+
+            diffyear = Datediff(data.APP_PROPERTY_CAR[i].year) /365;
+            carAge = CarAge(diffyear);
+
+            for (j=0; j<data.carAddLimit.length; j++){
+                if (data.carAddLimit[j] != null && data.carAddLimit[j].car_age == carAge && data.carAddLimit[j].nativ == isNative){
+                    ExtraSum = data.carAddLimit[j].add_sum;
+                    break;
+                }
+            }
+
+            data.RES_LIMIT_ITOG += ExtraSum;
+        }
+    }
+
+    delete data.crmCars;
+    delete data.carAddLimit;
+
+
+    data.RES_LIMIT_ITOG = Math.min(data.RES_LIMIT_ITOG,maxItogLim);
+
+
+</script>
+</body>
+</html>

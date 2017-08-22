@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    json = '{"data":{"newCredArray":[{"ref":"SAMDN50000055958683","avans":291.72,"cred":3168.92,"difprc":1515.83,"difcom":0,"diffine":0},{"ref":"SAMDN86000744525191","avans":0,"cred":62.86,"difprc":0,"difcom":0,"diffine":0}],"LOCAL_INCOME_01":[],"getPromise":[{"refcontract":"SAMDN50000055958683 ","avans":"-291.72","cred":"-3168.92","difprc":"-1515.83","difcom":"0.00","diffine":"0.00"},{"refcontract":"SAMDN86000744525191 ","avans":"0.00","cred":"-62.86","difprc":"0.00","difcom":"0.00","diffine":"0.00"}],"DATA_DEBCARD":[],"DATA_RESTRUCT":[{"PAN":"*****","RATE":43.2,"OVER_PROC":1570.89,"CURR":"UAH","OVER_BODY":87.14,"NORM_COM":0,"PRODTYPE":"UN_M","OVER_COM":0,"FL_GD":0,"CTYPE":"CRPL","BANK":"PB","REFERENCE":"SAMDN50000055958683","NORM_BODY":1857.67,"SUMREPEX":50,"COMPLEX":"P48","BALCONTR":1944.81,"FINE":0,"RATEFINE":43.2,"EXAGE":"***","NORM_PROC":390.64},{"PAN":"88006603602044","RATE":36,"OVER_PROC":0,"CURR":"UAH","OVER_BODY":0,"NORM_COM":0,"PRODTYPE":"SHTR","OVER_COM":0,"FL_GD":0,"CTYPE":"SHTR","BANK":"PB","REFERENCE":"SAMDN86000744525191","NORM_BODY":628.52,"SUMREPEX":0,"COMPLEX":"P48","BALCONTR":628.52,"FINE":0,"RATEFINE":36,"EXAGE":-1,"NORM_PROC":0}],"LOCAL_BAL_ALL":[3906.34,628.52],"LOCAL_BAL_PROC":[1961.5300000000002,0],"LOCAL_BAL_COM":[0,0],"LOCAL_BAL_BODY":[1944.8100000000002,628.52],"LOCAL_BAL_FINE":[0,0],"LOCAL_SUM_MANDATORY_PROC":[0,0],"LOCAL_SUM_POSSIBLY_PROC_FORGIVE":[0,0],"LOCAL_SUM_POSSIBLY_COM_FORGIVE":[0,0],"LOCAL_SUM_POSSIBLY_FINE_FORGIVE":[0,0],"LOCAL_SUM_POSSIBLY_COM_PROC_FORGIVE":["***",0],"LOCAL_BAL_BODY_WITHOUT_SHTR":[1944.8100000000002,0],"LOCAL_RS_OVER_COM_FORGIVE":[0,0],"LOCAL_RS_OVER_COM_REMAIN":[0,0],"LOCAL_RS_OVER_PROC_FORGIVE":[445.7000000000003,0],"LOCAL_RS_OVER_PROC_REMAIN":[1515.83,0],"LOCAL_RS_FINE_FORGIVE":[0,0],"LOCAL_RS_FINE_REMAIN":[0,0],"LOCAL_RS_SUM_FORGIVE":[445.7000000000003,565.66],"LOCAL_RS_SUM_REMINE":[3460.64,62.860000000000014],"LOCAL_RS_SHTR_FORGIVE":[0,565.66],"LOCAL_RS_SHTR_REMINE":[0,62.860000000000014],"flagClientPromise":"Y","LOCAL_PAN_FLAG":"N","RES_DEBCARD_POGASH_TYPE":"","RES_DEBCARD_POGASHENIE":"","userID":8150,"PROD_CHAR_ADVANCEAMOUNT":3523.5,"APP_CUST_ID":21587395,"PROD_CHAR_TYPE":"RESTRUCT","APP_SOCSTATUS_CHILDNUMBER":3,"PROD_CHAR_BANK":"PB","APP_CUST_INN":"2908418530","APP_SOCSTATUS_RESIDENT":"UA","APP_MARITAL_MARITALCOND":"MARRIED","APP_CUST_GENDER":"M","PROD_CHAR_BRANCH":"IFWW","APP_SOCSTATUS_EDUCATION":"TEC","APP_EMPL_SOCIALSTATUS":"UNEMP","PROD_SCHEME_TERM":6,"APP_CUST_BIRTHDAY":"19790818000000","urlCalback":"https://test-start.privatbank.ua:7355/Irbis/conveyor/restnbsm.json","urlSave":"http://rtdm.test.it.loc/RTDMApi/log/insert.json","ref":"160420B1DT064038QOPW","SID":"160416csb4dts44avej6","PROD_CHAR_PAYMONTH":0,"LOCAL_TYPE_RESTR":1,"RES_CHAR_CRED_TYPE":"RS06","RES_PERSENT":0.001,"RES_RS_NEW_CRED_TERM":6,"termWave":6,"LOCAL_ONE_PAY":"N","LOCAL_MIN_SUM_COM":30,"LOCAL_MIN_NEW_CRED_SUM":50,"compl":"start","monthKoef":0.1666667,"LOCAL_SUM_AVANS":291.72}}';
+    var data = JSON.parse(json).data;
+
+   /* data.LOCAL_RS_FINE_FORGIVE = new Array(0,400,30);
+    data.LOCAL_RS_FINE_REMAIN = new Array(0,600,100);
+    LOCAL_SUM_FINE = 430;
+    data.LOCAL_RS_OVER_PROC_FORGIVE = new Array(1000,200,0);
+    data.LOCAL_RS_OVER_PROC_REMAIN = new Array(1500,300,0);
+    LOCAL_SUM_PROC = 1200;
+    data.LOCAL_RS_OVER_COM_FORGIVE = new Array(100,7000,0);
+    data.LOCAL_RS_OVER_COM_REMAIN = new Array(200,300,0);
+    LOCAL_SUM_PROC = 7100;
+    data.LOCAL_RS_SHTR_FORGIVE = new Array(0,100,0);
+    data.LOCAL_RS_SHTR_REMINE = new Array(0,60,0);
+    LOCAL_SUM_PROC = 100;
+    data.PROD_CHAR_ADVANCEAMOUNT = 10000;
+    data.LOCAL_ONE_PAY = 'Y';
+    data.LOCAL_RS_SUM_REMINE = new Array(1700,1260,100);
+    data.LOCAL_RS_SUM_FORGIVE = new Array(1100,7700,30);*/
+
+    data.getCosts = {};
+    data.getCosts.gpdif = 100;
+
+//===============================================================================
+    function ForgiveBigAvans(cred, SUM) {
+        var  DIFF_TMP;
+        DIFF_TMP = cred.DIFF_SUM;
+        for (var j = 0; j < cred.RS_FORGIVE.length; j++) {
+            if (cred.RS_FORGIVE[j] / SUM > 0) {
+                if (cred.DIFF_SUM * cred.RS_FORGIVE[j] / SUM < cred.RS_FORGIVE[j]) {
+                    if (DIFF_TMP - (cred.DIFF_SUM * cred.RS_FORGIVE[j] / SUM) >= 0) {
+                        cred.REMAIN[j] += cred.DIFF_SUM * cred.RS_FORGIVE[j] / SUM;
+                        DIFF_TMP -= (cred.DIFF_SUM *cred.RS_FORGIVE[j] / SUM);
+                        cred.RS_FORGIVE[j] -= (cred.DIFF_SUM * cred.RS_FORGIVE[j] / SUM);
+                    }
+                    else {
+                        cred.REMAIN[j] += DIFF_TMP;
+                        cred.RS_FORGIVE[j] -= DIFF_TMP;
+                        DIFF_TMP = 0;
+                    }
+                }
+                else {
+                    cred.REMAIN[j] +=cred.RS_FORGIVE[j];
+                    DIFF_TMP -= cred.RS_FORGIVE[j];
+                    cred.RS_FORGIVE[j] = 0;
+                }
+            }
+        }
+        cred.DIFF_SUM = DIFF_TMP;
+
+    }
+
+    function Diff001Kop(RS_FORGIVE_SUM, cred) {
+        if (RS_FORGIVE_SUM >= 0.01) {
+            for (var j = 0; j < cred.RS_FORGIVE.length; j++) {
+                if (cred.RS_FORGIVE[j] > 0 && cred.DIFF_SUM > 0) {
+                    cred.REMAIN[j] += cred.DIFF_SUM;
+                    cred.RS_FORGIVE[j] -= cred.DIFF_SUM;
+                    cred.DIFF_SUM = 0;
+                }
+            }
+        }
+    }
+
+    function ForgiveBigAvans(cred, SUM) {
+        var  DIFF_TMP;
+        DIFF_TMP = cred.DIFF_SUM;
+        for (var j = 0; j < cred.RS_FORGIVE.length; j++) {
+            if (cred.RS_FORGIVE[j] / SUM > 0) {
+                if (cred.DIFF_SUM * cred.RS_FORGIVE[j] / SUM < cred.RS_FORGIVE[j]) {
+                    if (DIFF_TMP - (cred.DIFF_SUM * cred.RS_FORGIVE[j] / SUM) >= 0) {
+                        cred.REMAIN[j] += cred.DIFF_SUM * cred.RS_FORGIVE[j] / SUM;
+                        DIFF_TMP -= (cred.DIFF_SUM *cred.RS_FORGIVE[j] / SUM);
+                        cred.RS_FORGIVE[j] -= (cred.DIFF_SUM * cred.RS_FORGIVE[j] / SUM);
+                    }
+                    else {
+                        cred.REMAIN[j] += DIFF_TMP;
+                        cred.RS_FORGIVE[j] -= DIFF_TMP;
+                        DIFF_TMP = 0;
+                    }
+                }
+                else {
+                    cred.REMAIN[j] +=cred.RS_FORGIVE[j];
+                    DIFF_TMP -= cred.RS_FORGIVE[j];
+                    cred.RS_FORGIVE[j] = 0;
+                }
+            }
+        }
+        cred.DIFF_SUM = DIFF_TMP;
+
+    }
+
+    function Diff001Kop(RS_FORGIVE_SUM, cred) {
+        if (RS_FORGIVE_SUM >= 0.01) {
+            for (var j = 0; j < cred.RS_FORGIVE.length; j++) {
+                if (cred.RS_FORGIVE[j] > 0 && cred.DIFF_SUM > 0) {
+                    cred.REMAIN[j] += cred.DIFF_SUM;
+                    cred.RS_FORGIVE[j] -= cred.DIFF_SUM;
+                    cred.DIFF_SUM = 0;
+                }
+            }
+        }
+    }
+
+
+    // не прощаем клиенту сумму судебных издержек
+    if (data.getCosts != undefined && data.getCosts.gpdif != undefined ){
+        data.getCosts.gpdif = Math.abs(Number(data.getCosts.gpdif));
+        var maxSHTR = 0;
+        var indMaxSHTR = -1;
+        for (i = 0; i < data.DATA_RESTRUCT.length; i++) {
+            if (data.DATA_RESTRUCT[i].CTYPE == 'SHTR' || data.DATA_RESTRUCT[i].CTYPE == 'SHTN') {
+                if (maxSHTR<data.LOCAL_BAL_ALL[i]){
+                    maxSHTR = Math.max(maxSHTR,data.LOCAL_BAL_ALL[i]);
+                    indMaxSHTR = i;
+                }
+            }
+        }
+        if (indMaxSHTR != -1){
+            if (data.LOCAL_RS_SHTR_FORGIVE[indMaxSHTR] >= data.getCosts.gpdif){
+                data.LOCAL_RS_SHTR_REMINE[indMaxSHTR]+=data.getCosts.gpdif;
+                data.LOCAL_RS_SHTR_FORGIVE[indMaxSHTR] -= data.getCosts.gpdif;
+                data.LOCAL_RS_SUM_REMINE[indMaxSHTR] += data.getCosts.gpdif;
+                data.LOCAL_RS_SUM_FORGIVE[indMaxSHTR] -= data.getCosts.gpdif;
+            }
+        }
+    }
+
+    data.LOCAL_RS_TOTAL_SUM_REMINE = 0;
+    data.LOCAL_RS_TOTAL_SUM_FORGIVE = 0;
+
+    /*-------------------SUM---------------------*/
+    for (i = 0; i < data.LOCAL_RS_SUM_REMINE.length; i++) {
+        data.LOCAL_RS_TOTAL_SUM_REMINE += data.LOCAL_RS_SUM_REMINE[i];
+        data.LOCAL_RS_TOTAL_SUM_FORGIVE += data.LOCAL_RS_SUM_FORGIVE[i];
+    }
+    var LOCAL_SUM_COM, LOCAL_SUM_FINE, LOCAL_SUM_PROC;
+    LOCAL_SUM_COM = 0;
+    LOCAL_SUM_FINE = 0;
+    LOCAL_SUM_PROC = 0;
+
+    for (i = 0; i < data.LOCAL_RS_OVER_COM_FORGIVE.length; i++) {
+        LOCAL_SUM_COM += data.LOCAL_RS_OVER_COM_FORGIVE[i];
+        LOCAL_SUM_FINE += data.LOCAL_RS_FINE_FORGIVE[i];
+        LOCAL_SUM_PROC += data.LOCAL_RS_OVER_PROC_FORGIVE[i];
+    }
+
+    // для "замороженных" клиентов передается мин.сумма аванса
+    if (data.PROD_CHAR_ADVANCEAMOUNT < data.LOCAL_SUM_AVANS){
+        data.PROD_CHAR_ADVANCEAMOUNT = data.LOCAL_SUM_AVANS;
+    }
+
+    // для рестр. СБ
+    if (data.LOCAL_TYPE_RESTR == 4 && data.PROD_CHAR_ADVANCEAMOUNT< data.LOCAL_RS_TOTAL_SUM_REMINE*0.5){
+        data.PROD_CHAR_ADVANCEAMOUNT= data.LOCAL_RS_TOTAL_SUM_REMINE*0.5;
+    }
+
+    data.LOCAL_RS_CRED_FIRST_PAY_B = data.PROD_CHAR_ADVANCEAMOUNT;
+
+    //================ big avans==================
+    if (data.LOCAL_RS_CRED_FIRST_PAY_B > data.LOCAL_RS_TOTAL_SUM_REMINE  ) {
+
+        var DIFF_SUM = 0;
+
+        DIFF_SUM = data.LOCAL_RS_CRED_FIRST_PAY_B - data.LOCAL_RS_TOTAL_SUM_REMINE;
+
+        var DIFF_SUM_TMP = DIFF_SUM;
+        var newCred = {};
+
+        /*---------- fogive fine-----------*/
+        if (LOCAL_SUM_FINE > 0) {
+            newCred.REMAIN = data.LOCAL_RS_FINE_REMAIN;
+            newCred.RS_FORGIVE = data.LOCAL_RS_FINE_FORGIVE;
+            newCred.DIFF_SUM = DIFF_SUM;
+            ForgiveBigAvans(newCred, LOCAL_SUM_FINE);
+            DIFF_SUM_TMP = newCred.DIFF_SUM;
+            if (DIFF_SUM_TMP == 0.01) {
+                var LOCAL_SUM_FINE_FORGIVE = 0;
+                for (i = 0; i < data.LOCAL_RS_FINE_FORGIVE.length; i++) {
+                    LOCAL_SUM_FINE_FORGIVE += data.LOCAL_RS_FINE_FORGIVE[i];
+                }
+                Diff001Kop(LOCAL_SUM_FINE_FORGIVE, newCred);
+            }
+            DIFF_SUM_TMP = newCred.DIFF_SUM;
+            DIFF_SUM = DIFF_SUM_TMP;
+        }
+
+        /*---------- fogive SHTR-----------*/
+        if (DIFF_SUM > 0) {
+            for (i = 0; i < data.DATA_RESTRUCT.length; i++) {
+                if (data.DATA_RESTRUCT[i].CTYPE == 'SHTR' || data.DATA_RESTRUCT[i].CTYPE == 'SHTN') {
+                    if (data.LOCAL_RS_SHTR_FORGIVE[i] - DIFF_SUM > 0) {
+                        data.LOCAL_RS_SHTR_FORGIVE[i] -= DIFF_SUM;
+                        data.LOCAL_RS_SHTR_REMINE[i] += DIFF_SUM;
+                        DIFF_SUM = 0;
+                    }
+                    else {
+                        data.LOCAL_RS_SHTR_REMINE[i] += data.LOCAL_RS_SHTR_FORGIVE[i];
+                        DIFF_SUM -= data.LOCAL_RS_SHTR_FORGIVE[i];
+                        data.LOCAL_RS_SHTR_FORGIVE[i] = 0;
+                    }
+                }
+            }
+            var LOCAL_SUM_SHTR_FORGIVE = 0;
+            for (i = 0; i < data.LOCAL_RS_SHTR_FORGIVE.length; i++) {
+                LOCAL_SUM_SHTR_FORGIVE += data.LOCAL_RS_SHTR_FORGIVE[i];
+            }
+            newCred.REMAIN = data.LOCAL_RS_SHTR_REMINE;
+            newCred.RS_FORGIVE = data.LOCAL_RS_SHTR_FORGIVE;
+            newCred.DIFF_SUM = DIFF_SUM;
+            Diff001Kop(LOCAL_SUM_SHTR_FORGIVE,newCred );
+            DIFF_SUM = newCred.DIFF_SUM;
+            DIFF_SUM_TMP = DIFF_SUM;
+        }
+
+        /*---------- fogive PROC-----------*/
+        if (LOCAL_SUM_PROC > 0 && DIFF_SUM > 0) {
+            newCred.REMAIN = data.LOCAL_RS_OVER_PROC_REMAIN;
+            newCred.RS_FORGIVE = data.LOCAL_RS_OVER_PROC_FORGIVE;
+            newCred.DIFF_SUM = DIFF_SUM;
+            ForgiveBigAvans(newCred, LOCAL_SUM_PROC);
+            DIFF_SUM_TMP = newCred.DIFF_SUM;
+            if (DIFF_SUM_TMP == 0.01) {
+                var LOCAL_SUM_PROC_FORGIVE = 0;
+                for (i = 0; i < data.LOCAL_RS_OVER_PROC_FORGIVE.length; i++) {
+                    LOCAL_SUM_PROC_FORGIVE += data.LOCAL_RS_OVER_PROC_FORGIVE[i];
+                }
+                Diff001Kop( LOCAL_SUM_PROC_FORGIVE, newCred);
+            }
+            DIFF_SUM_TMP = newCred.DIFF_SUM;
+            DIFF_SUM = DIFF_SUM_TMP;
+        }
+
+        /*---------- fogive COM-----------*/
+        if (LOCAL_SUM_COM > 0 && DIFF_SUM > 0) {
+            newCred.REMAIN = data.LOCAL_RS_OVER_COM_REMAIN;
+            newCred.RS_FORGIVE = data.LOCAL_RS_OVER_COM_FORGIVE;
+            newCred.DIFF_SUM = DIFF_SUM;
+            ForgiveBigAvans(newCred, LOCAL_SUM_COM);
+            DIFF_SUM_TMP = newCred.DIFF_SUM;
+            if (DIFF_SUM_TMP == 0.01) {
+                var LOCAL_SUM_COM_FORGIVE = 0;
+                for (i = 0; i < data.LOCAL_RS_OVER_COM_FORGIVE.length; i++) {
+                    LOCAL_SUM_COM_FORGIVE += data.LOCAL_RS_OVER_COM_FORGIVE[i];
+                }
+                Diff001Kop( LOCAL_SUM_COM_FORGIVE, newCred);
+            }
+            DIFF_SUM_TMP = newCred.DIFF_SUM;
+            DIFF_SUM = DIFF_SUM_TMP;
+        }
+
+        /*----------TOTAL SUM------------*/
+        for (i = 0; i < data.DATA_RESTRUCT.length; i++) {
+            if (data.DATA_RESTRUCT[i].CTYPE != 'SHTR' && data.DATA_RESTRUCT[i].CTYPE != 'SHTN') {
+                /*-----------calculation amount of forgive ----------*/
+                data.LOCAL_RS_SUM_FORGIVE[i] = data.LOCAL_RS_OVER_PROC_FORGIVE[i] + data.LOCAL_RS_OVER_COM_FORGIVE[i] + data.LOCAL_RS_FINE_FORGIVE[i];
+                /*-----------calculation amount of remain sum ----------*/
+                data.LOCAL_RS_SUM_REMINE[i] = data.LOCAL_BAL_ALL[i] - data.LOCAL_RS_SUM_FORGIVE[i];
+            }
+            else {
+                data.LOCAL_RS_SUM_FORGIVE[i] = data.LOCAL_RS_SHTR_FORGIVE[i];
+                data.LOCAL_RS_SUM_REMINE[i] = data.LOCAL_RS_SHTR_REMINE[i];
+            }
+        }
+        data.LOCAL_RS_TOTAL_SUM_REMINE = 0;
+        data.LOCAL_RS_TOTAL_SUM_FORGIVE = 0;
+        for (i = 0; i < data.LOCAL_RS_SUM_REMINE.length; i++) {
+            data.LOCAL_RS_TOTAL_SUM_REMINE += data.LOCAL_RS_SUM_REMINE[i];
+            data.LOCAL_RS_TOTAL_SUM_FORGIVE += data.LOCAL_RS_SUM_FORGIVE[i];
+        }
+
+    }
+    /*================other==================*/
+    if (data.LOCAL_ONE_PAY != 'Y'){
+        if (data.flagClientPromise == 'Y'){
+            if (data.LOCAL_TYPE_RESTR != 1){
+                data.LOCAL_RS_TOTAL_SUM_REMINE += data.LOCAL_SUM_AVANS;
+                data.LOCAL_RS_TOTAL_SUM_FORGIVE -= data.LOCAL_SUM_AVANS;
+            }
+
+            data.LOCAL_RS_NEW_CRED_SUM = data.LOCAL_RS_TOTAL_SUM_REMINE - Math.max(data.LOCAL_RS_CRED_FIRST_PAY_B,data.LOCAL_SUM_AVANS);
+        }
+        else {
+            data.LOCAL_RS_NEW_CRED_SUM = data.LOCAL_RS_TOTAL_SUM_REMINE - data.LOCAL_RS_CRED_FIRST_PAY_B;
+        }
+        /*------------------------calculation NEW cred annuity PAYmonth ----------*/
+        data.LOCAL_RS_NEW_CRED_PAYMONTH = data.LOCAL_RS_NEW_CRED_SUM*data.monthKoef;
+    }
+    else {
+        data.LOCAL_RS_NEW_CRED_SUM = data.LOCAL_RS_TOTAL_SUM_REMINE;
+        data.LOCAL_RS_NEW_CRED_PAYMONTH = 0;
+    }
+
+
+
+
+</script>
+</body>
+</html>

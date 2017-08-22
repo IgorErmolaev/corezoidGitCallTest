@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    json = '{"create_time":"2015.12.14 14:47:11","change_time":"2015.12.14 14:47:11","node_prev_id":"5639ea50dfb2841a2a017262","status":4,"user_id":8150,"data":{"LOCAL_INCOME_01":[],"DATA_DEBCARD":[{"PAN":"*****","BANK":"PB","CCY":"RUR","TYPE_CARD":"W","ACTIVE":"Y","Z01":0,"C01":0,"DATE_START":"20130618000000"},{"PAN":"*****","BANK":"PB","CCY":"UAH","TYPE_CARD":"W","ACTIVE":"Y","Z01":0,"C01":0.9,"DATE_START":"20130724000000"}],"DATA_RESTRUCT":[{"PAN":"*****","RATE":43.2,"OVER_PROC":1700.13,"CURR":"UAH","OVER_BODY":99.38,"NORM_COM":0,"PRODTYPE":"UN_M","OVER_COM":0,"FL_GD":2,"CTYPE":"CRPL","BANK":"PB","REFERENCE":"SAMDN50OTC002993801","NORM_BODY":4523.45,"SUMREPEX":0,"COMPLEX":"P48","BALCONTR":4622.83,"FINE":0,"RATEFINE":43.2,"EXAGE":162,"NORM_PROC":523.59},{"PAN":"88004603613626","RATE":36,"OVER_PROC":0,"CURR":"UAH","OVER_BODY":0,"NORM_COM":0,"PRODTYPE":"SHTR","OVER_COM":0,"FL_GD":2,"CTYPE":"SHTR","BANK":"PB","REFERENCE":"SAMDN86000744405149","NORM_BODY":781.7,"SUMREPEX":0,"COMPLEX":"P48","BALCONTR":781.7,"FINE":0,"RATEFINE":36,"EXAGE":-1,"NORM_PROC":0}],"LOCAL_BAL_ALL":[6846.55,781.7],"LOCAL_BAL_PROC":[2223.72,0],"LOCAL_BAL_COM":[0,0],"LOCAL_BAL_BODY":[4622.83,781.7],"LOCAL_BAL_FINE":[0,0],"LOCAL_SUM_MANDATORY_PROC":[0,0],"LOCAL_SUM_POSSIBLY_PROC_FORGIVE":[0,0],"LOCAL_SUM_POSSIBLY_COM_FORGIVE":[0,0],"LOCAL_SUM_POSSIBLY_FINE_FORGIVE":[0,0],"LOCAL_SUM_POSSIBLY_COM_PROC_FORGIVE":[249.63281,0],"LOCAL_BAL_BODY_WITHOUT_SHTR":[4622.83,0],"LOCAL_PAN_FLAG":"N","RES_DEBCARD_POGASH_TYPE":"W","RES_DEBCARD_POGASHENIE":"5168742067570295","PROD_CHAR_ADVANCEAMOUNT":700,"APP_EMPL_ACTIVITY":"TRADE","APP_CUST_ID":51796412,"PROD_CHAR_TYPE":"RESTRTHIRD","APP_SOCSTATUS_CHILDNUMBER":0,"PROD_CHAR_BANK":"PB","APP_EMPL_ORGTYPE":"BUSINESS","APP_EMPL_OKPO":"2256924348","APP_CUST_INN":"2256924348","APP_SOCSTATUS_RESIDENT":"UA","APP_MARITAL_MARITALCOND":"DIVORCED","APP_CUST_GENDER":"F","PROD_CHAR_BRANCH":"MR14","APP_SOCSTATUS_EDUCATION":"TEC","APP_EMPL_SOCIALSTATUS":"SAILOR","APP_EMPL_RANK":"ORGLEAD","PROD_SCHEME_TERM":12,"APP_CUST_BIRTHDAY":"19611016000000","PROD_CHAR_PAYMONTH":0,"LOCAL_TYPE_RESTR":2,"RES_CHAR_CRED_TYPE":"KP12","RES_PERSENT":0.833,"RES_RS_NEW_CRED_TERM":12,"LOCAL_ONE_PAY":"N","LOCAL_MIN_SUM_COM":30,"LOCAL_MIN_NEW_CRED_SUM":50}}';
+    var data = JSON.parse(json).data;
+
+    data.LOCAL_RS_FINE_FORGIVE = new Array(0,400,30);
+    data.LOCAL_RS_FINE_REMAIN = new Array(0,600,100);
+    LOCAL_SUM_FINE = 430;
+    data.LOCAL_RS_PROC_FORGIVE = new Array(1000,200,0);
+    data.LOCAL_RS_PROC_REMAIN = new Array(1500,300,0);
+    LOCAL_SUM_PROC = 1200;
+    DIFF_SUM = 5000;
+    DIFF_SUM_TMP = 5000;
+
+    function ForgiveBigAvans(cred, SUM) {
+        var rem_tmp, DIFF_SUM_TMP;
+        DIFF_SUM_TMP = newCred.DIFF_SUM;
+        for (var j = 0; j < newCred.RS_FORGIVE.length; j++) {
+            if (newCred.RS_FORGIVE[j] / SUM > 0) {
+                if (newCred.DIFF_SUM * newCred.RS_FORGIVE[j] / SUM < newCred.RS_FORGIVE[j]) {
+                    if (DIFF_SUM_TMP - (newCred.DIFF_SUM * newCred.RS_FORGIVE[j] / SUM) >= 0) {
+                        newCred.REMAIN[j] += newCred.DIFF_SUM * newCred.RS_FORGIVE[j] / SUM;
+                        DIFF_SUM_TMP -= (newCred.DIFF_SUM *newCred.RS_FORGIVE[j] / SUM);
+                        newCred.RS_FORGIVE[j] -= (newCred.DIFF_SUM * newCred.RS_FORGIVE[j] / SUM);
+                    }
+                    else {
+                        newCred.REMAIN[j] += DIFF_SUM_TMP;
+                        newCred.RS_FORGIVE[j] -= DIFF_SUM_TMP;
+                        DIFF_SUM_TMP = 0;
+                    }
+                }
+                else {
+                    newCred.REMAIN[j] +=newCred.RS_FORGIVE[j];
+                    DIFF_SUM_TMP -= newCred.RS_FORGIVE[j];
+                    newCred.RS_FORGIVE[j] = 0;
+                }
+            }
+        }
+        newCred.DIFF_SUM = DIFF_SUM_TMP;
+
+    }
+
+
+
+
+    var newCred = {};
+    newCred.REMAIN = data.LOCAL_RS_FINE_REMAIN;
+    newCred.RS_FORGIVE = data.LOCAL_RS_FINE_FORGIVE;
+    newCred.DIFF_SUM = DIFF_SUM;
+
+    ForgiveBigAvans(newCred, LOCAL_SUM_FINE);
+    DIFF_SUM_TMP = newCred.DIFF_SUM;
+    DIFF_SUM = DIFF_SUM_TMP;
+
+    newCred.REMAIN = data.LOCAL_RS_PROC_REMAIN;
+    newCred.RS_FORGIVE = data.LOCAL_RS_PROC_FORGIVE;
+
+    ForgiveBigAvans(newCred, LOCAL_SUM_PROC, DIFF_SUM);
+    DIFF_SUM = newCred.DIFF_SUM;
+    DIFF_SUM_TMP = DIFF_SUM;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+{
+  "data": {
+    "doc": {
+      "r": {
+        "o": {
+          "NLINK_LST": {
+            "ClExtInfo": [
+              {
+                "@CreatorLgn": "DD120880SSN",
+                "@ClientSt": "A",
+                "@SName": "ТЕСТ2",
+                "@Name": "ТПВ МАЯК",
+                "@LName": "null",
+                "@FName": "null",
+                "@MName": "null",
+                "@LNameRu": "null",
+                "@FNameRu": "null",
+                "@MNameRu": "null",
+                "@Sex": "null",
+                "@ClientId": "1002340880",
+                "@OKPO": "12345854",
+                "@FlVIP": "N",
+                "@FlPhiz": "N",
+                "@FlJur": "Y"
+              },
+              {
+                "@CreatorLgn": "DN010587GED",
+                "@ClientSt": "O",
+                "@SName": "null",
+                "@Name": "null",
+                "@LName": "null",
+                "@FName": "null",
+                "@MName": "null",
+                "@LNameRu": "ГРИГОРЬЕВА",
+                "@FNameRu": "КИРА",
+                "@MNameRu": "КОНСТАНТИНОВНА",
+                "@Sex": "",
+                "@ClientId": "1028748954",
+                "@OKPO": "null",
+                "@FlVIP": "N",
+                "@FlPhiz": "Y",
+                "@FlJur": "N"
+              },
+              {
+                "@CreatorLgn": "UNKNOWN",
+                "@ClientSt": "A",
+                "@SName": "null",
+                "@Name": "null",
+                "@LName": "ГРИГОРЬЕВА",
+                "@FName": "ЕЛЕНА",
+                "@MName": "ДМИТРИЕВНА",
+                "@LNameRu": "ГРИГОРЬЕВА",
+                "@FNameRu": "ЕЛЕНА",
+                "@MNameRu": "ДМИТРИЕВНА",
+                "@Sex": "F",
+                "@ClientId": "44914269",
+                "@OKPO": "3189706147",
+                "@FlVIP": "Y",
+                "@FlPhiz": "Y",
+                "@FlJur": "N"
+              },
+              {
+                "@CreatorLgn": "UNKNOWN",
+                "@ClientSt": "A",
+                "@SName": "null",
+                "@Name": "null",
+                "@LName": "СОСНОВСЬКА",
+                "@FName": "ЗІНАЇДА",
+                "@MName": "АВГУСТИНІВНА",
+                "@LNameRu": "СОСНОВСКАЯ",
+                "@FNameRu": "ЗИНАИДА",
+                "@MNameRu": "АВГУСТИНОВНА",
+                "@Sex": "F",
+                "@ClientId": "26221839",
+                "@OKPO": "1899301147",
+                "@FlVIP": "N",
+                "@FlPhiz": "Y",
+                "@FlJur": "N"
+              },
+              {
+                "@CreatorLgn": "UNKNOWN",
+                "@ClientSt": "A",
+                "@SName": "null",
+                "@Name": "null",
+                "@LName": "НОВИКОВА",
+                "@FName": "АЛЛА",
+                "@MName": "СЕРГЕЕВНА",
+                "@LNameRu": "НОВИКОВА",
+                "@FNameRu": "АЛЛА",
+                "@MNameRu": "СЕРГЕЕВНА",
+                "@Sex": "F",
+                "@ClientId": "47607644",
+                "@OKPO": "3158611006",
+                "@FlVIP": "Y",
+                "@FlPhiz": "Y",
+                "@FlJur": "N"
+              }
+            ],
+            "Link": [
+              {
+                "@CalipsoDT": "[B@3c74deb5",
+                "@NameKeyLeader": "A",
+                "@NameKeyLinked": "C",
+                "@Remark": "null",
+                "@State": "A",
+                "@Source": "MAO",
+                "@AuthSys": "LDAP",
+                "@EditorLogin": "DN020889GJJ",
+                "@DTM": "2010-03-10 15:57:24.133",
+                "@LinkName": "РУКОВОДИТЕЛИ",
+                "@SubClientId": "44914269",
+                "@MainClientId": "1002340880",
+                "@LinkType": "0200200",
+                "@LinkID": "GYPWPJE11D2MA"
+              },
+              {
+                "@CalipsoDT": "[B@26b5882d",
+                "@NameKeyLeader": "F",
+                "@NameKeyLinked": "F",
+                "@Remark": "null",
+                "@State": "A",
+                "@Source": "НА ОС",
+                "@AuthSys": "LDAP",
+                "@EditorLogin": "DN010587GED",
+                "@DTM": "2015-03-05 12:05:03.396",
+                "@LinkName": "CREATOR",
+                "@SubClientId": "1028748954",
+                "@MainClientId": "44914269",
+                "@LinkType": "0100100",
+                "@LinkID": "I6VZLT7N2UL19"
+              },
+              {
+                "@CalipsoDT": "[B@57ff5635",
+                "@NameKeyLeader": "F",
+                "@NameKeyLinked": "F",
+                "@Remark": "NULL",
+                "@State": "A",
+                "@Source": "MAO",
+                "@AuthSys": "LDAP",
+                "@EditorLogin": "DN250184JMS",
+                "@DTM": "2010-05-21 16:19:37.556",
+                "@LinkName": "РОДИТЕЛЬСКАЯ",
+                "@SubClientId": "44914269",
+                "@MainClientId": "26221839",
+                "@LinkType": "0100100",
+                "@LinkID": "GYO7QO3130MMA"
+              },
+              {
+                "@CalipsoDT": "[B@1cc95c15",
+                "@NameKeyLeader": "F",
+                "@NameKeyLinked": "F",
+                "@Remark": "null",
+                "@State": "A",
+                "@Source": "LINKPV2",
+                "@AuthSys": "LDAP",
+                "@EditorLogin": "DN240686NAS1",
+                "@DTM": "2014-06-06 18:17:37.136",
+                "@LinkName": "РОДИТЕЛЬСКАЯ",
+                "@SubClientId": "44914269",
+                "@MainClientId": "47607644",
+                "@LinkType": "0100100",
+                "@LinkID": "HW3N02CW1W520"
+              }
+            ]
+          }
+        },
+        "@key": "0"
+      }
+    },
+    "uadid_r": "1311ZISKGJ8NK0",
+    "addr_reg_act_eq": true,
+    "doc_ident_num": "085716",
+    "doc_ident_ser": "АВ",
+    "APP_CUST_ID": 44914269
+  }
+}

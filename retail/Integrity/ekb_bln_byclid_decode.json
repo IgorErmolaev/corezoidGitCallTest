@@ -1,0 +1,88 @@
+{
+    "data": {
+        "doc": {
+            "r": {
+                "o": {
+                    "BLN_BYCLIENTID": [
+                        {
+                            "TYPES": {
+                                "@BlackType1": "1",
+                                "@BlackType2": "15"
+                            },
+                            "@BlackId": "1001988507",
+                            "@BlackTable": "C",
+                            "@CtoBCode": "D",
+                            "@CtoBSt": "A",
+                            "@CtoBRemark": "REDEFINE",
+                            "@EditorLogin": "BLACKLISTS",
+                            "@CtoBDTM": "2016-01-28 18:54:13.326",
+                            "@SrcID": "22",
+                            "@BlackCountry": "UA"
+                        },
+                        {
+                            "TYPES": {
+                                "@BlackType1": "1",
+                                "@BlackType2": "15"
+                            },
+                            "@BlackId": "1001988507",
+                            "@BlackTable": "C",
+                            "@CtoBCode": "A",
+                            "@CtoBSt": "A",
+                            "@CtoBRemark": "REDEFINE",
+                            "@EditorLogin": "BLACKLISTS",
+                            "@CtoBDTM": "2016-01-28 18:54:13.326",
+                            "@SrcID": "22",
+                            "@BlackCountry": "UA"
+                        },
+                        {
+                            "TYPES": {
+                                "@BlackType1": "1",
+                                "@BlackType2": "15"
+                            },
+                            "@BlackId": "1001988507",
+                            "@BlackTable": "C",
+                            "@CtoBCode": "B",
+                            "@CtoBSt": "A",
+                            "@CtoBRemark": "REDEFINE",
+                            "@EditorLogin": "BLACKLISTS",
+                            "@CtoBDTM": "2016-01-28 18:54:13.326",
+                            "@SrcID": "22",
+                            "@BlackCountry": "UA"
+                        },
+                        {
+                            "TYPES": {
+                                "@BlackType1": "1",
+                                "@BlackType2": "15"
+                            },
+                            "@BlackId": "1001988507",
+                            "@BlackTable": "C",
+                            "@CtoBCode": "E",
+                            "@CtoBSt": "A",
+                            "@CtoBRemark": "REDEFINE",
+                            "@EditorLogin": "BLACKLISTS",
+                            "@CtoBDTM": "2016-01-28 18:54:13.33",
+                            "@SrcID": "22",
+                            "@BlackCountry": "UA"
+                        },
+                        {
+                            "TYPES": {
+                                "@BlackType1": "1",
+                                "@BlackType2": "40"
+                            },
+                            "@BlackId": "1001988507",
+                            "@BlackTable": "C",
+                            "@CtoBCode": "E",
+                            "@CtoBSt": "A",
+                            "@CtoBRemark": "REDEFINE",
+                            "@EditorLogin": "BLACKLISTS",
+                            "@CtoBDTM": "2016-01-28 18:54:13.33",
+                            "@SrcID": "57",
+                            "@BlackCountry": "UA"
+                        }
+                    ]
+                },
+                "@key": "0"
+            }
+        }
+    }
+}

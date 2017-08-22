@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    json = '{"data":{"RES_COEFF_ELIG":1.3,"APP_EMPL_SOCIALSTATUS":"DECREE","PROD_APP_EMPLOYEE":"N","RES_INC_DISP":5000,"RES_INC_NOT_CONF":0,"APP_EMPL_ORGTYPE":"BUSINESS","LOCAL_STUD_AMOUNT":5000,"PROD_CHAR_BANK":"PB","PROD_CHAR_TYPE":"UPLIMNKK","PROD_PACK_TYPE":"GOLD","RES_CRED_LIM":15000,"RES_PROD_TYPE":"UNI","LIMIT_FOR_GOLD":"Y","RTDM_DIC_LIMITPARAM":{"IMPORTANT":{"IMPORTANT":{"min_sum":0,"max_sum":25000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"USAGE":{"USAGE":{"min_sum":0,"max_sum":2000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"PENS":{"AGEge25":{"min_sum":2500,"max_sum":8000,"coefficient":4,"bound":"400","bank":"PB_GOLD"},"AGElt25":{"min_sum":"400","max_sum":1500,"coefficient":1,"bound":"400","bank":"PB_GOLD"}},"SOTR/ZP":{"PRIVATE":{"min_sum":2000,"max_sum":8000,"coefficient":3,"bound":"500","bank":"PB_GOLD"},"EMPLOYEE":{"min_sum":3000,"max_sum":25000,"coefficient":3,"bound":"500","bank":"PB_GOLD"},"STATE":{"min_sum":2000,"max_sum":8000,"coefficient":4,"bound":"500","bank":"PB_GOLD"}},"PENS_VN":{"AGEge25":{"min_sum":"***","max_sum":8000,"coefficient":3,"bound":0,"bank":"PB_GOLD"},"AGElt25":{"min_sum":"***","max_sum":1500,"coefficient":1,"bound":0,"bank":"PB_GOLD"}},"DECREE":{"DECREE":{"min_sum":"500","max_sum":"500","coefficient":1,"bound":0,"bank":"PB_GOLD"}},"NEW":{"NEW":{"min_sum":"***","max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"CASHPAYM":{"CASHPAYM":{"min_sum":0,"max_sum":25000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"HYSTORY":{"HYSTORY":{"min_sum":"***","max_sum":8000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"JUNIOR":{"JUNIOR":{"min_sum":1000,"max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"STUD":{"STUD":{"min_sum":"500","max_sum":1500,"coefficient":1,"bound":"500","bank":"PB_GOLD"}},"POS":{"POS":{"min_sum":2000,"max_sum":5000,"coefficient":2,"bound":0,"bank":"PB_GOLD"}},"ACC_INCOME":{"ACC_INCOME":{"min_sum":2000,"max_sum":5000,"coefficient":2,"bound":0,"bank":"PB_GOLD"}},"VNESH":{"AGElt22":{"min_sum":"500","max_sum":4000,"coefficient":0,"bound":0,"bank":"PB_GOLD"},"EXPERIENCElt6":{"min_sum":"500","max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"},"PARTWORK":{"min_sum":"500","max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"},"VNESH":{"min_sum":"500","max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"TOP-1000/WHITEWORK":{"TOP-1000/WHITEWORK":{"min_sum":0,"max_sum":5000,"coefficient":3,"bound":0,"bank":"PB_GOLD"}},"UNEMP":{"UNEMP":{"min_sum":"***","max_sum":2000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"DEPOS":{"DEPOS":{"min_sum":2000,"max_sum":25000,"coefficient":0.8,"bound":5000,"bank":"PB_GOLD"}},"LIMIT_OLD":{"LIMIT_OLD":{"min_sum":0,"max_sum":25000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"UPGRADE":{"UPGRADE":{"min_sum":0,"max_sum":25000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}}}}}';
+    var data = JSON.parse(json).data;
+    data.RES_LIMIT = new Array();
+    data.RES_LIMIT_TYPE = new Array();
+    data.LOCAL_MAX_LIMIT = new Array();
+
+    var limit = 0;
+    var limit_type;
+    var limit_max = 0;
+
+    if (data.PROD_SETTING_PACKAGE == 'GRANT' || data.LOCAL_STUD_AMOUNT >= data.RTDM_DIC_LIMITPARAM.STUD.STUD.bound || data.LOCAL_STUD_LESS30 == 'Y'){
+        limit = data.RTDM_DIC_LIMITPARAM.STUD.STUD.coefficient * (data.RES_INC_DISP + data.RES_INC_NOT_CONF);
+        limit = Math.max(limit,data.RTDM_DIC_LIMITPARAM.STUD.STUD.min_sum);
+        limit = Math.min(limit,data.RTDM_DIC_LIMITPARAM.STUD.STUD.max_sum);
+        limit_max = data.RTDM_DIC_LIMITPARAM.STUD.STUD.max_sum;
+        limit_type = 'STUD';
+        data.RES_LIMIT.push(limit);
+        data.RES_LIMIT_TYPE.push(limit_type);
+        data.LOCAL_MAX_LIMIT.push(limit_max);
+    }
+
+    limit = 0;
+    limit_max = 0;
+
+    if (data.APP_EMPL_SOCIALSTATUS == 'STUDENT' && RES_LIMIT_TYPE.indexOf('STUD') == -1){
+        limit = data.RTDM_DIC_LIMITPARAM.STUD.STUD.min_sum;
+        limit_max = data.RTDM_DIC_LIMITPARAM.STUD.STUD.min_sum;
+        limit_type = 'STUD_VN';
+        data.RES_LIMIT.push(limit);
+        data.RES_LIMIT_TYPE.push(limit_type);
+        data.LOCAL_MAX_LIMIT.push(limit_max);
+    }
+
+
+
+</script>
+</body>
+</html>

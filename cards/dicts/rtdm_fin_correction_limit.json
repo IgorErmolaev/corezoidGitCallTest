@@ -1,0 +1,14 @@
+{
+  "ops": [
+    {
+      "ref": "RTDM_FIN_CORRECTION_LIMIT",
+      "type": "create",
+      "obj": "task",
+      "conv_id": "96057",
+      "data": {
+        "AB":{"bank":"AB","MINIM_LIM":500,"MAXIM_LIM":5000,"COEFF":1,"UNEMP_LIM":300,"TIMEEMPL_LIM":2000,"RESTR_LIM":2000,"ROUND":100},
+        "PB":{"bank":"PB","MINIM_LIM":500,"MAXIM_LIM":5000,"COEFF":1,"UNEMP_LIM":300,"TIMEEMPL_LIM":2000,"RESTR_LIM":2000,"ROUND":100}
+    }
+    }
+  ]
+}

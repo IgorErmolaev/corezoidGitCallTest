@@ -1,0 +1,50 @@
+{"data":{"currrate": [
+  {
+    "bank": "PB",
+    "bankCurr": "UAH",
+    "curr": "CHF",
+    "toCurr": 8.148
+  },
+  {
+    "bank": "PB",
+    "bankCurr": "UAH",
+    "curr": "CYP",
+    "toCurr": 12.7399
+  },
+  {
+    "bank": "PB",
+    "bankCurr": "UAH",
+    "curr": "EUR",
+    "toCurr": 9.7874
+  },
+  {
+    "bank": "PB",
+    "bankCurr": "UAH",
+    "curr": "GEL",
+    "toCurr": 4.8173
+  },
+  {
+    "bank": "PB",
+    "bankCurr": "UAH",
+    "curr": "LVL",
+    "toCurr": 14.0523
+  },
+  {
+    "bank": "PB",
+    "bankCurr": "UAH",
+    "curr": "RUR",
+    "toCurr": 0.2456
+  },
+  {
+    "bank": "PB",
+    "bankCurr": "UAH",
+    "curr": "UAH",
+    "toCurr": 1
+  },
+  {
+    "bank": "PB",
+    "bankCurr": "UAH",
+    "curr": "USD",
+    "toCurr": 7.993
+  }
+]}}

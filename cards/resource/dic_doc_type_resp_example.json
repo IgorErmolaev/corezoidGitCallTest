@@ -1,0 +1,33 @@
+{
+  "data": {
+    "docForTypeRequest": [
+      "000001", "000002"
+    ],
+    "DOC_IDENT": [
+      {
+        "VALID": "N",
+        "EKB_TYPE": "000001",
+        "NUM": "236228",
+        "SER": "ЕР",
+        "MAIN": "Y",
+        "DATESTART": "2006-03-25",
+        "DATEEND": "null",
+        "CUST_ID": "1000736532",
+        "COUNTRY": "UA",
+        "ID": "1004250194"
+      },
+      {
+        "VALID": "Y",
+        "EKB_TYPE": "000002",
+        "NUM": "11111",
+        "SER": "AA",
+        "MAIN": "N",
+        "DATESTART": "2006-03-01",
+        "DATEEND": "2016-03-25",
+        "CUST_ID": "1000736532",
+        "COUNTRY": "UA",
+        "ID": "1004250195"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    json = '{"data":{"DATA_OPER_IS_VIP_MANAGER":"N","APP_CUST_IS_VIP":"N","APP_CUST_NAME":"ОЛЕГ","APP_CUST_SURNAME":"МОКАН","APP_CUST_PATRONYMIC":"ПЕТРОВИЧ","APPLIC_ID":"160223TS","PROD_SCHEME_CCY_LOAN":"UAH","PROD_EMPL_LDAP_EXECUTIVE":"SITE","PROD_CHAR_BRANCH":"DNH0","PROD_CHAR_BANK":"PB","PROD_REASON_DOWN":"","PROD_CHAR_LIMITREQUESTED":42500,"APP_CUST_ID":11860897,"DATA_CRED_SUM_LIMIT":25000,"DATA_CRED":[{"BAL":"-24939.18","LIMIT":"25000.00","PRODUCT":"VIP","REFERENC":"SAMDN03000250408825","TYPE":"REP1","STATE":"O"}]}}';
+    var data = JSON.parse(json).data;
+
+    data.LIMIT_CLIENT_RES = 'ok';
+    //data.LIMIT_CLIENT_CODE = 'E004';
+    data.LIMIT_CLIENT_F_NREF = 'D010';
+    data.LIMIT_CLIENT_F_NCLIENT = 'A101';
+    data.LIMIT_CLIENT_MAXLIMGRAN = 50000;
+    data.LIMIT_CLIENT_NEWLIMIT = 25000;
+    data.APP_CUST_IS_VIP = 'N';
+    data.PROD_PACK_TYPE = 'UNI';
+    data.RES_CRED_LIM = 20000;
+    data.DATA_CRED_SUM_LIMIT = 20000;
+    data.RES_PREDICT_CODE = ['D045','D030','D050','D010','D020'];
+    data.RES_PREDICT_CODE_TYPE = ['N','N','N','Y','N'];
+    data.PROD_CHAR_LIMITREQUESTED = 23000;
+    //data.STATE_ACTION = 'UP';
+    //data.insurance= false;
+    //data.PRECALC_LIMIT = 25000;
+    //data.ref = '11111';
+    //data.conv_id = 1111;
+
+    data.N2_Credit = [{"addstate_P48":" ","addstate_Syb":" ","b1_30_Days_Cred":0,"b1_30_Days_Prc":0,"b30_60_Days_Cred":0,"b30_60_Days_Prc":0,"b60_90_Days_Cred":0,"b60_90_Days_Prc":0,"b90_Days_Cred":0,"b90_Days_Prc":0,"bal_Kred":0,"bal_Prc":0,"bal_Six_Month":0,"bank":"PB","basis_Kod":" ","branch":"LGH1","bsc_Mn_Bis":" ","contractype":"CRPL","contrstate":"A","cr_Cash":0,"cr_Pay":0,"cr_Sale":0,"cr_pay24":0,"credit_Num":"SAMUNI007000000110","currency":"UAH","date_Act":"2012-12-19T00:00:00","date_Given":"2007-02-01T00:00:00","date_Ivr":"1900-01-01T00:00:00","date_Start":"2007-01-03T00:00:00","dateclos_C":"2106-01-04T00:00:00","dateclos_F":"1900-01-01T00:00:00","datelong":"2999-12-31T00:00:00","days_Cred":0,"days_Lim_Increase":0,"days_Max":0,"days_No_Pay":0,"days_Prc":0,"days_max":0,"dlp":" ","fiid":"DN63","firstpay":"Y","id_Client":1000932254,"limitEquivalNationalCcy":15000,"limit_Balance":15000,"limit_Old":9800,"limit_Six_Month":0,"lock_card":0,"max_Days_Cred":0,"max_Days_Prc":0,"max_Prs_Cred":0,"max_Prs_Pr":0,"num_Null":0,"pay_tag":"N","plat_Min":0,"product":"UN_M","pros_Cred":0,"pros_Prc":0,"rastr_State":"","source_pan":" ","spis":0,"start_Summ":15000,"tr_Cash":0,"tr_Pay":0,"tr_Sale":0,"tr_pay24":0}];
+
+    data.PROD_SCHEME_CCY_LOAN = '980';
+    data.PROD_CHAR_REFERENCE = 'SAMUNI0070000001101';
+
+
+    data.STATE_ACTION = 'refuse';
+    data.refuseCodes = 'A101';
+    data.RES_CRED_LIM = 5000;
+    data.LIMIT_CLIENT_MAXLIMGRAN = 5000;
+    data.PROD_CHAR_LIMITREQUESTED = 5500;
+
+//======================================================================================================================
+
+    if (data.STATE_ACTION == 'refuse' && data.refuseCodes == 'A101' && data.RES_CRED_LIM >= data.LIMIT_CLIENT_MAXLIMGRAN ){
+        data.refuseCodes = 'kD111';
+        if (data.block90Days  != 'Y' && data.RES_CRED_LIM <25000 && data.RES_CRED_LIM == data.LIMIT_CLIENT_MAXLIMGRAN){
+            data.PRECALC_LIMIT =Math.min(data.RES_CRED_LIM + Math.max(Math.min(0.1*data.RES_CRED_LIM,0.1*(data.PROD_CHAR_LIMITREQUESTED-data.RES_CRED_LIM)),100),25000);
+            data.STATE_ACTION = 'upLimit';
+            data.refuseCodes = 'A101';
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>

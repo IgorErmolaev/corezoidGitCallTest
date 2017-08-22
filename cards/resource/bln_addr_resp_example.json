@@ -1,0 +1,27 @@
+{
+  "data": {
+    "doc": {
+      "r": {
+        "BLNADDR_LST": {
+          "@BlackAddrSt": "A",
+          "@BlackAddrDTM": "2013-06-18 16:17:51.286",
+          "@BlackAddrDTS": "2013-06-18 16:17:51.286",
+          "@InitiatorLogin": "DN310887NRV1",
+          "@EditorLogin": "DN281089ZEV",
+          "@CreatorLogin": "DN281089ZEV",
+          "@BlackAddrType2": "13",
+          "@BlackAddrType1": "1",
+          "@UADId": "1312YMRGW4OZZ0",
+          "@BlackAddrId": "HI34ACDY1SJ15"
+        },
+        "@key": "0"
+      }
+    },
+    "APP_REG_ADDRESS":
+    { "UADID": "58GKFW0YMEOO0C",
+      "UADID9": "1312YMRGW4OZZ0",
+      "ID_REGION": "UA31354",
+      "SUBTOWN": "PGT" },
+    "APP_CUST_ID": 18348405
+  }
+}

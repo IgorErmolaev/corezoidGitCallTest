@@ -1,0 +1,14 @@
+{
+  "ops": [
+    {
+      "ref": "RTDM_CALL_SCORE",
+      "type": "create",
+      "obj": "task",
+      "conv_id": "96057",
+      "data": {
+        "AB": 0,
+        "PB": 0
+      }
+    }
+  ]
+}

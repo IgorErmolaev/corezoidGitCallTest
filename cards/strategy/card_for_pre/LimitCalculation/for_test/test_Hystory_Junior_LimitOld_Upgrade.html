@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    json = '{"data":{"RES_CUST_IS_EXJUNIOR":"Y","LOCAL_RESTRUCTURING":100,"LOCAL_RESTRUCTURING_LIMIT":10000,"RES_COEFF_ELIG":1.3,"RES_TYPE_CUST":"INTERN","APP_EMPL_SOCIALSTATUS":"UNEMP","PROD_APP_EMPLOYEE":"N","RES_INC_DISP":5000,"RES_INC_NOT_CONF":0,"APP_EMPL_ORGTYPE":"BUSINESS","LOCAL_STUD_AMOUNT":5000,"PROD_CHAR_BANK":"PB","PROD_CHAR_TYPE":"UPLIMNKK","PROD_PACK_TYPE":"GOLD","RES_CRED_LIM":15000,"RES_PROD_TYPE":"UNI","LIMIT_FOR_GOLD":"Y","RTDM_DIC_LIMITPARAM":{"IMPORTANT":{"IMPORTANT":{"min_sum":0,"max_sum":25000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"USAGE":{"USAGE":{"min_sum":0,"max_sum":2000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"PENS":{"AGEge25":{"min_sum":2500,"max_sum":8000,"coefficient":4,"bound":"400","bank":"PB_GOLD"},"AGElt25":{"min_sum":"400","max_sum":1500,"coefficient":1,"bound":"400","bank":"PB_GOLD"}},"SOTR/ZP":{"PRIVATE":{"min_sum":2000,"max_sum":8000,"coefficient":3,"bound":"500","bank":"PB_GOLD"},"EMPLOYEE":{"min_sum":3000,"max_sum":25000,"coefficient":3,"bound":"500","bank":"PB_GOLD"},"STATE":{"min_sum":2000,"max_sum":8000,"coefficient":4,"bound":"500","bank":"PB_GOLD"}},"PENS_VN":{"AGEge25":{"min_sum":"***","max_sum":8000,"coefficient":3,"bound":0,"bank":"PB_GOLD"},"AGElt25":{"min_sum":"***","max_sum":1500,"coefficient":1,"bound":0,"bank":"PB_GOLD"}},"DECREE":{"DECREE":{"min_sum":"500","max_sum":"500","coefficient":1,"bound":0,"bank":"PB_GOLD"}},"NEW":{"NEW":{"min_sum":"***","max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"CASHPAYM":{"CASHPAYM":{"min_sum":0,"max_sum":25000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"HYSTORY":{"HYSTORY":{"min_sum":"***","max_sum":8000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"JUNIOR":{"JUNIOR":{"min_sum":1000,"max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"STUD":{"STUD":{"min_sum":"500","max_sum":1500,"coefficient":1,"bound":"500","bank":"PB_GOLD"}},"POS":{"POS":{"min_sum":2000,"max_sum":5000,"coefficient":2,"bound":0,"bank":"PB_GOLD"}},"ACC_INCOME":{"ACC_INCOME":{"min_sum":2000,"max_sum":5000,"coefficient":2,"bound":0,"bank":"PB_GOLD"}},"VNESH":{"AGElt22":{"min_sum":"500","max_sum":4000,"coefficient":0,"bound":0,"bank":"PB_GOLD"},"EXPERIENCElt6":{"min_sum":"500","max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"},"PARTWORK":{"min_sum":"500","max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"},"VNESH":{"min_sum":"500","max_sum":5000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"TOP-1000/WHITEWORK":{"TOP-1000/WHITEWORK":{"min_sum":0,"max_sum":5000,"coefficient":3,"bound":0,"bank":"PB_GOLD"}},"UNEMP":{"UNEMP":{"min_sum":500,"max_sum":2000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"DEPOS":{"DEPOS":{"min_sum":2000,"max_sum":25000,"coefficient":0.8,"bound":5000,"bank":"PB_GOLD"}},"LIMIT_OLD":{"LIMIT_OLD":{"min_sum":0,"max_sum":25000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}},"UPGRADE":{"UPGRADE":{"min_sum":0,"max_sum":25000,"coefficient":0,"bound":0,"bank":"PB_GOLD"}}}}}';
+    var data = JSON.parse(json).data;
+    data.RES_LIMIT = new Array();
+    data.RES_LIMIT_TYPE = new Array();
+    data.LOCAL_MAX_LIMIT = new Array();
+
+    var limit = 0;
+    var limit_max = 0;
+
+    var startType = new Array('CRSTMGPB1','CARDSET','REISSUE','UNIPACK','UNIPACKSAS','ONLINEANKETA');
+
+    /*HYSTORY*/
+    if (data.BCH_CRED_LIMIT_ACTION >0 && data.BCH_CRED_HIST_YBCH.substr(0,1) != 'N' && data.BCH_CRED_HIST_YBCH.substr(0,1) != 'H' && data.BCH_CRED_HIST_DATA.substr(0,1) != 'N' && data.BCH_CRED_HIST_DATA.substr(0,1) != 'H' &&
+            0.8 * (data.APP_INCOME_MONTHSALARY + data.APP_INCOME_OTHERSOURCE) >= (data.RES_EXP_MONTH_TOTAL + data.BCH_CRED_PLAT_MIN_TOTAL + 0.07*data.BCH_CRED_COUNT_ACT) && data.BCH_CRED_COUNT_ACT_CC <2){
+        limit= data.BCH_CRED_LIMIT_ACTION;
+        data.RES_LIMIT_CRED_HIST = limit;
+        limit_max = data.RTDM_DIC_LIMITPARAM.HYSTORY.HYSTORY.max_sum;
+        limit = Math.max(limit,data.RTDM_DIC_LIMITPARAM.HYSTORY.HYSTORY.min_sum);
+        limit = Math.min(limit,data.RTDM_DIC_LIMITPARAM.HYSTORY.HYSTORY.max_sum);
+        data.RES_LIMIT.push(limit);
+        data.RES_LIMIT_TYPE.push('HYSTORY');
+        data.LOCAL_MAX_LIMIT.push(limit_max);
+    }
+
+    /*JUNIOR*/
+    limit = 0;
+    limit_max = 0;
+
+    if (data.RES_CUST_IS_EXJUNIOR == 'Y'){
+        limit_max = data.RTDM_DIC_LIMITPARAM.JUNIOR.JUNIOR.max_sum;
+        limit = data.RTDM_DIC_LIMITPARAM.JUNIOR.JUNIOR.min_sum;
+        data.RES_LIMIT.push(limit);
+        data.RES_LIMIT_TYPE.push('JUNIOR');
+        data.LOCAL_MAX_LIMIT.push(limit_max);
+    }
+
+    /*LIMIT_OLD*/
+    limit = 0;
+    limit_max = 0;
+
+    if (data.LOCAL_RESTRUCTURING >=100 && data.LOCAL_RESTRUCTURING_LIMIT > 0 ){
+        limit_max = data.RTDM_DIC_LIMITPARAM.LIMIT_OLD.LIMIT_OLD.max_sum;
+        limit = data.LOCAL_RESTRUCTURING_LIMIT;
+        data.RES_LIMIT.push(limit);
+        data.RES_LIMIT_TYPE.push('LIMIT_OLD');
+        data.LOCAL_MAX_LIMIT.push(limit_max);
+    }
+
+    /*UPGRADE*/
+    limit = 0;
+    limit_max = 0;
+
+    if (startType.indexOf(data.PROD_CHAR_TYPE) != -1 && data.PROD_SCHEME_CCY_LOAN == data.LOCAL_CARD_UPGRADE_CCY && data.DATA_CARD_UPGRADE_LIMIT >0 ){
+        for (var i=0; i<data.DATA_CRED.length; i++){
+            if (data.DATA_CRED[i].REFERENC == data.DATA_CARD_UPGRADE_REFCONTRAC){
+                limit = data.DATA_CARD_UPGRADE_LIMIT;
+                limit_max = data.RTDM_DIC_LIMITPARAM.UPGRADE.UPGRADE.max_sum;
+                limit = Math.min(limit,data.RTDM_DIC_LIMITPARAM.UPGRADE.UPGRADE.max_sum);
+                data.RES_LIMIT.push(limit);
+                data.RES_LIMIT_TYPE.push('UPGRADE');
+                data.LOCAL_MAX_LIMIT.push(limit_max);
+            }
+        }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

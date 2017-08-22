@@ -1,0 +1,10 @@
+data.STRATEGY_ID = "P2B";
+data.char_type = 'KUB_PRE';
+data.phone = data.tel;
+data.TypeDec = 'AVTO';
+data.Decision = 'Accept';
+data.FinalCode = 'A101';
+data.comment = "Негатив отсутствует. Кредитование разрешено";
+data.rtdm_api_url="https://rtdm.it.loc/RTDMApi";
+data.ref = data.intRef;
+data.bank = 'PB';

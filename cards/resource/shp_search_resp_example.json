@@ -1,0 +1,2006 @@
+{
+  "create_time": "2015.12.25 11:36:09",
+  "change_time": "2015.12.25 11:36:10",
+  "node_prev_id": "56371534c9cf84507a5b0d65",
+  "status": "processed",
+  "user_id": 5938,
+  "data": {
+    "attachments":    [
+      {
+        "id": "0000000088601365",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "450743",
+            "docRule":                {
+              "id": 16,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ВН",
+            "docRule":                {
+              "id": 11,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 2,
+          "name": "Общегражданский паспорт",
+          "docType": 0,
+          "creator": "admin       ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "6860571, 2013; 7059393, 2013;7042527 от 27.10.14,7139111(2015),7139111(2015)",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "6860571, 2013; 7059393, 2013;https://doc.privatbank.ua/PrivatDoc/Scr/Par0.jsp?P2=7042527&Year=2014",
+          "additionalInfo": "РАЗОБРАТЬСЯ!!! 7171509 (2015)",
+          "lastModificationDate": "2015-12-02 16:25:59.126+0200",
+          "secured": false,
+          "owner": "DN010289PTE"
+        },
+        "parent": "NULL            ",
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR120162OSA",
+        "version": 1,
+        "extension": "TIF",
+        "integrity": true,
+        "caseNumber": "13.7.0.0.0/14",
+        "pageNumber": 179,
+        "attachStore":          {
+          "id": "XU",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "620",
+        "creationDate": "2009-02-18 13:31:23.686+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2009-02-24 11:09:28.686+0200",
+        "busOp": 0,
+        "printableTicket": "0803150100088601365",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000088601366",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 3,
+          "name": "Справка ИНН",
+          "docType": 0,
+          "creator": "DN171081NMV ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "нет",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "нет",
+          "additionalInfo": "DN260681JMA /22.02.2008 ИНН - необязательный реквизит (нет в ЕКБ для верующих)",
+          "lastModificationDate": "2013-08-20 16:00:47.290+0300",
+          "secured": false,
+          "owner": "dn111083ljv"
+        },
+        "parent": "NULL            ",
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR120162OSA",
+        "version": 1,
+        "extension": "TIF",
+        "integrity": true,
+        "caseNumber": "13.7.0.0.0/14",
+        "pageNumber": 180,
+        "attachStore":          {
+          "id": "XU",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "620",
+        "creationDate": "2009-02-18 13:31:23.753+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2009-02-24 11:09:29.006+0200",
+        "busOp": 0,
+        "printableTicket": "0702041100088601366",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000104569905",
+        "atsr":          [
+          {
+            "value": "WSFH",
+            "docRule":                {
+              "id": 93,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ZR140482OLV",
+            "docRule":                {
+              "id": 43,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "4130514098824928",
+            "docRule":                {
+              "id": 94,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "450743",
+            "docRule":                {
+              "id": 16,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "090603JE006990",
+            "docRule":                {
+              "id": 79,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ZRRW",
+            "docRule":                {
+              "id": 39,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ВН",
+            "docRule":                {
+              "id": 11,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ЗАЯВЛЕНИЕ КЛИЕНТА НА ОПЕРАЦИЮ",
+            "docRule":                {
+              "id": 36,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ФЛ",
+            "docRule":                {
+              "id": 91,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 401,
+          "name": "Заявление клиента на операцию",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": " ",
+          "additionalInfo": " ",
+          "lastModificationDate": "2008-12-08 12:49:06.856+0200",
+          "secured": true
+        },
+        "parent": "NULL            ",
+        "dnKind": "RI",
+        "srvCust": "CEM ",
+        "creator": "ZR140482OLV",
+        "version": 1,
+        "extension": "TIF",
+        "integrity": true,
+        "caseNumber": "10.0.6.0.0/7-ZR",
+        "pageNumber": 94,
+        "attachStore":          {
+          "id": "XX",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "42",
+        "creationDate": "2009-06-03 09:59:25.926+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2009-07-08 12:18:16.676+0300",
+        "busOp": 0,
+        "printableTicket": "0411040500104569905",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000128962120",
+        "atsr":          [
+          {
+            "value": "WSFH",
+            "docRule":                {
+              "id": 93,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ZR180780JLA",
+            "docRule":                {
+              "id": 43,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "450743",
+            "docRule":                {
+              "id": 16,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ZRRW",
+            "docRule":                {
+              "id": 39,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "4130514016835865",
+            "docRule":                {
+              "id": 94,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ВН",
+            "docRule":                {
+              "id": 11,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "091202JE668791",
+            "docRule":                {
+              "id": 79,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ПЕРЕВЫПУСК С НОВЫМ НОМЕРОМ",
+            "docRule":                {
+              "id": 90,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ЗАЯВЛЕНИЕ КЛИЕНТА НА ОПЕРАЦИЮ",
+            "docRule":                {
+              "id": 36,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ФЛ",
+            "docRule":                {
+              "id": 91,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 401,
+          "name": "Заявление клиента на операцию",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": " ",
+          "additionalInfo": " ",
+          "lastModificationDate": "2008-12-08 12:49:06.856+0200",
+          "secured": true
+        },
+        "parent": "NULL            ",
+        "dnKind": "RI",
+        "srvCust": "CEM ",
+        "creator": "ZR180780JLA",
+        "version": 1,
+        "extension": "TIF",
+        "integrity": true,
+        "caseNumber": "10.0.6.0.0/7-ZR",
+        "pageNumber": 169,
+        "attachStore":          {
+          "id": "Y3",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "95",
+        "creationDate": "2009-12-02 17:40:14.083+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2010-01-21 17:14:35.103+0200",
+        "busOp": 0,
+        "printableTicket": "0315050200128962120",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000149708160",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "CAMERA",
+            "docRule":                {
+              "id": 95,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНІСЛАВІВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ГАННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСЬКА",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1052,
+          "name": "Фото клиента с продуктом / картой",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6759400&Year=2010",
+          "additionalInfo": "По заданию Шелудько Д.Г.; 7045083(2015)",
+          "lastModificationDate": "2015-11-26 15:59:05.660+0200",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "parent": "NULL            ",
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "JPG",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "Y6",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2010-04-15 14:25:30.516+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2010-04-15 14:27:24.723+0300",
+        "busOp": 0,
+        "printableTicket": "1203110000149708160",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000149709078",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 804,
+          "name": "Анкета-заявление по идентификации клиента",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "СП-2010-27 от 12.01.2010",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=60029&Year=2010",
+          "additionalInfo": " 6931578(2015)",
+          "lastModificationDate": "2015-08-26 12:40:05.183+0300",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "parent": "NULL            ",
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "TIF",
+        "integrity": true,
+        "caseNumber": "13.7.0.0.0/14-ZR",
+        "pageNumber": 157,
+        "attachStore":          {
+          "id": "Y6",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "49",
+        "creationDate": "2010-04-15 14:27:48.013+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2010-04-21 15:44:49.200+0300",
+        "busOp": 0,
+        "printableTicket": "1005051000149709078",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000154720611",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "CAMERA",
+            "docRule":                {
+              "id": 95,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНІСЛАВІВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ГАННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСЬКА",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1,
+          "name": "Фото клиента",
+          "docType": 0,
+          "creator": "DN070380VSN1",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "нет",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "нет",
+          "additionalInfo": "нет",
+          "lastModificationDate": "2013-04-22 16:39:06.730+0300",
+          "secured": false,
+          "owner": "DN151271SDG"
+        },
+        "parent": "0000000149708160",
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR070281PMJ",
+        "version": 2,
+        "extension": "JPG",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "Y6",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2010-05-18 14:05:47.426+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2010-05-18 14:08:22.830+0300",
+        "busOp": 0,
+        "printableTicket": "1203011400154720611",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000211028022",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "CAMERA",
+            "docRule":                {
+              "id": 95,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1052,
+          "name": "Фото клиента с продуктом / картой",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6759400&Year=2010",
+          "additionalInfo": "По заданию Шелудько Д.Г.; 7045083(2015)",
+          "lastModificationDate": "2015-11-26 15:59:05.660+0200",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "JPG",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "YC",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2011-04-12 09:07:51.716+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2011-04-12 09:07:52.536+0300",
+        "busOp": 0,
+        "printableTicket": "0909141000211028022",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000263152960",
+        "atsr":          [
+          {
+            "value": "2011",
+            "docRule":                {
+              "id": 64,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "6954174",
+            "docRule":                {
+              "id": 63,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "Z11B5PB7000003",
+            "docRule":                {
+              "id": 75,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1189,
+          "name": "Заявление о выплате страхового возмещения",
+          "docType": 0,
+          "creator": "dn221084zaj ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "6543259",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6543259&Year=2011",
+          "additionalInfo": " ",
+          "lastModificationDate": "2011-03-15 15:54:46.606+0200",
+          "secured": false,
+          "owner": "DN221084ZAJ"
+        },
+        "dnKind": "RI",
+        "srvCust": "OTC ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "JPEG",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "YI",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2011-12-05 11:31:17.683+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2011-12-10 11:30:11.150+0200",
+        "busOp": 0,
+        "printableTicket": "1107011500263152960",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000263152966",
+        "atsr":          [
+          {
+            "value": "2011",
+            "docRule":                {
+              "id": 64,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "6954174",
+            "docRule":                {
+              "id": 63,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "Z11B5PB7000003",
+            "docRule":                {
+              "id": 75,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1190,
+          "name": "Справка о травме",
+          "docType": 0,
+          "creator": "dn221084zaj ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "6543259",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6543259&Year=2011",
+          "additionalInfo": " ",
+          "lastModificationDate": "2011-03-15 15:54:23.940+0200",
+          "secured": false,
+          "owner": "DN221084ZAJ"
+        },
+        "dnKind": "RI",
+        "srvCust": "OTC ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "JPEG",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "YI",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2011-12-05 11:31:19.383+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2011-12-10 11:30:11.270+0200",
+        "busOp": 0,
+        "printableTicket": "0605040800263152966",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000263152972",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "Z11B5PB7000003",
+            "docRule":                {
+              "id": 75,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1264,
+          "name": "Договор страхования",
+          "docType": 0,
+          "creator": "dn230787nsv ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": " ",
+          "additionalInfo": "Договор страхования",
+          "lastModificationDate": "2011-06-24 12:03:50.213+0300",
+          "secured": false,
+          "owner": "dn230787nsv"
+        },
+        "dnKind": "RI",
+        "srvCust": "OTC ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "JPEG",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "YI",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2011-12-05 11:31:22.010+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2011-12-05 11:31:22.023+0200",
+        "busOp": 0,
+        "printableTicket": "1303101400263152972",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000293034875",
+        "atsr":          [
+          {
+            "value": "CAMERA",
+            "docRule":                {
+              "id": 95,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1052,
+          "name": "Фото клиента с продуктом / картой",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6759400&Year=2010",
+          "additionalInfo": "По заданию Шелудько Д.Г.; 7045083(2015)",
+          "lastModificationDate": "2015-11-26 15:59:05.660+0200",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "JPG",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "E3",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2012-08-13 08:42:56.993+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2012-08-13 08:42:57.130+0300",
+        "busOp": 0,
+        "printableTicket": "0515050800293034875",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000293034896",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 902,
+          "name": "Заявка на изменение анкетных данных клиента",
+          "docType": 0,
+          "creator": "dn171081nmv ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "2010/6607513 - О документообороте при оформлении кредитных карт",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6607513&Year=2010",
+          "additionalInfo": " ",
+          "lastModificationDate": "2010-10-19 17:47:33.626+0300",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "ZIP",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "YL",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2012-08-13 08:42:58.063+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2012-08-13 09:03:35.850+0300",
+        "busOp": 0,
+        "printableTicket": "1406070800293034896",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000293034897",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "450743",
+            "docRule":                {
+              "id": 16,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "ВН",
+            "docRule":                {
+              "id": 11,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 2,
+          "name": "Общегражданский паспорт",
+          "docType": 0,
+          "creator": "admin       ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "6860571, 2013; 7059393, 2013;7042527 от 27.10.14,7139111(2015),7139111(2015)",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "6860571, 2013; 7059393, 2013;https://doc.privatbank.ua/PrivatDoc/Scr/Par0.jsp?P2=7042527&Year=2014",
+          "additionalInfo": "РАЗОБРАТЬСЯ!!! 7171509 (2015)",
+          "lastModificationDate": "2015-12-02 16:25:59.126+0200",
+          "secured": false,
+          "owner": "DN010289PTE"
+        },
+        "parent": "0000000088601365",
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR280779LNV",
+        "version": 2,
+        "extension": "ZIP",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "YL",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2012-08-13 08:42:58.246+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2012-08-13 09:05:12.486+0300",
+        "busOp": 0,
+        "printableTicket": "1108151400293034897",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000404555681",
+        "atsr":          [
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "CAMERA",
+            "docRule":                {
+              "id": 95,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 971,
+          "name": "Фото для карты",
+          "docType": 0,
+          "creator": "dn030584vdi ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": " ",
+          "additionalInfo": " ",
+          "lastModificationDate": "2010-12-22 14:25:44.790+0200",
+          "secured": false,
+          "owner": "dn030584vdi"
+        },
+        "parent": "                ",
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "jpg",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "YQ",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2013-09-05 17:18:55.673+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2013-09-05 17:18:57.083+0300",
+        "busOp": 0,
+        "printableTicket": "0612130500404555681",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000493007400",
+        "atsr":          [
+          {
+            "value": "CAMERA",
+            "docRule":                {
+              "id": 95,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1052,
+          "name": "Фото клиента с продуктом / картой",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6759400&Year=2010",
+          "additionalInfo": "По заданию Шелудько Д.Г.; 7045083(2015)",
+          "lastModificationDate": "2015-11-26 15:59:05.660+0200",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "parent": "                ",
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "Zr280779lnv",
+        "version": 1,
+        "extension": "jpg",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "A1",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2014-02-10 12:10:06.280+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2014-02-10 12:10:06.353+0200",
+        "busOp": 0,
+        "printableTicket": "0909100600493007400",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000493008549",
+        "atsr":          [
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 804,
+          "name": "Анкета-заявление по идентификации клиента",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "СП-2010-27 от 12.01.2010",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=60029&Year=2010",
+          "additionalInfo": " 6931578(2015)",
+          "lastModificationDate": "2015-08-26 12:40:05.183+0300",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "parent": "                ",
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "zip",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "A0",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2014-02-10 12:10:06.520+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2014-02-10 16:17:51.356+0200",
+        "busOp": 0,
+        "printableTicket": "0109080200493008549",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000493008550",
+        "atsr":          [
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "950.0",
+            "docRule":                {
+              "id": 159,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 245,
+          "name": "Справка с места работы",
+          "docType": 0,
+          "creator": "admin       ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6504091&Year=2012",
+          "additionalInfo": "по просьбе Летучая Дина Викторовна",
+          "lastModificationDate": "2014-06-25 16:38:47.770+0300",
+          "secured": false,
+          "owner": "DD061185LDV"
+        },
+        "parent": "                ",
+        "dnKind": "RI",
+        "srvCust": "SPDR",
+        "creator": "ZR280779LNV",
+        "version": 1,
+        "extension": "zip",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "A0",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2015-12-22 12:10:06.586+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2014-02-10 12:14:29.186+0200",
+        "busOp": 0,
+        "printableTicket": "0605041200493008550",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000534551176",
+        "atsr":          [
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1052,
+          "name": "Фото клиента с продуктом / картой",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6759400&Year=2010",
+          "additionalInfo": "По заданию Шелудько Д.Г.; 7045083(2015)",
+          "lastModificationDate": "2015-11-26 15:59:05.660+0200",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "zr070489fin",
+        "version": 1,
+        "extension": "jpg",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "A4",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2014-08-04 13:03:32.253+0300",
+        "physicalStorage": 0,
+        "lastModificationDate": "2014-08-04 13:03:32.360+0300",
+        "busOp": 0,
+        "printableTicket": "1205120100534551176",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000551184910",
+        "atsr":          [
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "Z149TPB700001K",
+            "docRule":                {
+              "id": 75,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1261,
+          "name": "Справка компетентного органа",
+          "docType": 0,
+          "creator": "dn230787nsv ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": " ",
+          "additionalInfo": "Справка компетентного органа, страховые случаи; добавление обяз 37 рекв (6856740)",
+          "lastModificationDate": "2015-07-30 10:08:51.670+0300",
+          "secured": false,
+          "owner": "DN140882LOO1"
+        },
+        "dnKind": "RI",
+        "srvCust": "OTC ",
+        "creator": "zr070489fin",
+        "version": 1,
+        "extension": "jpg",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "A7",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2014-10-31 15:05:49.003+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2014-10-31 15:05:49.210+0200",
+        "busOp": 0,
+        "printableTicket": "0302140500551184910",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000555080868",
+        "atsr":          [
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1052,
+          "name": "Фото клиента с продуктом / картой",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6759400&Year=2010",
+          "additionalInfo": "По заданию Шелудько Д.Г.; 7045083(2015)",
+          "lastModificationDate": "2015-11-26 15:59:05.660+0200",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "zr260380tis",
+        "version": 1,
+        "extension": "jpg",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "A6",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2014-11-21 12:32:57.963+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2014-11-21 12:32:59.150+0200",
+        "busOp": 0,
+        "printableTicket": "0003090500555080868",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000555097600",
+        "atsr":          [
+          {
+            "value": "СТАНИСЛАВОВНА",
+            "docRule":                {
+              "id": 19,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "3380813559",
+            "docRule":                {
+              "id": 20,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "PB",
+            "docRule":                {
+              "id": 60,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "АННА",
+            "docRule":                {
+              "id": 18,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 2184,
+          "name": "Анкета-заявление (ос без подписи)",
+          "docType": 0,
+          "creator": "dn300881baa ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": "103597",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": " https://doc.privatbank.ua/PrivatDoc/Scr/Par0.jsp?P2=103597&Year=2014",
+          "additionalInfo": " ",
+          "lastModificationDate": "2014-01-28 14:34:47.656+0200",
+          "secured": false,
+          "owner": "DN210889MNA"
+        },
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "ZR260380TIS",
+        "version": 1,
+        "extension": "pdf",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "A6",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2014-11-21 12:33:03.303+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2014-11-21 12:33:04.100+0200",
+        "busOp": 0,
+        "printableTicket": "1103000600555097600",
+        "placement": "cxp",
+        "colRef": 1
+      },
+      {
+        "id": "0000000563461496",
+        "atsr":          [
+          {
+            "value": "1000084961",
+            "docRule":                {
+              "id": 35,
+              "name": "",
+              "mandatory": false
+            }
+          },
+          {
+            "value": "СИЧЕВСКАЯ",
+            "docRule":                {
+              "id": 17,
+              "name": "",
+              "mandatory": false
+            }
+          }
+        ],
+        "vdDoc":          {
+          "id": 1052,
+          "name": "Фото клиента с продуктом / картой",
+          "docType": 0,
+          "creator": "dn060978kjp ",
+          "prevDRMNDR": [],
+          "currDRMNDR": [],
+          "confirmedBy": " ",
+          "prevDocRules": [],
+          "currDocRules": [],
+          "confirmedURL": "https://10.1.102.159:81/PrivatDoc/Scr/Par0.jsp?P2=6759400&Year=2010",
+          "additionalInfo": "По заданию Шелудько Д.Г.; 7045083(2015)",
+          "lastModificationDate": "2015-11-26 15:59:05.660+0200",
+          "secured": false,
+          "owner": "dn260681jma"
+        },
+        "dnKind": "RI",
+        "srvCust": "CIS ",
+        "creator": "zr290578bin",
+        "version": 1,
+        "extension": "jpg",
+        "integrity": true,
+        "caseNumber": "0",
+        "pageNumber": 0,
+        "attachStore":          {
+          "id": "A6",
+          "name": "",
+          "url": ""
+        },
+        "volumeNumber": "0",
+        "creationDate": "2015-01-03 14:08:36.246+0200",
+        "physicalStorage": 0,
+        "lastModificationDate": "2015-01-03 14:08:36.360+0200",
+        "busOp": 0,
+        "printableTicket": "0209110900563461496",
+        "placement": "cxp",
+        "colRef": 1
+      }
+    ],
+    "answer": "ok",
+    "APP_CUST_ID": 1000084961,
+    "APPLIC_ID": "151202TS1111111"
+  }
+}

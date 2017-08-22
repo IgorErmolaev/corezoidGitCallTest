@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    json = '{"data":{"0":{"dateodb":"2016-05-20 00:00:00.000","clientid":"22497328","bank":"PB","lim":"0.00","newlimit":"5000.00","MaxLimGran":"5000.00","f_nclient":"SSSS","f_nref":"A101","f_nref_add":"A101","comm_client":"Негатив отсутствует. Кредитование разрешено","comm_ref":"Негатив отсутствует. Кредитование разрешено","comm_ref_add":"Негатив отсутствует. Кредитование разрешено","cardgroup":"SCORINCOME","insurance":"N","res":"ok"},"detailInfo":{"limitSizeRestrictReasons":[{"id_type":"D036","comment":"Договор закрыт ","dateodb":"2016-05-14 00:00:00","WAVE":"N"}],"calcGroupsList":[{"cardgroup":"SCORINCOME","comment":"Поведенческая модель доходов","newlimit":"5000.00","newlimit_cutHistAge":"5000.00","newlimit_cutProduct":"5000.00","dateodb":"2016-05-13 00:00:00"}],"limitCut":[]}}}';
+    var data = JSON.parse(json).data;
+
+
+    data.RES_LLL = ['Q','L','B'];
+
+    var props = Object.getOwnPropertyNames(data.infoObjact);
+    for (var i=0;i<props.length; i++) {
+        if ( props[i] != "infoObjact") {
+            data[props[i]] = data.infoObjact[props[i]];
+            delete data.infoObjact[props[i]];
+        }
+    }
+    if (data.infoObjact.infoObjact != undefined)
+        data.infoObjact = data.infoObjact.infoObjact;
+    else
+        delete data.infoObjact;
+</script>
+</body>
+</html>

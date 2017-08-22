@@ -1,0 +1,15 @@
+{"data": {
+"listclientproperty": {
+"clientProperty": {
+"@typePay": "EMPTY",
+"@product": "VP",
+"@oper": "%",
+"@limit": "60000",
+"@ldap": "DN010785NMJ",
+"@docno": "6503001",
+"@dateMod": "2015-04-30",
+"@credit": "%",
+"@clid": "44914269",
+"@bank": "PB"
+}
+}}}

@@ -1,0 +1,18 @@
+{
+  "data":{
+    "callhist": {"+380965376395": {
+    "callQa": "155:123;210:44;236:125;1000:28;1001:OK",
+    "resCallBalHist": 0,
+    "resCallTotal": "C_NULL"
+  }},
+    "APP_PHONE": [
+      {
+        "DTM": "2015-12-24 16:15:30.473",
+        "LIGHT": 0,
+        "NUMBER_CALL": "+380965376395",
+        "CUST_ID_CALL": "1029901426",
+        "TYPE_CALL": "MOB"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{"data": {
+  "resp":    {
+    "dateodb": "2016-05-20 00:00:00.000",
+    "clientid": "22497328",
+    "bank": "PB",
+    "lim": "0.00",
+    "newlimit": "5000.00",
+    "MaxLimGran": "5000.00",
+    "f_nclient": "SSSS",
+    "f_nref": "A101",
+    "f_nref_add": "A101",
+    "comm_client": "Негатив отсутствует. Кредитование разрешено",
+    "comm_ref": "Негатив отсутствует. Кредитование разрешено",
+    "comm_ref_add": "Негатив отсутствует. Кредитование разрешено",
+    "cardgroup": "SCORINCOME",
+    "insurance": "N",
+    "res": "ok"
+  },
+  "detailInfo":    {
+    "limitSizeRestrictReasons": [      {
+      "id_type": "D036",
+      "comment": "Договор закрыт ",
+      "dateodb": "2016-05-14 00:00:00\u0000\u0000U\u0000",
+      "WAVE": "N"
+    }],
+    "calcGroupsList": [      {
+      "cardgroup": "SCORINCOME",
+      "comment": "Поведенческая модель доходов",
+      "newlimit": "5000.00",
+      "newlimit_cutHistAge": "5000.00",
+      "newlimit_cutProduct": "5000.00",
+      "dateodb": "2016-05-13 00:00:00\u0000\u0000\u0000\u0000"
+    }],
+    "limitCut": []
+  }
+}}

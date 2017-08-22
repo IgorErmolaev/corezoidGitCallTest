@@ -1,0 +1,34 @@
+//data.APP_CUST_INN = '2451419599';
+
+//--------------------------------------------------First Payment %-------------------------------------------------
+data.LOCAL_CAR_VALUE_EXT = 0;
+data.RES_CHAR_ADVANCE_PRC = 0;
+
+data.LOCAL_CAR_VALUE_EXT = data.APP_PROPERTY_CAR_VALUE_EXT + data.APP_PROPERTY_CAR_EXPENSES_EXT;
+
+data.RES_FINAL_KRED_SUM = data.LOCAL_CAR_VALUE_EXT;
+
+if (data.LOCAL_CAR_VALUE_EXT!=0) {
+    data.LOCAL_FIRST_PAYM = (data.PROD_CHAR_ADVANCEAMOUNT_EXT/data.LOCAL_CAR_VALUE_EXT*100).toFixed(2);
+}
+data.RES_CHAR_ADVANCE_PRC = Math.round(data.LOCAL_FIRST_PAYM);
+
+data.RES_SCHEME_TERM = data.PROD_SCHEME_TERM;
+
+//----------------------------- VOSTOK ---------------------------
+var doneck = new Array ('UA6806','UA6828','UA6829','UA6833','UA6849','UA6852','UA6871','UA7595','UA6879','UA6807','UA6881','UA6889','UA6919','UA6932',
+    'UA6933','UA6934','UA6948','UA6951','UA6956','UA6995','UA6996','UA7004','UA7007','UA7021','UA7025','UA7042','UA7057','UA7136','UA6869','UA6876','UA7428',
+    'UA7002','UA8134','UA7902','UA7899','UA6817','UA6884','UA7973','UA6950','UA6851','UA7006','UA7228','UA6831','UA7003','UA6832','UA6916');
+var lugansk = new Array ('UA17411',
+    'UA17448','UA17422','UA17436','UA17442','UA17464','UA17449','UA17487','UA17412','UA17490','UA17495','UA17521','UA17522',
+    'UA17537','UA17548','UA17549','UA18084','UA17493','UA18280','UA17494','UA18085','UA17536','UA17785','UA17840','UA17488',
+    'UA18083','UA18174','UA18127','UA17489','UA18166','UA18411','UA17463','UA17420');
+
+data.LOCAL_DONBASS = 'N';
+
+if (lugansk.indexOf(data.APP_ACT_ADDRESS.ID_REGION) != -1 || lugansk.indexOf(data.APP_REG_ADDRESS.ID_REGION) != -1 ||
+    doneck.indexOf(data.APP_ACT_ADDRESS.ID_REGION) != -1 || doneck.indexOf(data.APP_REG_ADDRESS.ID_REGION) != -1
+)
+{
+    data.LOCAL_DONBASS = 'Y';
+}

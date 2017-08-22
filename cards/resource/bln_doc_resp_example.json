@@ -1,0 +1,46 @@
+{
+  "data": {
+    "doc": {
+      "r": {
+        "o": {
+          "BLNDOC_LST": {
+            "@CalipsoDT": "0x0000000002ebd69d",
+            "@BlackDocRemark": "null",
+            "@BaseId": "null",
+            "@EditorLogin": "null",
+            "@CreatorLogin": "DD120880SSN",
+            "@BlackDocSt": "A",
+            "@BlackDocDTM": "2007-11-05 11:14:15.833",
+            "@BlackDocDTS": "2007-11-05 11:14:15.833",
+            "@BlackDocOKPO": "null",
+            "@BlackDocMName": "О",
+            "@BlackDocFName": "О",
+            "@BlackDocLName": "ГРИЦIН",
+            "@BlackDocName": "null",
+            "@BlackDocByWho": "null",
+            "@BlackDocDS": "2007-01-17",
+            "@BlackDocSer": "АВ",
+            "@BlackDocNum": "085716",
+            "@BlackDocType": "000001",
+            "@BlackDocCountry": "UA",
+            "@ClientID": "null",
+            "@BlackDocID": "2148522"
+          }
+        },
+        "@key": "0"
+      }
+    },
+    "DATA_PERSLINK":
+    [ { "CUST_ID": 49186901,
+      "BL_ZONE": "R",
+      "BL_CONTROL": "KHS;ZPDO2;",
+      "CALL": "N",
+      "SMS": "Y",
+      "PASS": "N",
+      "BLOKPO_ZONE": "R",
+      "BL_PHONE": "MOB;" } ],
+    "DOC_IDENT_NUM": "085716",
+    "DOC_IDENT_SER": "АВ",
+    "APP_CUST_ID": 49186901
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "ops": [
+    {
+      "ref": "RTDM_RESTRUCTION_OF_LIMIT",
+      "type": "create",
+      "obj": "task",
+      "conv_id": "96057",
+      "data": {
+        "AB/PB": {
+          "NO_ST_PHONE": {
+            "bank_r": "AB/PB",
+            "koeff_r": 0.7,
+            "max_r": 4000,
+            "min_r": 500,
+            "type_r": "NO_ST_PHONE"
+          },
+          "AGE_21_25": {
+            "bank_r": "AB/PB",
+            "koeff_r": 0,
+            "max_r": 5000,
+            "min_r": 0,
+            "type_r": "AGE_21_25"
+          },
+          "TIMEEMPL": {
+            "bank_r": "AB/PB",
+            "koeff_r": 0,
+            "max_r": 2500,
+            "min_r": 0,
+            "type_r": "TIMEEMPL"
+          },
+          "INS": {
+            "bank_r": "AB/PB",
+            "koeff_r": 120,
+            "max_r": 15000,
+            "min_r": 0,
+            "type_r": "INS"
+          },
+          "MEDIUM": {
+            "bank_r": "AB/PB",
+            "koeff_r": 0.5,
+            "max_r": 5000,
+            "min_r": 500,
+            "type_r": "MEDIUM"
+          },
+          "AGE_LT21": {
+            "bank_r": "AB/PB",
+            "koeff_r": 0,
+            "max_r": 2000,
+            "min_r": 0,
+            "type_r": "AGE_LT21"
+          },
+          "WPHONE_IS_MOB": {
+            "bank_r": "AB/PB",
+            "koeff_r": 0,
+            "max_r": 5000,
+            "min_r": 0,
+            "type_r": "WPHONE_IS_MOB"
+          },
+          "NEGATIVE": {
+            "bank_r": "AB/PB",
+            "koeff_r": 0,
+            "max_r": 5000,
+            "min_r": 0,
+            "type_r": "NEGATIVE"
+          }
+        },
+        "AB/PB_VIP": {
+          "AGE_21_25": {
+            "bank_r": "AB/PB_VIP",
+            "koeff_r": 0,
+            "max_r": 30000,
+            "min_r": 0,
+            "type_r": "AGE_21_25"
+          },
+          "INS": {
+            "bank_r": "AB/PB_VIP",
+            "koeff_r": 120,
+            "max_r": 15000,
+            "min_r": 0,
+            "type_r": "INS"
+          },
+          "MEDIUM": {
+            "bank_r": "AB/PB_VIP",
+            "koeff_r": 0.5,
+            "max_r": 10000,
+            "min_r": 500,
+            "type_r": "MEDIUM"
+          },
+          "AGE_LT21": {
+            "bank_r": "AB/PB_VIP",
+            "koeff_r": 0,
+            "max_r": 30000,
+            "min_r": 0,
+            "type_r": "AGE_LT21"
+          },
+          "NEGATIVE": {
+            "bank_r": "AB/PB_VIP",
+            "koeff_r": 0,
+            "max_r": 10000,
+            "min_r": 0,
+            "type_r": "NEGATIVE"
+          }
+        }
+      }
+    }
+  ]
+}

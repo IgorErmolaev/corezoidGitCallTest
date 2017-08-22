@@ -1,0 +1,684 @@
+{
+  "ops": [
+    {
+      "ref": "RES_COEF_ELIIG",
+      "type": "create",
+      "obj": "task",
+      "conv_id": "96057",
+      "data": {
+        "MATRIX_CONF_AB": [
+          {
+            "border1": -999999,
+            "border2": 701,
+            "probl1": 1.5,
+            "probl2": 1.5
+          },
+          {
+            "border1": 701,
+            "border2": 783,
+            "probl1": 1.5,
+            "probl2": 1.5
+          },
+          {
+            "border1": 783,
+            "border2": 828,
+            "probl1": 2,
+            "probl2": 1.5
+          },
+          {
+            "border1": 828,
+            "border2": 862,
+            "probl1": 2,
+            "probl2": 1.5
+          },
+          {
+            "border1": 862,
+            "border2": 886,
+            "probl1": 2,
+            "probl2": 2
+          },
+          {
+            "border1": 886,
+            "border2": 907,
+            "probl1": 2,
+            "probl2": 2
+          },
+          {
+            "border1": 907,
+            "border2": 929,
+            "probl1": 2.5,
+            "probl2": 2
+          },
+          {
+            "border1": 929,
+            "border2": 947,
+            "probl1": 2.5,
+            "probl2": 2
+          },
+          {
+            "border1": 947,
+            "border2": 966,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 966,
+            "border2": 999999,
+            "probl1": 3,
+            "probl2": 3
+          }
+        ],
+        "MATRIX_CONF_PB": [
+          {
+            "border1": -999999,
+            "border2": 630,
+            "probl1": 2,
+            "probl2": 2
+          },
+          {
+            "border1": 630,
+            "border2": 662,
+            "probl1": 2,
+            "probl2": 2
+          },
+          {
+            "border1": 662,
+            "border2": 686,
+            "probl1": 2,
+            "probl2": 2
+          },
+          {
+            "border1": 686,
+            "border2": 707,
+            "probl1": 2,
+            "probl2": 2
+          },
+          {
+            "border1": 707,
+            "border2": 725,
+            "probl1": 2.6,
+            "probl2": 2
+          },
+          {
+            "border1": 725,
+            "border2": 741,
+            "probl1": 2.6,
+            "probl2": 2
+          },
+          {
+            "border1": 741,
+            "border2": 757,
+            "probl1": 2.6,
+            "probl2": 2
+          },
+          {
+            "border1": 757,
+            "border2": 772,
+            "probl1": 2.6,
+            "probl2": 2
+          },
+          {
+            "border1": 772,
+            "border2": 787,
+            "probl1": 2.6,
+            "probl2": 2.6
+          },
+          {
+            "border1": 787,
+            "border2": 802,
+            "probl1": 2.6,
+            "probl2": 2.6
+          },
+          {
+            "border1": 802,
+            "border2": 817,
+            "probl1": 2.6,
+            "probl2": 2.6
+          },
+          {
+            "border1": 817,
+            "border2": 832,
+            "probl1": 2.6,
+            "probl2": 2.6
+          },
+          {
+            "border1": 832,
+            "border2": 849,
+            "probl1": 3.4,
+            "probl2": 2.6
+          },
+          {
+            "border1": 849,
+            "border2": 865,
+            "probl1": 3.4,
+            "probl2": 2.6
+          },
+          {
+            "border1": 865,
+            "border2": 883,
+            "probl1": 3.4,
+            "probl2": 2.6
+          },
+          {
+            "border1": 883,
+            "border2": 904,
+            "probl1": 3.4,
+            "probl2": 2.6
+          },
+          {
+            "border1": 904,
+            "border2": 927,
+            "probl1": 4,
+            "probl2": 4
+          },
+          {
+            "border1": 927,
+            "border2": 957,
+            "probl1": 4,
+            "probl2": 4
+          },
+          {
+            "border1": 957,
+            "border2": 1002,
+            "probl1": 4,
+            "probl2": 4
+          },
+          {
+            "border1": 1002,
+            "border2": 9999999,
+            "probl1": 4,
+            "probl2": 4
+          }
+        ],
+        "MATRIX_CONF_RIP_NOSYS_AB": [
+          {
+            "border1": -999999,
+            "border2": 159,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 159,
+            "border2": 182,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 182,
+            "border2": 200,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 200,
+            "border2": 214,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 214,
+            "border2": 226,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 226,
+            "border2": 239,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 239,
+            "border2": 249,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 249,
+            "border2": 258,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 258,
+            "border2": 269,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 269,
+            "border2": 277,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 277,
+            "border2": 286,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 286,
+            "border2": 296,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 296,
+            "border2": 306,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 306,
+            "border2": 316,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 316,
+            "border2": 328,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 328,
+            "border2": 340,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 340,
+            "border2": 355,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 355,
+            "border2": 375,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 375,
+            "border2": 404,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 404,
+            "border2": 999999,
+            "probl1": 6,
+            "probl2": 6
+          }
+        ],
+        "MATRIX_CONF_RIP_NOSYS_PB": [
+          {
+            "border1": -999999,
+            "border2": 213,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 213,
+            "border2": 238,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 238,
+            "border2": 255,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 255,
+            "border2": 269,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 269,
+            "border2": 281,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 281,
+            "border2": 292,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 292,
+            "border2": 302,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 302,
+            "border2": 312,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 312,
+            "border2": 322,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 322,
+            "border2": 332,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 332,
+            "border2": 341,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 341,
+            "border2": 350,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 350,
+            "border2": 362,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 362,
+            "border2": 371,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 371,
+            "border2": 384,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 384,
+            "border2": 398,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 398,
+            "border2": 415,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 415,
+            "border2": 435,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 435,
+            "border2": 462,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 462,
+            "border2": 999999,
+            "probl1": 6,
+            "probl2": 6
+          }
+        ],
+        "MATRIX_CONF_RIP_SYS_AB": [
+          {
+            "border1": -999999,
+            "border2": 143,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 143,
+            "border2": 163,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 163,
+            "border2": 180,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 180,
+            "border2": 194,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 194,
+            "border2": 206,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 206,
+            "border2": 218,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 218,
+            "border2": 228,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 228,
+            "border2": 238,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 238,
+            "border2": 250,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 250,
+            "border2": 260,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 260,
+            "border2": 269,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 269,
+            "border2": 279,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 279,
+            "border2": 291,
+            "probl1": 5,
+            "probl2": 5
+          },
+          {
+            "border1": 291,
+            "border2": 302,
+            "probl1": 5,
+            "probl2": 5
+          },
+          {
+            "border1": 302,
+            "border2": 316,
+            "probl1": 5,
+            "probl2": 5
+          },
+          {
+            "border1": 316,
+            "border2": 331,
+            "probl1": 5,
+            "probl2": 5
+          },
+          {
+            "border1": 331,
+            "border2": 348,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 348,
+            "border2": 370,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 370,
+            "border2": 399,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 399,
+            "border2": 999999,
+            "probl1": 6,
+            "probl2": 6
+          }
+        ],
+        "MATRIX_CONF_RIP_SYS_PB": [
+          {
+            "border1": -999999,
+            "border2": 202,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 202,
+            "border2": 227,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 227,
+            "border2": 245,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 245,
+            "border2": 260,
+            "probl1": 3,
+            "probl2": 3
+          },
+          {
+            "border1": 260,
+            "border2": 273,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 273,
+            "border2": 285,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 285,
+            "border2": 297,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 297,
+            "border2": 308,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 308,
+            "border2": 317,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 317,
+            "border2": 328,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 328,
+            "border2": 338,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 338,
+            "border2": 348,
+            "probl1": 4.2,
+            "probl2": 4.2
+          },
+          {
+            "border1": 348,
+            "border2": 360,
+            "probl1": 5,
+            "probl2": 5
+          },
+          {
+            "border1": 360,
+            "border2": 370,
+            "probl1": 5,
+            "probl2": 5
+          },
+          {
+            "border1": 370,
+            "border2": 382,
+            "probl1": 5,
+            "probl2": 5
+          },
+          {
+            "border1": 382,
+            "border2": 396,
+            "probl1": 5,
+            "probl2": 5
+          },
+          {
+            "border1": 396,
+            "border2": 413,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 413,
+            "border2": 433,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 433,
+            "border2": 459,
+            "probl1": 6,
+            "probl2": 6
+          },
+          {
+            "border1": 459,
+            "border2": 999999,
+            "probl1": 6,
+            "probl2": 6
+          }
+        ]
+      }
+    }
+  ]
+}

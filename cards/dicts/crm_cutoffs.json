@@ -1,0 +1,106 @@
+{
+  "ops": [
+    {
+      "ref": "CRM_CUTOFFS",
+      "type": "create",
+      "obj": "task",
+      "conv_id": "96057",
+      "data": {
+        "AB": {
+          "REGION_OTHER": {
+            "bad_b": 690,
+            "bank": "AB",
+            "good_b": 850,
+            "gray_z": 100,
+            "min_b": 500,
+            "region": "REGION_OTHER",
+            "zero_b": 825
+          },
+          "REGION_BAD": {
+            "bad_b": 690,
+            "bank": "AB",
+            "good_b": 850,
+            "gray_z": 100,
+            "min_b": 650,
+            "region": "REGION_BAD",
+            "zero_b": 825
+          },
+          "RIP_SYS": {
+            "bad_b": 240,
+            "bank": "AB",
+            "good_b": 311,
+            "gray_z": 100,
+            "min_b": 216,
+            "region": "RIP_SYS",
+            "zero_b": 815
+          },
+          "RIP_NO_SYS": {
+            "bad_b": 240,
+            "bank": "AB",
+            "good_b": 311,
+            "gray_z": 100,
+            "min_b": 216,
+            "region": "RIP_NO_SYS",
+            "zero_b": 815
+          },
+          "REGION_PREBAD": {
+            "bad_b": 690,
+            "bank": "AB",
+            "good_b": 850,
+            "gray_z": 100,
+            "min_b": 550,
+            "region": "REGION_PREBAD",
+            "zero_b": 825
+          }
+        },
+        "PB": {
+          "REGION_OTHER": {
+            "bad_b": 679,
+            "bank": "PB",
+            "good_b": 1055,
+            "gray_z": 400,
+            "min_b": 240,
+            "region": "REGION_OTHER",
+            "zero_b": 760
+          },
+          "REGION_BAD": {
+            "bad_b": 679,
+            "bank": "PB",
+            "good_b": 1055,
+            "gray_z": 400,
+            "min_b": 260,
+            "region": "REGION_BAD",
+            "zero_b": 843
+          },
+          "RIP_SYS": {
+            "bad_b": 295,
+            "bank": "PB",
+            "good_b": 371,
+            "gray_z": 100,
+            "min_b": 180,
+            "region": "RIP_SYS",
+            "zero_b": 150
+          },
+          "RIP_NO_SYS": {
+            "bad_b": 295,
+            "bank": "PB",
+            "good_b": 371,
+            "gray_z": 100,
+            "min_b": 0,
+            "region": "RIP_NO_SYS",
+            "zero_b": 150
+          },
+          "REGION_PREBAD": {
+            "bad_b": 679,
+            "bank": "PB",
+            "good_b": 1055,
+            "gray_z": 400,
+            "min_b": 260,
+            "region": "REGION_PREBAD",
+            "zero_b": 768
+          }
+        }
+      }
+    }
+  ]
+}

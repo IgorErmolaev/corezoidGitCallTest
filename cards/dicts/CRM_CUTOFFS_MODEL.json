@@ -1,0 +1,24 @@
+{
+    "ops": [
+        {
+            "ref": "CRM_CUTOFFS_MODEL",
+            "conv_id": "95797",
+            "type": "create",
+            "obj": "task",
+            "data": {
+                "PB": {
+                    "NEW_VNESH": 0.30282,
+                    "CASHPAYM": 0.406546,
+                    "ZP_PENS_DEPOS": 0.345318,
+                    "OTHER": 0.421458
+                },
+                "AB": {
+                    "NEW_VNESH": 0.30282,
+                    "CASHPAYM": 0.406546,
+                    "ZP_PENS_DEPOS": 0.345318,
+                    "OTHER": 0.421458
+                }
+            }
+        }
+    ]
+}
