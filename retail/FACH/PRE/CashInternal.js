@@ -1,4 +1,5 @@
 // JavaScript Document
+
 function Datediff(days_diff) {
     var dateOpen = new Date(days_diff); // дата на входе
     var today = new Date();
@@ -85,7 +86,7 @@ if (data.BCH_CRED_HIST_DATA != undefined && (data.BCH_CRED_HIST_DATA.substr(0,1)
 
 /*------------------------------------------MONTH PAY----------------------------------------------------------------------*/
 
-data.LOCAL_CLIENT_MONTH_PAY = data.RES_COEFF_ELIG * data.RES_INC_DISP;
+data.LOCAL_CLIENT_MONTH_PAY = data.RES_COEFF_ELIG/2 * data.RES_INC_DISP;
 data.LOCAL_CLIENT_MONTH_PAY = Math.max(data.LOCAL_CLIENT_MONTH_PAY,0);
 data.LOCAL_CLIENT_MONTH_PAY = Math.max(data.LOCAL_CLIENT_MONTH_PAY,((data.RES_MAX_MID_PAY/0.25 - data.RES_EXP_MONTH_TOTAL)*data.RES_COEFF_ELIG));
 data.LOCAL_CLIENT_MONTH_PAY = Math.max(data.LOCAL_CLIENT_MONTH_PAY,0);
@@ -181,6 +182,19 @@ if (data.RES_TYPE_CUST == 'EXTERN') {
         }
     }
 }
+
+/*
+//допил закручиваем выдачи по сумме
+ if (data.DATA_TRELCLIENTS_FACH_LIM24>0) {
+  data.DATA_TRELCLIENTS_FACH_LIM24 = data.DATA_TRELCLIENTS_FACH_LIM24 * 0.7;
+  data.DATA_TRELCLIENTS_FACH_LIM24 = Math.round(data.DATA_TRELCLIENTS_FACH_LIM24/100)*100;
+ }
+ 
+ if (data.RES_FINAL_KRED_SUM>0) {
+  data.RES_FINAL_KRED_SUM = data.RES_FINAL_KRED_SUM * 0.7;
+  data.RES_FINAL_KRED_SUM = Math.round(data.RES_FINAL_KRED_SUM/100)*100; 
+ }
+*/ 
 
 
 /*>=1000grn on 6month*/
