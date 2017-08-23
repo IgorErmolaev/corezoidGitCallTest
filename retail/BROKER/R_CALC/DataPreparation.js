@@ -88,11 +88,12 @@ var debcardType = new Array ('W','W_F','W_T');
 var cardProduct = new Array ('UNI','UN_M','GOLD','GL_L');
 var riskLogin = new Array (	'ZP240898DIV','CS191185MIO','DD111283SOV','HA210485VJI','HA200487FEM','TG130990KTT','TG010286MTB1','TG080480BVT','AB290486PVA','DD010489KKV',
     'ZP200889SDV1','K2070284GIJ','OD170692VAO','DO110988KAV','DO101091DTA');
+var product = new Array('GIL','CASH','PERS','FACH','AVTO','RAS');      
 
 //---------------------------------local-------------------------------------
 
 data.LOCAL_INCOME_MONTHSALARY = Math.max(data.APP_INCOME_MONTHSALARY,0);
-data.LOCAL_INCOME_OTHERSOURCE = Math.max(data.APP_INCOME_MONTHSALARY,0);
+data.LOCAL_INCOME_OTHERSOURCE = Math.max(data.APP_INCOME_OTHERSOURCE,0);
 
 
 //---------------------------------------------------RES_AGE------------
@@ -530,6 +531,7 @@ if (data.LOCAL_DONBASS == 'Y') {
 }
 
 
+
 //--------------------------------------oborot-----
 
 if (data.DATA_OB_ALL != undefined && data.DATA_OB_ALL >0) {
@@ -538,6 +540,9 @@ if (data.DATA_OB_ALL != undefined && data.DATA_OB_ALL >0) {
             data.DATA_OB_ALL = (data.DATA_OB_ALL - Math.max(data.DATA_CRED[i].BAL,data.DATA_CRED[i].LIMIT))*0.05
         }
     }
+}
+else {
+  data.DATA_OB_ALL = 0;
 }
 
 //-----------------------------------min cred cards limit----------------------------------------------
@@ -575,4 +580,22 @@ if (data.DATA_LOANS != undefined){
 }
 
 
+//-----------------NEGATIVE ubki history Amnisty---------------
 
+ data.UbkiHistoryAmnisty = 'N';
+
+if (data.RES_CRED_HIST_YBCH == 'NEGATIVE') {
+  if (data.BCH_CRED_HIST_DATA != 'NEGATIVE' && data.BCH_CRED_HIST_DATA != 'HDNEGATIVE') {
+    if (data.DATA_CRED!= undefined) {
+      for (var i=0; i< data.DATA_CRED.length; i++){
+        if (product.indexOf(data.DATA_CRED[i].PRODUCT)!=-1) {
+          if (data.DATA_CRED[i].STATE == 'C' || data.DATA_CRED[i].STATE == 'K' || data.DATA_CRED[i].STATE == 'Z') {
+            if (data.DATA_CRED[i].BANK == 'AB' && data.DATA_CRED[i].MAX_DAYS_CRED<1 && data.DATA_CRED[i].MAX_DAYS_PRC<1 && data.DATA_CRED[i].START_SUMM>500) {
+              data.UbkiHistoryAmnisty = 'Y';
+            }
+          }
+        } 
+      }
+    }
+  } 
+}
