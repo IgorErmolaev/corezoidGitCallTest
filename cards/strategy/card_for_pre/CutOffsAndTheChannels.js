@@ -1,3 +1,4 @@
+// JavaScript Document
 
 var KievPB = new Array('KI','K2','K3','K4','K5');
 var KievAB = new Array('A3K2','A3K6','ABAA','A3K7','A213','A3K8','AN7K');
@@ -124,18 +125,18 @@ if (data.PROD_CHAR_BANK == 'AB') {
     switch (data.RES_LIMIT_ITOG_TYPE) {
         case 'NEW':
         case 'VNESH':
-            balZero = 0.446418;
+            balZero = 0.492477;
             break;
         case 'CASHPAYM':
-            balZero = 0.492824;
+            balZero = 0.562418;
             break;
         case 'ZP':
         case 'PENS':
         case 'DEPOS':
-            balZero =  0.5;
+            balZero =  0.56;
             break;
         default :
-            balZero = 0.421458;
+            balZero = 0.493756;
     }
 
 
