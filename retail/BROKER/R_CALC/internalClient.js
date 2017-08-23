@@ -1,11 +1,3 @@
-var fs = require('fs');
-var json = fs.readFileSync(__dirname+'\\..\\test\\internalClient.json').toString();
-var data = JSON.parse(json).data;
-
-
-//*******************************************************************************************************************************************
-
-// JavaScript Document
 function Datediff(days_diff) {
     var dateOpen = new Date(days_diff); // дата на входе
     var today = new Date();
@@ -43,7 +35,6 @@ if (data.PROD_CHAR_CORPORATION != '0'/* && data.RES_CHAR_ADVANCE_PRC>=10*/) {
         data.LOCAL_SYSTEM_DTI = 1.4;
     }*/
 }
-
 //-------------------------------------UDK--------------------------------
 
 if (data.PROD_CHAR_LOANAMOUNT !=0) {
@@ -216,7 +207,7 @@ else {
 /*-------------------------------Type of limit-----------------------------------------------------------------*/
 
 if (data.RES_TYPE_CUST == 'INTERN') {
-    if (data.LOCAL_LIMIT_OLD = Math.max(data.LOCAL_CLIENT_SUM_CREDIT, data.LOCAL_CLIENT_SUM_DEPOSIT,data.LOCAL_CLIENT_SUM_SALARY,data.LOCAL_CLIENT_SUM_PENS,data.LOCAL_CLIENT_SUM_OB, data.LOCAL_LIMIT_OLD)) {
+    if (data.LOCAL_LIMIT_OLD == Math.max(data.LOCAL_CLIENT_SUM_CREDIT, data.LOCAL_CLIENT_SUM_DEPOSIT,data.LOCAL_CLIENT_SUM_SALARY,data.LOCAL_CLIENT_SUM_PENS,data.LOCAL_CLIENT_SUM_OB, data.LOCAL_LIMIT_OLD)) {
         data.RES_LIMIT_ITOG_TYPE = 'LIMIT_OLD';
     }
     else {
@@ -262,7 +253,7 @@ if (data.PROD_CHAR_BANK == 'PB') {
 }
 else {
     if (data.PROD_CHAR_BANK == 'AB') {
-        if (data.RES_SCCARD_SCORE_1>310 || (data.RES_SCCARD_SCORE_1>300 && data.PROD_CHAR_CORPORATION == '237') && data.RES_LIMIT_PLAT>=data.PROD_CHAR_LOANAMOUNT) {
+        if ((data.RES_SCCARD_SCORE_1>310 || (data.RES_SCCARD_SCORE_1>300 && data.PROD_CHAR_CORPORATION == '237')) && data.RES_LIMIT_PLAT>=data.PROD_CHAR_LOANAMOUNT) {
             data.LOCAL_CLIENT_SUM_SCORE = 0;
             data.RES_LIMIT_ITOG_TYPE = 'SCOR';
             data.RES_TYPE_CUST = 'INTERN';
@@ -280,10 +271,3 @@ if (data.RES_TYPE_CUST == 'EXTERN') {
         data.RES_LIMIT_ITOG_TYPE = 'NEW';
     }
 }
-
-
-
-//************************************************************************************************************
-
-
-console.log(data.RES_LIMIT_PLAT);
