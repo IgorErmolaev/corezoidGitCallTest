@@ -24,7 +24,7 @@ else {
 
 //----------------CORP_AB-------------
 
-var corpAB = new Array("255","259","260","261","265","266");
+var corpAB = new Array("255","259","260","261","265","266","273");
 
 if (corpAB.indexOf(data.PROD_CHAR_CORPORATION) != -1) {
   CORP_AB = 'True';

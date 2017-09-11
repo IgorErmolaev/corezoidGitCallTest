@@ -2,7 +2,7 @@
 
 //---------------------------LOW_INCOME-------------
 
-var corpLowInc = new Array('255','259','260','261','265','266');
+var corpLowInc = new Array('255','259','260','261','265','266','273');
 
 if (data.PROD_SCHEME_LOANPURPOSE == 'F4' && corpLowInc.indexOf(data.PROD_CHAR_CORPORATION) == -1) {
   SCHEME_LOWINCOME = 'True';
