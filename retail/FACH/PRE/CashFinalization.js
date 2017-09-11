@@ -1,10 +1,73 @@
 // JavaScript Document
 
+function toDate(target) {
+    if (typeof target == "string" && target.length == 24 && target.substr(4, 1) == "-" && target.substr(7, 1) == "-" && target.substr(10, 1) == "T" &&
+        target.substr(13, 1) == ":" && target.substr(16, 1) == ":" && target.substr(19, 1) == "." && target.substr(23, 1) == "Z") {
+        /*return new Date(target.substr(0, 10) + " " + target.substr(11, 8));*/
+        return new Date(target);
+    }
+    else return target;
+}
+
+function convertToDate(target) {
+    if (target != null) {
+        if (typeof target == "object") {
+            if (target instanceof Array) {
+                for (var i = 0; i<target.length; i++) {
+                    target[i] = convertToDate(target[i]);
+                }
+            }
+            else {
+                var props = Object.getOwnPropertyNames(target);
+                for (var i = 0; i<props.length; i++) {
+                    target[props[i]] = convertToDate(target[props[i]]);
+                }
+            }
+            return target;
+        } else return toDate(target);
+    } else return target;
+
+}
+
+data=convertToDate(data);
+
+function Datediff(days_diff ){
+    var dateOpen = days_diff; // дата на входе
+    var today = Date.now();
+    var diff = Math.abs(today - dateOpen);
+    var one_day = 1000 * 60 * 60 * 24;
+    var days = Math.round(diff / one_day);
+    return days;
+}
+
 var good_code = ['D010','D017','D021','D031','D039','D064','D068','D072','D087','D088', 'D200',
     'D201','D214','D217','D220','D225','D255','D267','D270','D284','D285','D287','D292','D293', 'D308'];
 
 if (data.RES_DEC_AUTO == undefined ||  data.RES_DEC_AUTO =='') {
     data.RES_DEC_AUTO = 'Y';
+}
+
+data.RES_COMMENT_NO_AUTO = '';
+
+//-----------------------------Особые клиенты------------------------------------------------
+
+data.LOCAL_CUST_IMPORTANT = 'N';
+
+if (data.RES_DEC_FINAL_FLOW != 'ACCEPT') {
+    if (data.APP_CUST_IMPORTANT == 'Y' && data.APP_CUST_IMPORTANT_COM != '') {
+      if ( Datediff(data.APP_CUST_IMPORTANT_DATE)<31) { 
+        data.RES_DEC_CATEGORY = 'ACCEPT';
+        data.RES_DEC_FINAL_FLOW = 'ACCEPT';
+        data.LOCAL_CUST_IMPORTANT = 'Y';
+        data.RES_COMMENT_NO_AUTO = 'Особый клиент' + ' СЗ №' + data.APP_CUST_IMPORTANT_COM + '; ';
+     }   
+    }
+    else {
+        data.RES_DEC_FINAL_FLOW = 'DECLINE';
+    }
+}
+else {
+    data.RES_DEC_FINAL_FLOW = 'ACCEPT';
 }
 
 /****************************************Comment**********************************************************************/
@@ -27,7 +90,6 @@ if (data.RES_DEC_FINAL_FLOW !='ACCEPT') {
     }
 }
 
-data.RES_COMMENT_NO_AUTO = '';
 if (data.LOCAL_HAS_DELINQUENCY == 'Y' || data.BCH_CRED_OWN_PROS_YBCH == 'Y') {
     data.RES_COMMENT_NO_AUTO += 'Текущая просрочка;';
 }
@@ -44,7 +106,7 @@ if (data.DATA_ECB_NOT_WORK == 'Y') {
     data.RES_COMMENT_NO_AUTO += 'Ручная проверка ЧС;';
 }
 
-if ( data.BCH_YBCH_NOT_WORK == 'Y)'){
+if ( data.BCH_YBCH_NOT_WORK == 'Y'){
     data.RES_COMMENT_NO_AUTO += 'Не сработал запрос в УБКИ - ручная проверка;';
 }
 
@@ -59,6 +121,21 @@ if (data.LOCAL_OPEN_PEACH == 'Y') {
 if (data.limits_not_work == 'Y') {
     data.RES_COMMENT_NO_AUTO += 'Не сработал запрос в сервис лимитов - ручная проверка;';
 }
+
+if (data.DATA_TRELCLIENTS_FACH_LIM24 == 0){
+   data.RES_COMMENT_NO_AUTO += ' Экспертное решение;';
+}
+
+if (data.LOCAL_BLCL_DOC == 'J') {
+        data.RES_DEC_AUTO = 'N';
+        data.RES_COMMENT_NO_AUTO += ' Номер и серия документа в ЧС;';
+}
+
+if (data.LOCAL_BLCL_DOC == 'D') {
+        data.RES_DEC_AUTO = 'N';
+        data.RES_COMMENT_NO_AUTO += ' Номер и серия паспорта в ЧС;';
+}
+
 if (good_code.indexOf(data.DATA_TRELCLIENTS_CODE) != -1) {
     data.RES_LIMIT_ITOG = 5000;
     switch(data.DATA_TRELCLIENTS_CODE)
@@ -94,6 +171,13 @@ if (good_code.indexOf(data.DATA_TRELCLIENTS_CODE) != -1) {
 
 if (data.RES_COMMENT_NO_AUTO != ''){
     data.RES_DEC_AUTO = 'N';
+}
+
+
+//------------------Показываем клиенту решение КЦ при повторной подаче и отказе
+
+if (data.RES_DEC_FINAL_FLOW == 'DECLINE' && data.KC_FINAL_CODE != '' && data.KC_LIMIT_P48>0 ) {
+  data.RES_DEC_FINAL_CODE_COMMENT = 'Шановний клієнте! Вам доступно ' +  data.KC_LIMIT_P48 + ' грн. на термін ' + data.PROD_SCHEME_TERM + ' місяців';  
 }
 
 
