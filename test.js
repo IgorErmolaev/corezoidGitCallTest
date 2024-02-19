@@ -1,4 +1,4 @@
-function testFunc (data) {
+exports.testFunc = (data) => {
     data.paramTest = 'test';
     return data;
-}
+};
